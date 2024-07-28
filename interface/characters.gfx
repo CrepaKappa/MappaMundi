@@ -43,6 +43,11 @@ spriteTypes = {
     }
 	
 	spriteType = {
+        name = GFX_Sahra_Wagenknecht
+        texturefile = "gfx/leaders/WGR/WGR_Wagenknecht.tga"
+    }
+	
+	spriteType = {
         name = GFX_Olaf_Scholz
         texturefile = "gfx/leaders/WGR/WGR_Scholz.dds"
     }
@@ -63,8 +68,23 @@ spriteTypes = {
     }
 	
 	spriteType = {
+        name = GFX_Alice_Weidel
+        texturefile = "gfx/leaders/WGR/WGR_Weidel.tga"
+    }
+	
+	spriteType = {
         name = GFX_Tino_Chrupalla
         texturefile = "gfx/leaders/WGR/WGR_Chrupalla.tga"
+    }
+	
+	spriteType = {
+        name = GFX_Bjorn_Hocke
+        texturefile = "gfx/leaders/WGR/WGR_Höcke.tga"
+    }
+	
+	spriteType = {
+        name = GFX_Matthias_Fischer
+        texturefile = "gfx/leaders/WGR/WGR_Fischer.tga"
     }
 	
 	spriteType = {
@@ -112,6 +132,11 @@ spriteTypes = {
         texturefile = "gfx/leaders/GER/Portrait_Erich_Ludendorff.dds"
     }
 	
+	spriteType = {
+        name = GFX_Wilhelm_Lattmann
+        texturefile = "gfx/leaders/GER/Portrait_Wilhelm_Lattmann.dds"
+    }
+	
 	### Nazi Germany ###
 	
 	spriteType = {
@@ -157,8 +182,8 @@ spriteTypes = {
     }
 	
 	spriteType = {
-        name = GFX_Norbert_Hofer
-        texturefile = "gfx/leaders/AUS/Portrait_Norbert_Hofer.dds"
+        name = GFX_Herbert_Kickl
+        texturefile = "gfx/leaders/AUS/Portrait_Herbert_Kickl.dds"
     }
 	
 	spriteType = {
@@ -174,6 +199,11 @@ spriteTypes = {
 	spriteType = {
         name = GFX_Richard_Kalergi
         texturefile = "gfx/leaders/EUR/Portrait_Richard_Kalergi.dds"
+    }
+	
+	spriteType = {
+        name = GFX_Richard_Steidle
+        texturefile = "gfx/leaders/AUS/Portrait_Richard_Steidle.dds"
     }
 	
 	### Hungary ###
@@ -221,6 +251,11 @@ spriteTypes = {
 	spriteType = {
         name = GFX_Mihaly_Karolyi
         texturefile = "gfx/leaders/HUN/Portrait_Mihaly_Karolyi.dds"
+    }
+	
+	spriteType = {
+        name = GFX_Peter_Magyar
+        texturefile = "gfx/leaders/HUN/Portrait_Peter_Magyar.dds"
     }
 	
 	### Croatia ###
@@ -302,8 +337,23 @@ spriteTypes = {
     }
 	
 	spriteType = {
+        name = GFX_Jeremy_Corbyn
+        texturefile = "gfx/leaders/ENG/ENG_Corbyn.tga"
+    }
+	
+	spriteType = {
+        name = GFX_Ed_Davey
+        texturefile = "gfx/leaders/ENG/ENG_Davey.tga"
+    }
+	
+	spriteType = {
         name = GFX_Keir_Starmer
         texturefile = "gfx/leaders/ENG/ENG_Starmer.tga"
+    }
+	
+	spriteType = {
+        name = GFX_Nigel_Farage
+        texturefile = "gfx/leaders/ENG/ENG_Farage.tga"
     }
 	
 	spriteType = {
@@ -402,6 +452,11 @@ spriteTypes = {
 	spriteType = {
         name = GFX_Matteo_Renzi
         texturefile = "gfx/leaders/ITA/ITA_Renzi.tga"
+    }
+	
+	spriteType = {
+        name = GFX_Antonio_Tajani
+        texturefile = "gfx/leaders/ITA/ITA_Tajani.tga"
     }
 	
 	spriteType = {
@@ -1570,6 +1625,11 @@ spriteTypes = {
 	spriteType = {
         name = GFX_Karin_Keller_Sutter
         texturefile = "gfx/leaders/SWI/SWI_Keller.tga"
+    }
+	
+	spriteType = {
+        name = GFX_Arthur_Hoffmann
+        texturefile = "gfx/leaders/SWI/Portrait_Arthur_Hoffmann.dds"
     }
 	
 	### Burma ###
