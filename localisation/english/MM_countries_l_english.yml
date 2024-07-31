@@ -4216,6 +4216,9 @@
  NBK_stratocratic_monarchism_ADJ:0 "Acadien"
  NBK_democratic:0 "Territory of New Brunswick"
  NBK_democratic_DEF:0 "the Territory of New Brunswick"
+ NBK_national_socialism:0 "Sector 18"
+ NBK_national_socialism_DEF:0 "Sector 18"
+ NBK_national_socialism_ADJ:0 "Oceanian"`
  NBK_ADJ:0 "New Brunswicker"
  
  ONT_anarchism_ideology:0 "Federation of Indigenous Peoples"
@@ -4250,6 +4253,9 @@
  ONT_republican_fascism_DEF:0 "The State of Ontario"
  ONT_fascism:0 "United Kingdom in Canada"
  ONT_fascism_DEF:0 "The Government of the United Kingdom of Great Britain and Northern Ireland in Canada"
+ ONT_national_socialism:0 "Sector 16"
+ ONT_national_socialism_DEF:0 "Sector 16"
+ ONT_national_socialism_ADJ:0 "Oceanian"
  ONT_right_anarchism:0 "Welland Canal Company"
  ONT_right_anarchism_DEF:0 "The Welland Canal Company"
  ONT_right_anarchism_ADJ:0 "Niagaran"
@@ -4271,8 +4277,9 @@
  MNB_democratic_monarchism_DEF:0 "The Province of Manitoba"
  MNB_monarchism:0 "Duchy of Manitoba"
  MNB_monarchism_DEF:0 "The Duchy of Manitoba"
- MNB_national_socialism:0 "Canadian Free State"
- MNB_national_socialism_DEF:0 "The Canadian Free State"
+ MNB_national_socialism:0 "Sector 15"
+ MNB_national_socialism_DEF:0 "Sector 15"
+ MNB_national_socialism_ADJ:0 "Oceanian"
  MNB_ADJ:0 "Manitoban"
 
  SAS_neutrality:0 "Provisional Government of Saskatchewan"
