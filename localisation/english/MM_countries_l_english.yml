@@ -4207,7 +4207,7 @@
  NBK_democratic_monarchism_DEF:0 "The Province of New Brunswick"
  NBK_centrist_republic:0 "Maritime Union"
  NBK_centrist_republic_DEF:0 "The Maritime Union"
- NBK_centrist_republic_ADJ:0 "Martime"
+ NBK_centrist_republic_ADJ:0 "Maritime"
  NBK_centrist_monarchism:0 "Martime Provinces"
  NBK_centrist_monarchism_DEF:0 "The Martime Provinces"
  NBK_centrist_monarchism_ADJ:0 "Martime"
@@ -4218,7 +4218,7 @@
  NBK_democratic_DEF:0 "the Territory of New Brunswick"
  NBK_national_socialism:0 "Sector 18"
  NBK_national_socialism_DEF:0 "Sector 18"
- NBK_national_socialism_ADJ:0 "Oceanian"`
+ NBK_national_socialism_ADJ:0 "Oceanian"
  NBK_ADJ:0 "New Brunswicker"
  
  ONT_anarchism_ideology:0 "Federation of Indigenous Peoples"
