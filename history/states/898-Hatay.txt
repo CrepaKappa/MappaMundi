@@ -1,10 +1,7 @@
 state={
 	id=898
 	name="STATE_898"
-
-	resources = {
-		chromium = 10
-	}
+
 
 	history={
 		owner = SYR
@@ -13,6 +10,7 @@ state={
 		}
 		add_core_of = TUR
 		add_core_of = SYR
+        add_core_of = PAO
 		add_core_of = HTY
         add_core_of = WTC
 

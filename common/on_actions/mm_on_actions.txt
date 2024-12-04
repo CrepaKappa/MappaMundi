@@ -82,8 +82,23 @@ on_actions = {
 						option = SEPTEMBERPROGRAMM_SETUP
 					}
 				}
-				GER = {
-					do_1914_septemberprogramm = yes
+				if = {
+					limit = {
+						has_start_date > 1913.01.01
+						has_start_date < 1915.01.01
+					}
+					GER = {
+						do_1914_septemberprogramm = yes
+					}
+				}
+				else_if = {
+					limit = {
+						has_start_date > 1935.01.01
+						has_start_date < 1940.01.01
+					}
+					GER = {
+						do_septemberprogramm_1936 = yes
+					}
 				}
 			}
 		}
@@ -219,7 +234,7 @@ on_actions = {
 							has_start_date < 2049.01.01
 						}
 					}
-					immediate = { log = "2024 De Jure Borders" }
+					log = "2024 De Jure Borders"
 					every_state = {
 						limit = {
 							OR = {
@@ -504,7 +519,7 @@ on_actions = {
 							has_start_date < 1937.01.01
 						}
 					}
-					immediate = { log = "1936 De Jure Borders" }
+					log = "1936 De Jure Borders"
 					every_state = {
 						limit = {
 							OR = {
@@ -606,7 +621,7 @@ on_actions = {
 							has_start_date < 1951.01.01
 						}
 					}
-					immediate = { log = "1950 De Jure Borders" }
+					log = "1950 De Jure Borders"
 					every_state = {
 						limit = {
 							OR = {
@@ -659,7 +674,6 @@ on_actions = {
 			}
 		}
 	}
-	
 	on_startup = {
 		#Check if state marking is disabled
 		effect = {
@@ -671,774 +685,6 @@ on_actions = {
 					}
 				}
 				set_global_flag = STATE_HIGHLIGHT_DISABLED
-			}
-		}
-	}
-	
-	on_startup = {
-		#USSR before the west russian war
-		effect = {
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = MM_unite_ussr
-						option = BEFORE_WRW
-					}
-				}
-
-				every_state = {
-						limit = {
-							OR = {
-							is_core_of = MSC
-							is_core_of = PTG
-							is_core_of = TIK
-							}
-						}
-						MSC = {
-							transfer_state = PREV
-						}
-					}
-					every_state = {
-						limit = {
-							is_core_of = MRD
-						NOT = {
-							is_core_of = SMM
-						}
-						}
-						MSC = {
-							transfer_state = PREV
-						}
-					}
-					every_state = {
-						limit = {
-							is_core_of = PNZ
-						NOT = {
-							is_core_of = SMM
-						}
-						}
-						MSC = {
-							transfer_state = PREV
-						}
-					}
-					every_state = {
-						limit = {
-							is_core_of = SRT
-						NOT = {
-							is_core_of = SMM
-						}
-						}
-						MSC = {
-							transfer_state = PREV
-						}
-					}
-					every_state = {
-						limit = {
-							OR = {
-								is_core_of = VGR
-								is_core_of = SMO
-								is_core_of = VLD
-								is_core_of = ASK
-							}
-						}
-					MSC = {
-						transfer_state = PREV
-						transfer_state = 13597
-						transfer_state = 2488
-						transfer_state = 11110
-						transfer_state = 14336
-						transfer_state = 14326
-						transfer_state = 14335
-						transfer_state = 14333
-						transfer_state = 14337
-						transfer_state = 11109
-						transfer_state = 14332
-						transfer_state = 14331
-						transfer_state = 14334
-						transfer_state = 237
-						transfer_state = 2489
-						transfer_state = 14329
-						transfer_state = 14325
-						transfer_state = 14323
-						transfer_state = 238
-						transfer_state = 11108
-						transfer_state = 14327
-						transfer_state = 14328
-						transfer_state = 14330
-						transfer_state = 1740
-						transfer_state = 14324
-						transfer_state = 14268
-						transfer_state = 245
-						transfer_state = 14322
-						transfer_state = 14321
-						transfer_state = 14319
-						transfer_state = 14320
-						transfer_state = 1329
-						transfer_state = 14318
-						transfer_state = 14317
-						transfer_state = 11112
-						transfer_state = 14121
-						transfer_state = 14123
-						transfer_state = 14122
-						transfer_state = 14119
-						transfer_state = 14117
-						transfer_state = 14113
-						transfer_state = 14118
-						transfer_state = 14120
-						transfer_state = 14124
-						transfer_state = 14125
-						transfer_state = 14126
-						transfer_state = 14129
-						transfer_state = 253
-						transfer_state = 14128
-						transfer_state = 14127
-						transfer_state = 13871
-						transfer_state = 13601
-						transfer_state = 13872
-						transfer_state = 12836
-						transfer_state = 12799
-						transfer_state = 252
-						transfer_state = 10426
-						transfer_state = 10413
-						transfer_state = 10414
-						transfer_state = 256
-						transfer_state = 13650
-						transfer_state = 1726
-						transfer_state = 1725
-						transfer_state = 13646
-						transfer_state = 351
-						transfer_state = 13652
-						transfer_state = 11927
-						transfer_state = 11926
-						transfer_state = 11915
-						transfer_state = 11914
-						transfer_state = 13639
-						transfer_state = 4874
-						transfer_state = 2834
-						transfer_state = 4883
-						transfer_state = 13828
-						transfer_state = 4884
-						transfer_state = 13829
-						transfer_state = 10411
-						transfer_state = 10410
-						transfer_state = 13602
-						transfer_state = 250
-						transfer_state = 401
-						transfer_state = 16357
-						transfer_state = 16362
-						transfer_state = 16363
-						transfer_state = 16359
-						transfer_state = 16348
-						transfer_state = 16347
-						transfer_state = 16349
-						transfer_state = 16339
-						transfer_state = 16340
-						transfer_state = 16342
-						transfer_state = 16341
-						transfer_state = 16338
-						transfer_state = 16364
-						transfer_state = 16346
-						transfer_state = 16324
-						transfer_state = 16323
-						transfer_state = 16328
-						transfer_state = 16327
-						transfer_state = 16329
-						transfer_state = 16326
-						set_cosmetic_tag = MSC_TNO
-						set_politics = {
-							ruling_party = national_socialism
-						}
-					}
-					}
-
-				every_state = {
-					limit = {
-						OR = {
-							is_core_of = UKH
-							is_core_of = VRK
-							is_core_of = GYY
-							is_core_of = BRZ
-							is_core_of = HYP
-							is_core_of = VYA
-						}
-					}
-				ARH = {
-					transfer_state = PREV
-					transfer_state = 4885
-					transfer_state = 214
-					transfer_state = 2835
-					transfer_state = 11934
-					transfer_state = 1241
-					transfer_state = 11931
-					transfer_state = 13641
-					transfer_state = 11932
-					transfer_state = 11933
-					transfer_state = 13642
-					transfer_state = 13644
-					transfer_state = 13643
-					transfer_state = 13645
-					transfer_state = 11940
-					transfer_state = 13640
-					transfer_state = 11936
-					transfer_state = 10424
-					transfer_state = 11916
-					transfer_state = 10422
-					transfer_state = 13655
-					transfer_state = 13656
-					transfer_state = 13651
-					transfer_state = 13647
-					transfer_state = 11917
-					transfer_state = 13649
-					transfer_state = 13648
-					transfer_state = 13827
-					transfer_state = 1727
-					transfer_state = 13658
-					transfer_state = 11919
-					transfer_state = 11918
-					transfer_state = 10425
-					transfer_state = 11922
-					transfer_state = 249
-					transfer_state = 11920
-					transfer_state = 10893
-					transfer_state = 10888
-					transfer_state = 1728
-					transfer_state = 10895
-					transfer_state = 651
-					transfer_state = 10417
-					transfer_state = 13671
-					transfer_state = 13670
-					transfer_state = 13669
-					transfer_state = 10903
-					transfer_state = 13672
-					transfer_state = 13673
-					transfer_state = 13674
-					transfer_state = 10907
-					transfer_state = 12573
-					transfer_state = 12661
-					transfer_state = 652
-					transfer_state = 12660
-					transfer_state = 12659
-					transfer_state = 955
-					transfer_state = 13667
-					transfer_state = 13665
-					transfer_state = 13668
-					transfer_state = 12658
-					transfer_state = 10415
-					transfer_state = 13666
-					transfer_state = 251
-					transfer_state = 11921
-					set_capital = {
-						state = 11936
-					}
-					set_cosmetic_tag = ARH_TNO
-					set_politics = {
-						ruling_party = vanguardism
-						}
-					}
-					KAZ = {
-						set_politics = {
-							ruling_party = stratocratic
-						}
-					}
-					KYR = {
-						set_politics = {
-							ruling_party = communism
-						}
-					}
-					TAJ = {
-						set_politics = {
-							ruling_party = communism
-						}
-					}
-					every_state = {
-						limit = {
-							OR = {
-								is_core_of = YGR
-								is_core_of = SUG
-								is_core_of = ZLO
-								is_core_of = OMS
-								is_core_of = UR2
-								is_core_of = MGN
-								is_core_of = ORS
-								is_core_of = SVR
-							}
-						}
-					TYU = {
-						transfer_state = PREV
-						transfer_state = 572
-						transfer_state = 11960
-						transfer_state = 3623
-						transfer_state = 11957
-						transfer_state = 403
-						transfer_state = 11954
-						transfer_state = 11952
-						transfer_state = 11949
-						transfer_state = 11947
-						transfer_state = 12608
-						transfer_state = 12607
-						transfer_state = 11948
-						transfer_state = 11893
-						transfer_state = 11890
-						transfer_state = 13804
-						transfer_state = 3079
-						transfer_state = 3080
-						transfer_state = 13805
-						transfer_state = 11953
-						transfer_state = 11956
-						transfer_state = 11961
-						transfer_state = 11955
-						transfer_state = 11959
-						transfer_state = 580
-						set_cosmetic_tag = TYU_TNO
-						set_politics = {
-							ruling_party = vanguardism
-						}
-					}
-					}
-					every_state = {
-						limit = {
-							OR = {
-								is_core_of = KRV
-								is_core_of = KNY
-								is_core_of = ALI
-								is_core_of = TOM
-								is_core_of = KKS
-							}
-						}
-					TOM = {
-					transfer_state = PREV
-					transfer_state = 570
-					transfer_state = 12609
-					transfer_state = 11967
-					transfer_state = 11966
-					transfer_state = 40
-					transfer_state = 11887
-					transfer_state = 11886
-					transfer_state = 12614
-					transfer_state = 11971
-					transfer_state = 11963
-					transfer_state = 11156
-					transfer_state = 654
-					transfer_state = 13806
-					transfer_state = 11964
-					transfer_state = 13807
-					transfer_state = 577
-					transfer_state = 10435
-					transfer_state = 6093
-					transfer_state = 11970
-					transfer_state = 10433
-					transfer_state = 11975
-					transfer_state = 516
-					transfer_state = 10957
-					transfer_state = 10931
-					transfer_state = 11981
-					transfer_state = 11976
-					transfer_state = 10437
-					transfer_state = 10436
-					transfer_state = 11977
-					transfer_state = 13819
-					transfer_state = 13821
-					transfer_state = 13820
-					transfer_state = 11159
-					transfer_state = 11974
-					transfer_state = 568
-					transfer_state = 11979
-					transfer_state = 13818
-					transfer_state = 11982
-					transfer_state = 567
-					transfer_state = 11983
-					transfer_state = 11978
-					set_cosmetic_tag = TOM_TNO
-						set_politics = {
-							ruling_party = liberal_republic
-						}
-					}
-			}
-			every_state = {
-				limit = {
-					OR = {
-						is_core_of = YKT
-						is_core_of = VYY
-						is_core_of = CSV
-						is_core_of = ALD
-						is_core_of = OMO
-						is_core_of = CTA
-						is_core_of = MGD
-						is_core_of = BYA
-						is_core_of = CCI
-						is_core_of = IRK
-					}
-				}
-			IRK = {
-				transfer_state = PREV
-				transfer_state = 12546
-				transfer_state = 12018
-				transfer_state = 561
-				transfer_state = 5840
-				transfer_state = 11144
-				transfer_state = 11137
-				transfer_state = 10445
-				transfer_state = 12578
-				transfer_state = 11142
-				transfer_state = 10442
-				transfer_state = 12014
-				transfer_state = 12013
-				transfer_state = 12000
-				transfer_state = 10444
-				transfer_state = 14015
-				transfer_state = 574
-				transfer_state = 12490
-				transfer_state = 10965
-				transfer_state = 10964
-				transfer_state = 7909
-				transfer_state = 12503
-				transfer_state = 12496
-				transfer_state = 12549
-				transfer_state = 14028
-				transfer_state = 14027
-				transfer_state = 12510
-				transfer_state = 12506
-				transfer_state = 1075
-				transfer_state = 637
-				transfer_state = 12501
-				transfer_state = 12502
-				transfer_state = 12499
-				transfer_state = 12500
-				transfer_state = 2677
-				transfer_state = 10428
-				transfer_state = 12498
-				transfer_state = 12497
-				transfer_state = 14029
-				transfer_state = 10440
-				transfer_state = 12560
-				transfer_state = 10451
-				set_politics = {
-					ruling_party = vanguardism
-						}
-			}
-			}
-			KAZ = {
-				set_capital = {
-					state = 12450
-				}
-				set_cosmetic_tag = KAZ_TNO
-			}
-			every_state = {
-				limit = {
-					OR = {
-						is_core_of = ATY
-					}
-				}
-			ATY = {
-				transfer_state = PREV
-				set_capital = {
-					state = 3306
-				}
-				set_cosmetic_tag = ATY_TNO
-				set_politics = {
-					ruling_party = stratocratic
-						}
-			}
-			}
-			TAN = {
-				transfer_state = 14007
-				transfer_state = 14008
-				transfer_state = 13940
-				transfer_state = 10439
-				transfer_state = 1254
-				transfer_state = 13945
-				transfer_state = 13914
-				transfer_state = 14349
-				transfer_state = 14350
-				transfer_state = 13892
-				transfer_state = 14351
-				transfer_state = 14352
-				transfer_state = 13891
-				transfer_state = 13998
-				transfer_state = 13999
-				transfer_state = 8739
-				transfer_state = 13941
-				transfer_state = 8823
-				transfer_state = 8680
-				transfer_state = 8715
-				transfer_state = 8690
-				transfer_state = 13883
-				transfer_state = 13884
-				transfer_state = 13885
-				transfer_state = 13890
-				transfer_state = 13889
-				transfer_state = 13893
-				transfer_state = 13888
-				transfer_state = 14354
-				transfer_state = 13907
-				transfer_state = 13997
-				transfer_state = 13996
-				transfer_state = 13900
-				transfer_state = 13887
-				transfer_state = 13886
-				transfer_state = 971
-				transfer_state = 8708
-				transfer_state = 8753
-				transfer_state = 12285
-				transfer_state = 11181
-				transfer_state = 13990
-				transfer_state = 13980
-				transfer_state = 13983
-				transfer_state = 13951
-				transfer_state = 13981
-				transfer_state = 13985
-				transfer_state = 11178
-				transfer_state = 11180
-				transfer_state = 13984
-				transfer_state = 8694
-				transfer_state = 8699
-				transfer_state = 13989
-				transfer_state = 8709
-				transfer_state = 8701
-				transfer_state = 8697
-				transfer_state = 8695
-				set_cosmetic_tag = TAN_TNO
-					set_politics = {
-						ruling_party = stratocratic
-						}
-					}
-
-			SIK = {
-				transfer_state = 11815
-				transfer_state = 11816
-				transfer_state = 11817
-					}
-
-			TSC = {
-				transfer_state = 232
-				transfer_state = 12803
-				transfer_state = 1861
-				transfer_state = 7191
-				transfer_state = 235
-				transfer_state = 13456
-				transfer_state = 13607
-				transfer_state = 13608
-				transfer_state = 13606
-				transfer_state = 234
-				transfer_state = 11105
-				transfer_state = 12343
-				transfer_state = 12342
-				transfer_state = 7021
-				transfer_state = 7020
-				transfer_state = 7017
-				transfer_state = 7015
-				transfer_state = 950
-				transfer_state = 7023
-				transfer_state = 7022
-				transfer_state = 12361
-				transfer_state = 4981
-				transfer_state = 12339
-				transfer_state = 13425
-				transfer_state = 12338
-				transfer_state = 4769
-				transfer_state = 12362
-				transfer_state = 12340
-				transfer_state = 4768
-				transfer_state = 12337
-				transfer_state = 1813
-				transfer_state = 9880
-				transfer_state = 12336
-				transfer_state = 12363
-				transfer_state = 12333
-				transfer_state = 12334
-				transfer_state = 7125
-				transfer_state = 12335
-				transfer_state = 3577
-				transfer_state = 2035
-				transfer_state = 4756
-				transfer_state = 7126
-				transfer_state = 949
-				transfer_state = 12223
-				transfer_state = 7128
-				transfer_state = 7030
-				transfer_state = 13447
-				transfer_state = 13452
-				transfer_state = 231
-				transfer_state = 13451
-				transfer_state = 7029
-				transfer_state = 7028
-				transfer_state = 7027
-				transfer_state = 14346
-				transfer_state = 14342
-				transfer_state = 14345
-				transfer_state = 14344
-				transfer_state = 14343
-				transfer_state = 14341
-				transfer_state = 14340
-				transfer_state = 14338
-				transfer_state = 16214
-				transfer_state = 16213
-				annex_country = { target = DAG }
-				annex_country = { target = AZR }
-				drop_cosmetic_tag = yes
-				set_cosmetic_tag = TSC_TNO
-				set_politics = {
-					ruling_party = national_socialism
-						}
-					}
-				every_state = {
-					limit = {
-						OR = {
-							is_core_of = MTN
-							is_core_of = KUB
-							}
-						}
-					TSC = {
-						transfer_state = PREV
-					}
-					}
-				TUR = {
-					transfer_state = 13605
-					transfer_state = 13445
-					transfer_state = 7024
-					transfer_state = 4788
-					transfer_state = 13603
-					transfer_state = 2034
-					transfer_state = 11899
-					transfer_state = 13459
-					transfer_state = 5900
-					transfer_state = 13446
-					transfer_state = 7025
-					annex_country = { target = ADJ }
-					annex_country = { target = ARM }
-					annex_country = { target = NAK }
-					}
-					every_state = {
-						limit = {
-								is_core_of = TSR
-						NOT = {
-								is_core_of = SNV
-						}
-						}
-						MAN = {
-							transfer_state = PREV
-						}
-					}
-					MAN = {
-						transfer_state = 12548
-						transfer_state = 3225
-						transfer_state = 12524
-						transfer_state = 12547
-						transfer_state = 12019
-						transfer_state = 1931
-						transfer_state = 657
-						transfer_state = 5851
-						transfer_state = 12519
-						transfer_state = 12526
-						transfer_state = 12521
-						transfer_state = 2676
-						transfer_state = 12520
-						transfer_state = 560
-						transfer_state = 12523
-						transfer_state = 12525
-						transfer_state = 12522
-						transfer_state = 12527
-						transfer_state = 12495
-					}
-					JAP = {
-						transfer_state = 2191
-						transfer_state = 655
-						transfer_state = 14001
-						transfer_state = 14000
-					}
-					every_state = {
-						limit = {
-							OR = {
-								is_core_of = MRM
-								is_core_of = KAR
-								is_core_of = ONG
-							}
-						}
-					FIN = {
-						transfer_state = PREV
-						transfer_state = 13600
-						transfer_state = 13854
-						transfer_state = 4753
-						transfer_state = 12302
-						transfer_state = 12029
-						transfer_state = 12290
-						transfer_state = 16246
-					}
-					}
-					UKR = {
-						transfer_state = 240
-						transfer_state = 14227
-						transfer_state = 3780
-						transfer_state = 2190
-						transfer_state = 11107
-						transfer_state = 11111
-						transfer_state = 218
-					}
-
-					every_state = {
-						limit = {
-							is_core_of = UZB
-							is_core_of = KAZ
-						}
-					TKS = {
-						transfer_state = PREV
-					}
-					}
-
-					every_state = {
-						limit = {
-							is_core_of = AMD
-						NOT = {
-							is_core_of = KHW
-							}
-							}
-							TKS = {
-								transfer_state = PREV
-								transfer_state = 12238
-								transfer_state = 12412
-								transfer_state = 10129
-								transfer_state = 12826
-								transfer_state = 12822
-								transfer_state = 10120
-								transfer_state = 12827
-								annex_country = { target = UZB }
-								set_capital = {
-									state = 405
-								}
-								set_cosmetic_tag = TKS_TNO
-								set_politics = {
-									ruling_party = republican_fascism
-								}
-							}
-							}
-
-							TMS = {
-						set_cosmetic_tag = TMS_TNO
-						set_politics = {
-							ruling_party = communism
-						}
-					}
-					KPK = {
-						set_cosmetic_tag = KPK_TNO
-						set_politics = {
-							ruling_party = democratic
-						}
-					}
-					TAJ = {
-						set_cosmetic_tag = TAJ_TNO
-					}
-					KYR = {
-						set_cosmetic_tag = KYR_TNO
-					}
-					SLB = {
-						transfer_state = 13074
-						transfer_state = 13075
-					}
-					LAT = {
-						transfer_state = 1008
-						transfer_state = 13830
-					}
-
-				}
 			}
 		}
 	}
@@ -2000,11 +1246,11 @@ on_actions = {
 									is_core_of = LAT
 								}
 							}
-							is_state = 10375
-							is_state = 10330
-							is_state = 8683
-							is_state = 8681
-							is_state = 8813
+							state = 10375
+							state = 10330
+							state = 8683
+							state = 8681
+							state = 8813
 						}
 					}
 					SOV = {
@@ -2175,37 +1421,37 @@ on_actions = {
 						option = KMT_CHINA
 					}
 				}
-					3172 = {
+				3172 = {
 					set_demilitarized_zone = no
+				}
+				every_state = {
+					limit = {
+						OR = {
+							is_core_of = CHI
+							}
+						NOT = {
+							is_core_of = TIB
+							is_core_of = JAP
+							is_core_of = SOV
+							is_core_of = BRM
+							}
 					}
-					every_state = {
-						limit = {
-							OR = {
-								is_core_of = CHI
-								}
-							NOT = {
-								is_core_of = TIB
-								is_core_of = JAP
-								is_core_of = SOV
-								is_core_of = BRM
-								}
-						}
-						CHI = {
-							transfer_state = PREV
-							add_state_core = PREV
-						}
+					CHI = {
+						transfer_state = PREV
+						add_state_core = PREV
 					}
-		CHI = {
-			transfer_state = 1007
-			}
-			every_state = {
-				limit = {
-					is_owned_by = CHI
+				}
+				CHI = {
+					transfer_state = 1007
+				}
+				every_state = {
+					limit = {
+						is_owned_by = CHI
 					}
-				add_state_core = PRC
-				add_state_core = CHI
-				remove_state_claim = CHI
-				remove_state_claim = PRC
+					add_state_core = PRC
+					add_state_core = CHI
+					remove_state_claim = CHI
+					remove_state_claim = PRC
 				}
 			}
 		}
@@ -2868,15 +2114,15 @@ on_actions = {
 			every_state = {
 				limit = {
 					OR = {
-						is_core_of = BKH
-						is_claimed_by = BKH
+						is_core_of = BUK
+						is_claimed_by = BUK
 						}
 					NOT = {
 						is_core_of = KYR
 						is_core_of = KAZ
 						}
 					}
-				BKH = {
+				BUK = {
 					transfer_state = PREV
 						}
 					}
@@ -2941,7 +2187,7 @@ on_actions = {
 				limit = {
 					OR = {
 					is_owned_by = RUS
-					is_owned_by = BKH
+					is_owned_by = BUK
 					is_owned_by = KHI
 						}
 					NOT = {
@@ -2980,7 +2226,7 @@ on_actions = {
 			transfer_state = 5651
 			transfer_state = 5652
 			}
-		BKH = {
+		BUK = {
 			set_cosmetic_tag = RUS_GREEN
 			}
 		KHI = {
@@ -3530,438 +2776,6 @@ on_actions = {
 			}
 		}
 	}
-
-	on_startup = {
-		#Communism Collapse Game Rule (1990)
-		effect = {
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = MM_set_scenario
-						option = USSR_COLLAPSE
-					}
-				}
-		set_province_name = { id = 3529 name = "Volgograd"}
-		217 = { set_state_name = Volgograd }
-		RUS = {
-			release = UKR
-			release = BLR
-			release = KBK
-			release = NOS
-			release = CHE
-			release = MRE
-			release = KMI
-			transfer_state = 2414
-			transfer_state = 1081
-			transfer_state = 1080
-			transfer_state = 1878
-			transfer_state = 12028
-			transfer_state = 146
-			transfer_state = 4870
-			transfer_state = 4880
-			transfer_state = 147
-			transfer_state = 9270
-			transfer_state = 10589
-			transfer_state = 2118
-			transfer_state = 722
-			transfer_state = 2777
-			transfer_state = 2086
-			transfer_state = 7411
-			transfer_state = 7412
-			transfer_state = 7413
-			transfer_state = 7414
-			transfer_state = 3552
-			transfer_state = 4092
-			transfer_state = 5979
-			transfer_state = 4072
-			transfer_state = 4094
-			transfer_state = 5
-			transfer_state = 4071
-			transfer_state = 4758
-			transfer_state = 12303
-			transfer_state = 12304
-			transfer_state = 12305
-			transfer_state = 12306
-			transfer_state = 12307
-			transfer_state = 12308
-			transfer_state = 4881
-			transfer_state = 4882
-			set_cosmetic_tag = RUS_RED
-			}
-					every_state = {
-						limit = {
-						is_core_of = RUS
-							OR = {
-							is_core_of = FIN
-							is_core_of = LAT
-							is_core_of = ABM
-							is_core_of = UBM
-							}
-						NOT = {
-							is_core_of = DAG
-							is_core_of = KMK
-							is_core_of = MRD
-							is_core_of = CVS
-							is_core_of = TTR
-							is_core_of = UDM
-							is_core_of = BSH
-							is_core_of = YKT
-							is_core_of = KAR
-							is_core_of = KBK
-							is_core_of = NOS
-							is_core_of = CHE
-							is_core_of = MRE
-							is_core_of = KMI
-							}
-							}
-						RUS = {
-							transfer_state = PREV
-								}
-							}
-					every_state = {
-						limit = {
-							OR = {
-							is_core_of = KON
-							is_core_of = SIL
-							is_core_of = PWP
-							is_core_of = POM
-							is_core_of = NKO
-							is_core_of = DAN
-								}
-							NOT = {
-							is_core_of = LIT
-							is_owned_by = RUS
-								}
-							}
-						POL = {
-							transfer_state = PREV
-								}
-							}
-					every_state = {
-						limit = {
-							OR = {
-							is_core_of = BLR
-								}
-							NOT = {
-							is_core_of = NKO
-								}
-							}
-						BLR = {
-							transfer_state = PREV
-								}
-							}
-					every_state = {
-						limit = {
-							OR = {
-							is_core_of = CRP
-							is_core_of = CRM
-								}
-							}
-						UKR = {
-							transfer_state = PREV
-								}
-							}
-		WGR = {
-			annex_country = { target = GER }
-			transfer_state = 5079
-			transfer_state = 8412
-			transfer_state = 2300
-			transfer_state = 62
-			transfer_state = 5078
-			transfer_state = 3210
-			transfer_state = 7463
-			transfer_state = 4829
-			transfer_state = 7462
-			transfer_state = 7461
-			transfer_state = 7460
-			transfer_state = 1384
-			}
-		POL = {
-			release = UKR
-			transfer_state = 7444
-			transfer_state = 8046
-			transfer_state = 5372
-			transfer_state = 2752
-			transfer_state = 3541
-			transfer_state = 8047
-			transfer_state = 1332
-			transfer_state = 1782
-			transfer_state = 4028
-			transfer_state = 3189
-			transfer_state = 7458
-			transfer_state = 3527
-			transfer_state = 7457
-			transfer_state = 5077
-			transfer_state = 7456
-			transfer_state = 5076
-			transfer_state = 2773
-			transfer_state = 68
-			transfer_state = 8222
-			transfer_state = 10954
-			}
-		UKR = {
-			transfer_state = 2506
-			transfer_state = 7484
-			transfer_state = 791
-			transfer_state = 3458
-			transfer_state = 5913
-			transfer_state = 5915
-			transfer_state = 7486
-			transfer_state = 3188
-			transfer_state = 799
-			transfer_state = 8032
-			transfer_state = 3325
-			transfer_state = 11004
-			transfer_state = 80
-			transfer_state = 5376
-			}
-		BLR = {
-			release = LIT
-			transfer_state = 4766
-			transfer_state = 4767
-			transfer_state = 8036
-			}
-		CZE = {
-			release = GER
-			transfer_state = 2472
-			transfer_state = 3773
-			transfer_state = 10534
-			transfer_state = 3190
-			set_politics = {
-				ruling_party = vanguardism
-				}
-			}
-		WGR = {
-			annex_country = { target = GER }
-			release = DDR
-			}
-		ROM = {
-			release = MOL
-			release = BUL
-			release = ALB
-			set_politics = {
-				ruling_party = liberal_republic
-				}
-			}
-		BUL = {
-			set_politics = {
-				ruling_party = vanguardism
-				}
-			}
-		MOL = {
-			set_capital = {
-				state = 78
-			}
-			transfer_state = 7325
-			}
-		AUS = {
-			set_politics = {
-				ruling_party = democratic
-				}
-			}
-		HUN = {
-			set_politics = {
-				ruling_party = liberal_republic
-					}
-			}
-		LIE = {
-			release = CZE
-			}
-		ITA = {
-			release = YUG
-			release = GRE
-			set_politics = {
-				ruling_party = democratic
-				}
-			}
-		ALB = {
-			set_politics = {
-				ruling_party = vanguardism
-				}
-			}
-		GRE = {
-			set_politics = {
-				ruling_party = democratic
-				}
-			}
-		SPR = {
-			annex_country = { target = CAT }
-			set_politics = {
-				ruling_party = democratic_monarchism
-				}
-			}
-		SMR = {
-			set_politics = {
-				ruling_party = democratic
-				}
-			}
-		POR = {
-			set_politics = {
-				ruling_party = democratic
-				}
-			}
-		MLT = {
-			drop_cosmetic_tag = yes
-			set_politics = {
-				ruling_party = democratic
-				}
-			}
-		ICE = {
-			set_politics = {
-				ruling_party = liberal_republic
-				}
-			drop_cosmetic_tag = yes
-			}
-		HOL = {
-			transfer_state = 9816
-			transfer_state = 9817
-			}
-		WTR = {
-			release = SLD
-			}
-		IRE = {
-			transfer_state = 3205
-			set_politics = {
-				ruling_party = neutrality
-				}
-			}
-		YUG = {
-			set_politics = {
-				ruling_party = socialism_ideology
-				}
-			}
-		KAR = {
-			transfer_state = 146
-			transfer_state = 4870
-			transfer_state = 12305
-			transfer_state = 12306
-			transfer_state = 12307
-			}
-			every_state = {
-				limit = {
-					is_core_of = IRE
-					NOT = {
-						is_core_of = NIR
-						}
-					}
-				IRE = {
-					transfer_state = PREV
-						}
-					}
-			every_state = {
-				limit = {
-					is_claimed_by = FRA
-					OR = {
-						is_owned_by = ITA
-						}
-					}
-				FRA = {
-					transfer_state = PREV
-					add_state_core = PREV
-						}
-					}
-			every_state = {
-				limit = {
-					is_owned_by = POL
-					}
-				POL = {
-					add_state_core = PREV
-						}
-					}
-			every_state = {
-				limit = {
-					OR = {
-					is_owned_by = UKR
-					is_core_of = CRM
-						}
-					}
-				UKR = {
-					add_state_core = PREV
-						}
-					}
-			every_state = {
-				limit = {
-					is_owned_by = HOL
-					}
-				HOL = {
-					add_state_core = PREV
-					}
-				}
-			every_state = {
-				limit = {
-					is_owned_by = WGR
-					}
-				set_demilitarized_zone = no
-				}
-			every_state = {
-				limit = {
-					OR = {
-					is_owned_by = RUS
-					is_core_of = DAG
-					is_core_of = KMK
-					is_core_of = MRD
-					is_core_of = CVS
-					is_core_of = TTR
-					is_core_of = UDM
-					is_core_of = BSH
-					is_core_of = YKT
-					is_core_of = KAR
-					is_core_of = KBK
-					is_core_of = NOS
-					is_core_of = CHE
-					is_core_of = MRE
-					is_core_of = KMI
-					}
-					}
-				RUS = {
-					add_state_core = PREV
-					}
-				}
-				every_country = {
-					limit = {
-						OR = {
-							tag = RUS
-							tag = UKR
-							tag = MOL
-							tag = BLR
-							tag = LIT
-							tag = LAT
-							tag = EST
-							tag = GEO
-							tag = ARM
-							tag = AZR
-							tag = KAZ
-							tag = UZB
-							tag = TMS
-							tag = KYR
-							tag = TAJ
-							tag = KBK
-							tag = NOS
-							tag = CHE
-							tag = MRE
-							tag = KMI
-							tag = DAG
-							tag = KMK
-							tag = MRD
-							tag = CVS
-							tag = TTR
-							tag = UDM
-							tag = BSH
-							tag = BYA
-							tag = YKT
-							tag = NAK
-							tag = ADJ
-							tag = ABK
-							}
-						}
-					set_cosmetic_tag = RUS_RED
-					set_politics = {
-						ruling_party = vanguardism
-							}
-						}
-			}
-		}
-	}
 # Secondary and Tertiary leaders visibility logic
 	on_startup = {
 		effect = {
@@ -4153,7 +2967,7 @@ on_actions = {
 							limit = {
 								has_government = neutrality
 							}
-							set_cosmetic_tag = FRA_COLONY
+							set_cosmetic_tag = FRA_BLUE
 						}
 						else_if = {
 							limit = {
@@ -4277,7 +3091,6 @@ on_actions = {
 								tag = GAB
 								tag = RCG
 								tag = CAR
-								tag = FEA
 								tag = CYP
 								tag = SZ2
 								tag = BLK
@@ -4353,7 +3166,6 @@ on_actions = {
 								tag = WTO
 								tag = CMR
 								tag = ALG
-								tag = TUN
 								tag = MRT
 								tag = NGR
 								tag = MLI
@@ -4510,7 +3322,6 @@ on_actions = {
 								tag = UKR
 								tag = WTO
 								tag = CZC
-								tag = CZE
 								tag = LIT
 								tag = TSC
 								tag = MSC
@@ -4602,6 +3413,7 @@ on_actions = {
 										has_cosmetic_tag = RUS_1992
 										has_cosmetic_tag = RUS_2024
 										has_cosmetic_tag = POL_2024
+										has_cosmetic_tag = ISR_2024
 									}
 								}
 							}
@@ -4714,7 +3526,6 @@ on_actions = {
 								tag = ZAM
 								tag = ANG
 								tag = MZB
-								tag = FEA
 								tag = NGA
 								tag = GHA
 								tag = DAH
@@ -4754,8 +3565,15 @@ on_actions = {
 							}
 							if = {
 								limit = {
-									has_start_date < 1915.01.01
-									has_start_date > 1913.01.01
+									OR = {
+										AND = {
+											has_start_date < 1915.01.01
+											has_start_date > 1913.01.01
+										}
+										AND = {
+											has_global_flag = septemberprogramm_1936
+										}
+									}
 								}
 								set_cosmetic_tag = GREY_GER3
 							}
@@ -4822,8 +3640,15 @@ on_actions = {
 							}
 							if = {
 								limit = {
-									has_start_date < 1915.01.01
-									has_start_date > 1913.01.01
+									OR = {
+										AND = {
+											has_start_date < 1915.01.01
+											has_start_date > 1913.01.01
+										}
+										AND = {
+											has_global_flag = septemberprogramm_1936
+										}
+									}
 								}
 								set_cosmetic_tag = GREY_GER3
 							}
@@ -4855,7 +3680,7 @@ on_actions = {
 							limit = {
 								has_government = stratocratic
 							}
-							set_cosmetic_tag = FRA_COLONY
+							set_cosmetic_tag = FRA_BLUE
 							every_state = {
 								limit = {
 									is_owned_by = ROOT
@@ -4876,7 +3701,174 @@ on_actions = {
 							limit = {
 								has_government = neutrality
 							}
-							set_cosmetic_tag = FRA_COLONY
+							set_cosmetic_tag = FRA_BLUE
+							every_state = {
+								limit = {
+									is_owned_by = ROOT
+								}
+								do_french_renames = yes
+							}
+						}
+					}
+					if = {
+						limit = {
+							tag = TUN
+						}
+						if = {
+							limit = {
+								has_government = authoritarian_monarchism
+							}
+							set_cosmetic_tag = FRA_BLUE
+							every_state = {
+								limit = {
+									is_owned_by = ROOT
+								}
+								do_standard_arabic_renames = yes
+							}
+						}
+					}
+					if = {
+						limit = {
+							tag = FEA
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = anocratic_monarchism
+									has_government = authoritarian_monarchism
+								}
+							}
+							set_cosmetic_tag = UK_RED
+							every_state = {
+								limit = {
+									is_owned_by = ROOT
+								}
+								do_english_renames = yes
+							}
+						}
+						else_if = {
+							limit = {
+								OR = {
+									has_government = anocratic_republic
+									has_government = neutrality
+									has_government = monarchism
+								}
+							}
+							set_cosmetic_tag = FRA_BLUE
+							every_state = {
+								limit = {
+									is_owned_by = ROOT
+								}
+								do_french_renames = yes
+							}
+						}
+						else_if = {
+							limit = {
+								has_government = stratocratic_monarchism
+							}
+							if = {
+								limit = {
+									has_start_date > 1913.01.01
+									has_start_date < 1915.01.01
+								}
+								set_cosmetic_tag = GREY_GER3
+							}
+							else = {
+								set_cosmetic_tag = GREY_GER2
+							}
+							every_state = {
+								limit = {
+									is_owned_by = ROOT
+								}
+								do_german_renames = yes
+							}
+						}
+						else_if = {
+							limit = {
+								has_government = centrist_monarchism
+							}
+							set_cosmetic_tag = RUS_GREEN
+							every_state = {
+								limit = {
+									is_owned_by = ROOT
+								}
+								do_russian_renames = yes
+							}
+						}
+						else_if = {
+							limit = {
+								has_government = centrist_republic
+							}
+							set_cosmetic_tag = CZE_BLUE
+							every_state = {
+								limit = {
+									is_owned_by = ROOT
+								}
+								do_czech_renames = yes
+							}
+						}
+						else_if = {
+							limit = {
+								has_government = stratocratic
+							}
+							set_cosmetic_tag = USA_BLUE
+							every_state = {
+								limit = {
+									is_owned_by = ROOT
+								}
+								do_english_renames = yes
+							}
+						}
+						else_if = {
+							limit = {
+								has_government = conservative_monarchism
+							}
+							set_cosmetic_tag = YUG_BLUE
+							every_state = {
+								limit = {
+									is_owned_by = ROOT
+								}
+								do_yugoslavian_renames = yes
+							}
+						}
+						else_if = {
+							limit = {
+								has_government = democratic_monarchism
+							}
+							set_cosmetic_tag = JAP_COLONY
+							every_state = {
+								limit = {
+									is_owned_by = ROOT
+								}
+								do_japanese_renames = yes
+							}
+						}
+						else_if = {
+							limit = {
+								has_government = socialist_monarchy
+							}
+							set_cosmetic_tag = FIN_COLONY
+							every_state = {
+								limit = {
+									is_owned_by = ROOT
+								}
+								do_finnish_renames = yes
+							}
+						}
+						else_if = {
+							limit = {
+								has_government = fascism
+							}
+							set_cosmetic_tag = ITA_GREEN
+							every_state = {
+								limit = {
+									is_owned_by = ROOT
+								}
+								do_italian_renames = yes
+							}
+						}
+						else = {
+							drop_cosmetic_tag = yes
 							every_state = {
 								limit = {
 									is_owned_by = ROOT
@@ -5030,6 +4022,7 @@ on_actions = {
 									has_government = liberal_republic
 									has_government = democratic
 									has_government = right_anarchism
+									has_government = national_conservative_republic
 								}
 							}
 							set_cosmetic_tag = GER_REPUBLIC
@@ -5066,17 +4059,29 @@ on_actions = {
 									has_government = stratocratic_monarchism
 									has_government = socialist_monarchy
 									has_government = democratic_monarchism
+									has_government = national_conservative_monarchism
 								}
 							}
 							set_cosmetic_tag = GREY_GER2
 							if = {
 								limit = {
-									AND = {
-										has_start_date < 1915.01.01
-										has_start_date > 1913.01.01
+									OR = {
+										AND = {
+											has_start_date < 1915.01.01
+											has_start_date > 1913.01.01
+										}
+										AND = {
+											has_global_flag = septemberprogramm_1936
+										}
 									}
 								}
 								set_cosmetic_tag = GER_1914
+								if = {
+									limit = {
+										has_global_flag = septemberprogramm_1936
+									}
+									set_cosmetic_tag = GER_EMPIRE
+								}
 							}
 						}
 						if = {
@@ -5127,6 +4132,7 @@ on_actions = {
 						if = {
 							limit = {
 								OR = {
+									has_government = theocratic
 									has_government = national_socialism
 									has_government = fascism
 									has_government = republican_fascism
@@ -5145,20 +4151,13 @@ on_actions = {
 						}
 						if = {
 							limit = {
-								OR = {
-									has_government = theocratic
+								has_government = theocratic
+								AND = {
+									has_start_date < 1915.01.01
+									has_start_date > 1913.01.01
 								}
 							}
-							set_cosmetic_tag = GER_THEO
-							if = {
-								limit = {
-									AND = {
-										has_start_date < 1915.01.01
-										has_start_date > 1913.01.01
-									}
-								}
-								set_cosmetic_tag = GER_HRE_1914
-							}
+							set_cosmetic_tag = GER_HRE_1914
 						}
 					}
 					if = {
@@ -5261,7 +4260,7 @@ on_actions = {
 								}
 								set_cosmetic_tag = FRA_AUTH_1914
 							}
-							if = {
+							else_if = {
 								limit = {
 									has_start_date > 2022.01.01
 								}
@@ -5271,7 +4270,6 @@ on_actions = {
 								limit = {
 									OR = {
 										has_cosmetic_tag = FRA_BLUE
-										has_cosmetic_tag = FRA_COLONY
 										has_cosmetic_tag = FRA_AUTH
 										has_cosmetic_tag = FRA_KINGDOM
 										has_cosmetic_tag = FRA_EMPIRE
@@ -5284,7 +4282,7 @@ on_actions = {
 								set_cosmetic_tag = FRA_AUTH
 							}
 						}
-						if = {
+						else_if = {
 							limit = {
 								OR = {
 									has_government = socialist_monarchy
@@ -5298,7 +4296,6 @@ on_actions = {
 								limit = {
 									OR = {
 										has_cosmetic_tag = FRA_BLUE
-										has_cosmetic_tag = FRA_COLONY
 										has_cosmetic_tag = FRA_AUTH
 										has_cosmetic_tag = FRA_KINGDOM
 										has_cosmetic_tag = FRA_EMPIRE
@@ -5311,7 +4308,7 @@ on_actions = {
 								set_cosmetic_tag = FRA_KINGDOM
 							}
 						}
-						if = {
+						else_if = {
 							limit = {
 								OR = {
 									has_government = fascism
@@ -5323,7 +4320,6 @@ on_actions = {
 								limit = {
 									OR = {
 										has_cosmetic_tag = FRA_BLUE
-										has_cosmetic_tag = FRA_COLONY
 										has_cosmetic_tag = FRA_AUTH
 										has_cosmetic_tag = FRA_KINGDOM
 										has_cosmetic_tag = FRA_EMPIRE
@@ -5336,12 +4332,15 @@ on_actions = {
 								set_cosmetic_tag = FRA_EMPIRE
 							}
 						}
-						if = {
+						else_if = {
 							limit = {
 								OR = {
 									has_government = conservative_monarchism
 									has_government = stratocratic_monarchism
 									has_government = anocratic_monarchism
+								}
+								NOT = {
+									has_start_date > 2022.01.01
 								}
 							}
 							set_cosmetic_tag = FRA_NAPOLEON
@@ -5349,7 +4348,6 @@ on_actions = {
 								limit = {
 									OR = {
 										has_cosmetic_tag = FRA_BLUE
-										has_cosmetic_tag = FRA_COLONY
 										has_cosmetic_tag = FRA_AUTH
 										has_cosmetic_tag = FRA_KINGDOM
 										has_cosmetic_tag = FRA_EMPIRE
@@ -5372,7 +4370,6 @@ on_actions = {
 									limit = {
 										OR = {
 											has_cosmetic_tag = FRA_BLUE
-											has_cosmetic_tag = FRA_COLONY
 											has_cosmetic_tag = FRA_AUTH
 											has_cosmetic_tag = FRA_KINGDOM
 											has_cosmetic_tag = FRA_EMPIRE
@@ -5385,12 +4382,11 @@ on_actions = {
 								}
 							}
 						}
-						if = {
+						else_if = {
 							limit = {
 								OR = {
 									has_government = communism
 									has_government = vanguardism
-									has_government = socialism_ideology
 									has_government = left_anarchism
 								}
 							}
@@ -5402,7 +4398,7 @@ on_actions = {
 								}
 								set_cosmetic_tag = FRA_SOCIALIST_1914
 							}
-							if = {
+							else_if = {
 								limit = {
 									has_start_date > 2022.01.01
 								}
@@ -5412,7 +4408,6 @@ on_actions = {
 								limit = {
 									OR = {
 										has_cosmetic_tag = FRA_BLUE
-										has_cosmetic_tag = FRA_COLONY
 										has_cosmetic_tag = FRA_AUTH
 										has_cosmetic_tag = FRA_KINGDOM
 										has_cosmetic_tag = FRA_EMPIRE
@@ -5425,35 +4420,7 @@ on_actions = {
 								set_cosmetic_tag = FRA_SOCIALIST
 							}
 						}
-						if = {
-							limit = {
-								NOT = {
-									OR = {
-										has_government = national_socialism
-										has_government = stratocratic
-										has_government = right_anarchism
-										has_government = theocratic
-										has_government = republican_fascism
-										has_government = socialist_monarchy
-										has_government = democratic_monarchism
-										has_government = centrist_monarchism
-										has_government = anocratic_monarchism
-										has_government = authoritarian_monarchism
-										has_government = fascism
-										has_government = monarchism
-										has_government = conservative_monarchism
-										has_government = stratocratic_monarchism
-										has_government = communism
-										has_government = vanguardism
-										has_government = socialism_ideology
-										has_government = left_anarchism
-										AND = {
-											has_government = neutrality
-											has_start_date > 2022.01.01
-										}
-									}
-								}
-							}
+						else = {
 							drop_cosmetic_tag = yes
 							if = {
 								limit = {
@@ -5462,7 +4429,7 @@ on_actions = {
 								}
 								set_cosmetic_tag = FRA_1914
 							}
-							if = {
+							else_if = {
 								limit = {
 									has_start_date > 2022.01.01
 								}
@@ -5472,7 +4439,6 @@ on_actions = {
 								limit = {
 									OR = {
 										has_cosmetic_tag = FRA_BLUE
-										has_cosmetic_tag = FRA_COLONY
 										has_cosmetic_tag = FRA_AUTH
 										has_cosmetic_tag = FRA_KINGDOM
 										has_cosmetic_tag = FRA_EMPIRE
@@ -5487,6 +4453,62 @@ on_actions = {
 								}
 								set_cosmetic_tag = FRA_BLUE
 							}
+						}
+					}
+					if = {
+						limit = {
+							tag = RUS
+							has_start_date > 2022.01.01
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = vanguardism
+									has_government = left_anarchism
+								}
+							}
+							set_cosmetic_tag = RUS_2024_VAN
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = socialism_ideology
+									has_government = socialist_monarchy
+									has_government = liberal_republic
+									has_government = democratic_monarchism
+									has_government = centrist_republic
+									has_government = centrist_monarchism
+									has_government = democratic
+									has_government = conservative_monarchism
+								}
+							}
+							set_cosmetic_tag = RUS_2024_REPUBLIC
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = communism
+									has_government = national_conservative_republic
+									has_government = national_conservative_monarchism
+									has_government = anocratic_republic
+									has_government = anocratic_monarchism
+									has_government = neutrality
+									has_government = authoritarian_monarchism
+									has_government = stratocratic
+									has_government = stratocratic_monarchism
+									has_government = republican_fascism
+									has_government = fascism
+									has_government = right_anarchism
+									has_government = theocratic
+								}
+							}
+							set_cosmetic_tag = RUS_2024
+						}
+						if = {
+							limit = {
+								has_government = national_socialism
+							}
+							set_cosmetic_tag = RUS_2024_NATSOC
 						}
 					}
 					if = {
@@ -6667,8 +5689,15 @@ on_actions = {
 									AND = {
 										has_government = socialist_monarchy
 										NOT = {
-											has_start_date < 1915.01.01
-											has_start_date > 1913.01.01
+											OR = {
+												AND = {
+													has_start_date < 1915.01.01
+													has_start_date > 1913.01.01
+												}
+												AND = {
+													has_global_flag = septemberprogramm_1936
+												}
+											}
 										}
 									}
 								}
@@ -6718,12 +5747,21 @@ on_actions = {
 								OR = {
 									AND = {
 										has_government = socialist_monarchy
-										has_start_date < 1915.01.01
-										has_start_date > 1913.01.01
+										OR = {
+											AND = {
+												has_start_date < 1915.01.01
+												has_start_date > 1913.01.01
+											}
+											AND = {
+												has_global_flag = septemberprogramm_1936
+											}
+										}
 									}
 									has_government = democratic_monarchism
 									has_government = centrist_monarchism
 									has_government = conservative_monarchism
+									has_government = national_conservative_monarchism
+									has_government = anocratic_monarchism
 									has_government = authoritarian_monarchism
 									has_government = stratocratic_monarchism
 									has_government = monarchism
@@ -6732,12 +5770,23 @@ on_actions = {
 							set_cosmetic_tag = HUN_KINGDOM
 							if = {
 								limit = {
-									AND = {
-										has_start_date < 1915.01.01
-										has_start_date > 1913.01.01
+									OR = {
+										AND = {
+											has_start_date < 1915.01.01
+											has_start_date > 1913.01.01
+										}
+										AND = {
+											has_global_flag = septemberprogramm_1936
+										}
 									}
 								}
 								set_cosmetic_tag = HUN_1914
+								if = {
+									limit = {
+										has_global_flag = septemberprogramm_1936
+									}
+									set_cosmetic_tag = HUN_AUSTRIA_HUNGARY
+								}
 							}
 							if = {
 								limit = {
@@ -6755,6 +5804,7 @@ on_actions = {
 									has_government = democratic
 									has_government = liberal_republic
 									has_government = centrist_republic
+									has_government = national_conservative_republic
 									has_government = anocratic_republic
 									has_government = neutrality
 									has_government = stratocratic
@@ -6785,19 +5835,18 @@ on_actions = {
 						}
 						if = {
 							limit = {
-								has_government = authoritarian_monarchism
 								has_start_date < 1915.01.01
 								has_start_date > 1913.01.01
 							}
 							set_cosmetic_tag = FIU_1914
-						}
-						else_if = {
-							limit = {
-								has_government = republican_fascism
-								has_start_date < 1915.01.01
-								has_start_date > 1913.01.01
+							if = {
+								limit = {
+									has_government = republican_fascism
+									has_start_date < 1915.01.01
+									has_start_date > 1913.01.01
+								}
+								set_cosmetic_tag = FIU_ITA_1914
 							}
-							set_cosmetic_tag = FIU_ITA_1914
 						}
 						else = {
 							drop_cosmetic_tag = yes
@@ -6926,6 +5975,7 @@ on_actions = {
 						else_if = {
 							limit = {
 								OR = {
+									has_government = anocratic_monarchism
 									has_government = authoritarian_monarchism
 								}
 								has_start_date < 1915.01.01
@@ -6948,11 +5998,24 @@ on_actions = {
 										has_government = authoritarian_monarchism
 										has_government = stratocratic_monarchism
 									}
-									has_start_date < 1915.01.01
-									has_start_date > 1913.01.01
+									OR = {
+										AND = {
+											has_start_date < 1915.01.01
+											has_start_date > 1913.01.01
+										}
+										AND = {
+											has_global_flag = septemberprogramm_1936
+										}
+									}
 								}
 							}
 							set_cosmetic_tag = LIV_1914
+							if = {
+								limit = {
+									has_global_flag = septemberprogramm_1936
+								}
+								set_cosmetic_tag = LIV_1914_SCC
+							}
 						}
 						else_if = {
 							limit = {
@@ -7025,6 +6088,12 @@ on_actions = {
 						}
 						else = {
 							drop_cosmetic_tag = yes
+							if = {
+								limit = {
+									has_global_flag = septemberprogramm_1936
+								}
+								set_cosmetic_tag = BLR_1914_SCC
+							}
 						}
 					}
 					if = {
@@ -7060,6 +6129,12 @@ on_actions = {
 								}
 							}
 							set_cosmetic_tag = CZE_SOCIALIST
+							every_state = {
+								limit = {
+									is_owned_by = CZE
+								}
+								do_czech_renames = yes
+							}
 							if = {
 								limit = {
 									AND = {
@@ -7069,7 +6144,7 @@ on_actions = {
 								}
 								set_cosmetic_tag = CZE_1950
 							}
-							if = {
+							else_if = {
 								limit = {
 									has_start_date < 2000.01.01
 									has_start_date > 1991.01.01
@@ -7077,13 +6152,28 @@ on_actions = {
 								set_cosmetic_tag = CZE_1992_VAN
 							}
 						}
-						if = {
+						else_if = {
 							limit = {
 								OR = {
-									has_government = liberal_republic
+									has_government = national_socialism
 								}
 							}
+							set_cosmetic_tag = GREY_GER3
+							every_state = {
+								limit = {
+									is_owned_by = CZE
+								}
+								do_german_renames = yes
+							}
+						}
+						else = {
 							drop_cosmetic_tag = yes
+							every_state = {
+								limit = {
+									is_owned_by = CZE
+								}
+								do_czech_renames = yes
+							}
 							if = {
 								limit = {
 									has_start_date < 2000.01.01
@@ -7114,7 +6204,7 @@ on_actions = {
 								}
 								set_cosmetic_tag = ROM_1950
 							}
-							if = {
+							else_if = {
 								limit = {
 									has_start_date < 2000.01.01
 									has_start_date > 1991.01.01
@@ -7122,13 +6212,7 @@ on_actions = {
 								set_cosmetic_tag = ROM_1992_VAN
 							}
 						}
-						if = {
-							limit = {
-								OR = {
-									has_government = socialism_ideology
-									has_government = centrist_republic
-								}
-							}
+						else = {
 							drop_cosmetic_tag = yes
 							if = {
 								limit = {
@@ -7137,7 +6221,7 @@ on_actions = {
 								}
 								set_cosmetic_tag = ROM_1992
 							}
-							if = {
+							else_if = {
 								limit = {
 									has_start_date < 2025.01.01
 									has_start_date > 2022.01.01
@@ -7167,7 +6251,7 @@ on_actions = {
 								}
 								set_cosmetic_tag = BUL_1950
 							}
-							if = {
+							else_if = {
 								limit = {
 									has_start_date < 2000.01.01
 									has_start_date > 1991.01.01
@@ -7175,13 +6259,7 @@ on_actions = {
 								set_cosmetic_tag = BUL_1992_VAN
 							}
 						}
-						if = {
-							limit = {
-								OR = {
-									has_government = centrist_republic
-									has_government = democratic
-								}
-							}
+						else = {
 							drop_cosmetic_tag = yes
 							if = {
 								limit = {
@@ -7509,6 +6587,7 @@ on_actions = {
 									has_government = republican_fascism
 									has_government = fascism
 									has_government = national_socialism
+									has_government = theocratic
 								}
 							}
 							set_cosmetic_tag = USA_AUTH
@@ -7650,8 +6729,9 @@ on_actions = {
 						else_if = {
 							limit = {
 								OR = {
-									has_government = centrist_monarchism
 									has_government = socialist_monarchy
+									has_government = centrist_monarchism
+									has_government = national_conservative_monarchism
 								}
 							}
 							set_cosmetic_tag = USA_MONARCHIST
@@ -7872,14 +6952,11 @@ on_actions = {
 						limit = {
 							AND = {
 								tag = RUS
-								OR = {
-									has_government = vanguardism
-								}
+								has_government = vanguardism
 								NOT = {
 									OR = {
-										has_cosmetic_tag = RUS_1914
-										has_cosmetic_tag = RUS_1992
-										has_cosmetic_tag = RUS_2024
+										has_start_date < 1930.01.01
+										has_start_date > 1945.01.01
 									}
 								}
 							}
@@ -7893,6 +6970,7 @@ on_actions = {
 								has_start_date < 1915.01.01
 								has_start_date > 1913.01.01
 								OR = {
+									has_government = left_anarchism
 									has_government = vanguardism
 									has_government = communism
 								}
@@ -7908,6 +6986,7 @@ on_actions = {
 								has_start_date > 1913.01.01
 								NOT = {
 									OR = {
+										has_government = left_anarchism
 										has_government = vanguardism
 										has_government = communism
 									}
@@ -7982,13 +7061,47 @@ on_actions = {
 						}
 						if = {
 							limit = {
-								AND = {
-									has_start_date < 2000.01.01
-									has_start_date > 1991.01.01
-									has_government = vanguardism
+								OR = {
+									AND = {
+										has_government = vanguardism
+									}
+									AND = {
+										has_start_date < 1915.01.01
+										has_start_date > 1913.01.01
+										has_government = communism
+									}
 								}
 							}
-							set_cosmetic_tag = UKR_1992_VAN
+							if = {
+								limit = {
+									AND = {
+										has_start_date < 1915.01.01
+										has_start_date > 1913.01.01
+									}
+								}
+								set_cosmetic_tag = UKR_SOCIALIST_1914
+							}
+							else_if = {
+								limit = {
+									AND = {
+										has_start_date < 2000.01.01
+										has_start_date > 1991.01.01
+									}
+								}
+								set_cosmetic_tag = UKR_1992_VAN
+							}
+							else_if = {
+								limit = {
+									AND = {
+										has_start_date < 2049.01.01
+										has_start_date > 2022.01.01
+									}
+								}
+								set_cosmetic_tag = UKR_2024_VAN
+							}
+							else = {
+								set_cosmetic_tag = RUS_RED
+							}
 						}
 						else_if = {
 							limit = {
@@ -8009,19 +7122,6 @@ on_actions = {
 								}
 							}
 							set_cosmetic_tag = UKR_GER_1914
-						}
-						else_if = {
-							limit = {
-								AND = {
-									has_start_date < 1915.01.01
-									has_start_date > 1913.01.01
-									OR = {
-										has_government = vanguardism
-										has_government = communism
-									}
-								}
-							}
-							set_cosmetic_tag = UKR_SOCIALIST_1914
 						}
 						else_if = {
 							limit = {
@@ -8067,6 +7167,12 @@ on_actions = {
 									}
 								}
 								set_cosmetic_tag = UKR_1914
+							}
+							else_if = {
+								limit = {
+									has_global_flag = septemberprogramm_1936
+								}
+								set_cosmetic_tag = UKR_1914_SCC
 							}
 						}
 					}
@@ -8172,17 +7278,23 @@ on_actions = {
 									has_government = stratocratic_monarchism
 								}
 							}
-							set_cosmetic_tag = MEX_SPR
+							set_cosmetic_tag = SPR_YELLOW
 						}
 						if = {
 							limit = {
 								OR = {
-									has_government = neutrality
 									has_government = stratocratic
 									has_government = republican_fascism
 									has_government = fascism
 									has_government = national_socialism
 									has_government = right_anarchism
+									AND = {
+										has_government = neutrality
+										NOT = {
+											has_start_date < 1915.01.01
+											has_start_date > 1913.01.01
+										}
+									}
 								}
 							}
 							set_cosmetic_tag = MEX_AUTH
@@ -8215,6 +7327,11 @@ on_actions = {
 									has_government = centrist_republic
 									has_government = liberal_republic
 									has_government = communism
+									AND = {
+										has_government = neutrality
+										has_start_date < 1915.01.01
+										has_start_date > 1913.01.01
+									}
 								}
 							}
 							drop_cosmetic_tag = yes
@@ -8224,6 +7341,13 @@ on_actions = {
 								}
 								set_cosmetic_tag = MEX_2024
 							}
+							if = {
+								limit = {
+									has_start_date < 1915.01.01
+									has_start_date > 1913.01.01
+								}
+								set_cosmetic_tag = MEX_1914
+							}
 						}
 						if = {
 							limit = {
@@ -8232,9 +7356,21 @@ on_actions = {
 									has_government = socialism_ideology
 									has_government = vanguardism
 									has_government = left_anarchism
+									AND = {
+										has_government = communism
+										has_start_date < 1915.01.01
+										has_start_date > 1913.01.01
+									}
 								}
 							}
 							set_cosmetic_tag = MEX_SOCIALIST
+							if = {
+								limit = {
+									has_start_date < 1915.01.01
+									has_start_date > 1913.01.01
+								}
+								set_cosmetic_tag = MEX_SOCIALIST_1914
+							}
 						}
 					}
 					if = {
@@ -8524,9 +7660,9 @@ on_actions = {
 									has_government = stratocratic
 								}
 							}
-							set_cosmetic_tag = FRA_COLONY
+							set_cosmetic_tag = FRA_BLUE
 						}
-						if = {
+						else_if = {
 							limit = {
 								OR = {
 									has_government = centrist_monarchism
@@ -8534,7 +7670,7 @@ on_actions = {
 							}
 							set_cosmetic_tag = UK_RED
 						}
-						if = {
+						else_if = {
 							limit = {
 								OR = {
 									has_government = democratic_monarchism
@@ -8542,7 +7678,7 @@ on_actions = {
 							}
 							set_cosmetic_tag = AUSTRIA_WHITE
 						}
-						if = {
+						else_if = {
 							limit = {
 								OR = {
 									has_government = anocratic_monarchism
@@ -8556,18 +7692,7 @@ on_actions = {
 								do_russian_renames = yes
 							}
 						}
-						if = {
-							limit = {
-								OR = {
-									NOT = {
-										has_government = neutrality
-										has_government = stratocratic
-										has_government = centrist_monarchism
-										has_government = anocratic_monarchism
-										has_government = democratic_monarchism
-									}
-								}
-							}
+						else = {
 							drop_cosmetic_tag = yes
 						}
 					}
@@ -8607,30 +7732,15 @@ on_actions = {
 					}
 					if = {
 						limit = {
-							tag = GUA
-						}
-						if = {
-							limit = {
-								OR = {
-									has_government = stratocratic_monarchism
-								}
+							OR = {
+								tag = GUA
+								tag = BLZ
+								tag = HON
+								tag = ELS
+								tag = NIC
+								tag = COS
+								tag = COL
 							}
-							set_cosmetic_tag = GUA_SPR
-						}
-						if = {
-							limit = {
-								OR = {
-									NOT = {
-										has_government = stratocratic_monarchism
-									}
-								}
-							}
-							drop_cosmetic_tag = yes
-						}
-					}
-					if = {
-						limit = {
-							tag = BLZ
 						}
 						if = {
 							limit = {
@@ -8640,20 +7750,13 @@ on_actions = {
 							}
 							set_cosmetic_tag = SPR_YELLOW
 						}
-						if = {
-							limit = {
-								OR = {
-									NOT = {
-										has_government = stratocratic_monarchism
-									}
-								}
-							}
+						else = {
 							drop_cosmetic_tag = yes
 						}
 					}
 					if = {
 						limit = {
-							tag = HON
+							tag = FCA
 						}
 						if = {
 							limit = {
@@ -8663,106 +7766,23 @@ on_actions = {
 							}
 							set_cosmetic_tag = SPR_YELLOW
 						}
-						if = {
+						else_if = {
 							limit = {
 								OR = {
-									NOT = {
-										has_government = stratocratic_monarchism
-									}
+									has_government = stratocratic
 								}
 							}
-							drop_cosmetic_tag = yes
+							set_cosmetic_tag = USA_BLUE
 						}
-					}
-					if = {
-						limit = {
-							tag = ELS
-						}
-						if = {
+						else_if = {
 							limit = {
 								OR = {
-									has_government = stratocratic_monarchism
+									has_government = authoritarian_monarchism
 								}
 							}
-							set_cosmetic_tag = SPR_YELLOW
+							set_cosmetic_tag = UK_RED
 						}
-						if = {
-							limit = {
-								OR = {
-									NOT = {
-										has_government = stratocratic_monarchism
-									}
-								}
-							}
-							drop_cosmetic_tag = yes
-						}
-					}
-					if = {
-						limit = {
-							tag = NIC
-						}
-						if = {
-							limit = {
-								OR = {
-									has_government = stratocratic_monarchism
-								}
-							}
-							set_cosmetic_tag = SPR_YELLOW
-						}
-						if = {
-							limit = {
-								OR = {
-									NOT = {
-										has_government = stratocratic_monarchism
-									}
-								}
-							}
-							drop_cosmetic_tag = yes
-						}
-					}
-					if = {
-						limit = {
-							tag = COS
-						}
-						if = {
-							limit = {
-								OR = {
-									has_government = stratocratic_monarchism
-								}
-							}
-							set_cosmetic_tag = SPR_YELLOW
-						}
-						if = {
-							limit = {
-								OR = {
-									NOT = {
-										has_government = stratocratic_monarchism
-									}
-								}
-							}
-							drop_cosmetic_tag = yes
-						}
-					}
-					if = {
-						limit = {
-							tag = COL
-						}
-						if = {
-							limit = {
-								OR = {
-									has_government = stratocratic_monarchism
-								}
-							}
-							set_cosmetic_tag = COL_SPR
-						}
-						if = {
-							limit = {
-								OR = {
-									NOT = {
-										has_government = stratocratic_monarchism
-									}
-								}
-							}
+						else = {
 							drop_cosmetic_tag = yes
 						}
 					}
@@ -8886,42 +7906,15 @@ on_actions = {
 				}
 				else_if = {
 					limit = {
-						has_government = neutrality
-					}
-					set_cosmetic_tag = MC2_AUTHREP
-					if = {
-						limit = {
-							has_country_leader = {
-								name = "Militärgouverneur Albert Hoffman"
-								ruling_only = yes
-							}
-						set_cosmetic_tag = MC2_NATSOC
-						}
-					}
-				}
-				else_if = {
-					limit = {
-						has_government = authoritarian_monarchism
-					}
-					set_cosmetic_tag = MC2_AUTHMON
-				}
-				else_if = {
-					limit = {
-						has_government = centrist_republic
-					}
-					set_cosmetic_tag = MC2_CENREP
-				}
-				else_if = {
-					limit = {
 						has_government = stratocratic
 					}
-					set_cosmetic_tag = MC2_STRAT
+					set_cosmetic_tag = GREY_GER3
 				}
 				else_if = {
 					limit = {
 						has_government = stratocratic_monarchism
 					}
-					set_cosmetic_tag = MC2_STRATMON
+					set_cosmetic_tag = GREY_GER2
 				}
 				else_if = {
 					limit = {
@@ -8938,8 +7931,11 @@ on_actions = {
 				else_if = {
 					limit = {
 						OR = {
+							has_government = socialism_ideology
 							has_government = democratic
 							has_government = anocratic_republic
+							has_government = neutrality
+							has_government = authoritarian_monarchism
 						}
 					}
 					set_cosmetic_tag = MC2_CONREP
@@ -8947,7 +7943,6 @@ on_actions = {
 				else_if = {
 					limit = {
 						OR = {
-							has_government = socialism_ideology
 							has_government = communism
 						}
 					}
@@ -8960,6 +7955,179 @@ on_actions = {
 						}
 					}
 					set_cosmetic_tag = RUS_RED
+				}
+				else = {
+					drop_cosmetic_tag = yes
+				}
+			}
+			if = {
+				limit = {
+					tag = TVE
+				}
+				if = {
+					limit = {
+						controls_moskowien = no
+						controls_west_russia = no
+					}
+					if = {
+						limit = {
+							has_government = vanguardism
+						}
+						set_cosmetic_tag = TVE_VAN
+					}
+					else_if = {
+						limit = {
+							has_government = socialism_ideology
+						}
+						set_cosmetic_tag = TVE_SOCREP
+					}
+					else_if = {
+						limit = {
+							has_government = conservative_monarchism
+						}
+						set_cosmetic_tag = TVE_CONMON
+					}
+					else_if = {
+						limit = {
+							OR = {
+								has_government = neutrality
+								has_government = stratocratic
+							}
+						}
+						set_cosmetic_tag = TVE_TNO
+					}
+					else_if = {
+						limit = {
+							has_government = national_socialism
+						}
+						set_cosmetic_tag = TVE_NATSOC
+					}
+					else = {
+						drop_cosmetic_tag = yes
+					}
+				}
+				if = {
+					limit = {
+						controls_moskowien = yes
+						controls_west_russia = no
+					}
+					if = {
+						limit = {
+							has_government = vanguardism
+						}
+						set_cosmetic_tag = TVE_MOSKOWIEN_VAN
+					}
+					else_if = {
+						limit = {
+							has_government = socialism_ideology
+						}
+						set_cosmetic_tag = TVE_MOSKOWIEN_SOCREP
+					}
+					else_if = {
+						limit = {
+							has_government = conservative_monarchism
+						}
+						set_cosmetic_tag = TVE_MOSKOWIEN_CONMON
+					}
+					else_if = {
+						limit = {
+							has_government = neutrality
+						}
+						set_cosmetic_tag = TVE_MOSKOWIEN_AUTHREP
+					}
+					else_if = {
+						limit = {
+							has_government = stratocratic
+						}
+						set_cosmetic_tag = TVE_MOSKOWIEN
+					}
+					else_if = {
+						limit = {
+							has_government = national_socialism
+						}
+						set_cosmetic_tag = TVE_MOSKOWIEN_NATSOC
+					}
+					else = {
+						drop_cosmetic_tag = yes
+					}
+				}
+				if = {
+					limit = {
+						controls_moskowien = yes
+						controls_west_russia = yes
+					}
+					if = {
+						limit = {
+							has_government = vanguardism
+						}
+						set_cosmetic_tag = TVE_SUPERREGIONAL_VAN
+					}
+					else_if = {
+						limit = {
+							has_government = socialism_ideology
+						}
+						set_cosmetic_tag = TVE_SUPERREGIONAL_SOCREP
+					}
+					else_if = {
+						limit = {
+							has_government = neutrality
+						}
+						set_cosmetic_tag = TVE_SUPERREGIONAL_AUTHREP
+					}
+					else_if = {
+						limit = {
+							has_government = stratocratic
+						}
+						set_cosmetic_tag = TVE_SUPERREGIONAL
+					}
+					else = {
+						drop_cosmetic_tag = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = ORO
+				}
+				if = {
+					limit = {
+						OR = {
+							has_government = socialism_ideology
+							has_government = neutrality
+						}
+						controls_moskowien = no
+						controls_west_russia = no
+					}
+					set_cosmetic_tag = ORO_TNO
+				}
+				else_if = {
+					limit = {
+						OR = {
+							has_government = socialism_ideology
+							has_government = neutrality
+						}
+						controls_moskowien = yes
+						controls_west_russia = no
+					}
+					set_cosmetic_tag = ORO_MOSKOWIEN
+					
+					every_state = {
+						limit = {
+							is_owned_by = ORO
+						}
+						do_russian_renames = yes
+					}
+				}
+				else_if = {
+					limit = {
+						OR = {
+							has_government = socialism_ideology
+							has_government = neutrality
+						}
+						controls_moskowien = yes
+						controls_west_russia = yes
+					}
+					set_cosmetic_tag = ORO_SUPERREGIONAL
 				}
 				else = {
 					drop_cosmetic_tag = yes
@@ -9296,6 +8464,12 @@ on_actions = {
 				}
 				else_if = {
 					limit = {
+						has_government = stratocratic
+					}
+					set_cosmetic_tag = GREY_GER1
+				}
+				else_if = {
+					limit = {
 						has_government = stratocratic_monarchism
 					}
 					set_cosmetic_tag = GREY_GER2
@@ -9337,7 +8511,7 @@ on_actions = {
 					set_cosmetic_tag = DN2_COMMUNISM
 				}
 				else = {
-					set_cosmetic_tag = DEN_TNO
+					drop_cosmetic_tag = yes
 				}
 			}
 			if = {
@@ -9353,42 +8527,32 @@ on_actions = {
 					}
 					set_cosmetic_tag = WR2_DEMOCRATIC
 				}
-				if = {
+				else_if = {
 					limit = {
 						has_government = neutrality
 					}
 					set_cosmetic_tag = WR2_AUTHREP
 				}
-				if = {
+				else_if = {
 					limit = {
 						has_government = republican_fascism
 					}
 					set_cosmetic_tag = WR2_REPFASH
 				}
-				if = {
+				else_if = {
 					limit = {
 						has_government = national_socialism
 					}
 					set_cosmetic_tag = WR2_NATSOC
 				}
-				if = {
+				else_if = {
 					limit = {
 						has_government = theocratic
 					}
 					set_cosmetic_tag = SS_STATE_GENERIC
 				}
-				if = {
-					limit = {
-						NOT = {
-							has_government = liberal_republic
-							has_government = democratic
-							has_government = neutrality
-							has_government = republican_fascism
-							has_government = national_socialism
-							has_government = theocratic
-						}
-					}
-					set_cosmetic_tag = WR2_TNO
+				else = {
+					drop_cosmetic_tag = yes
 				}
 			}
 			if = {
@@ -9403,7 +8567,7 @@ on_actions = {
 					}
 					set_cosmetic_tag = RUS_RED
 				}
-				if = {
+				else_if = {
 					limit = {
 						OR = {
 							has_government = communism
@@ -9411,7 +8575,7 @@ on_actions = {
 					}
 					set_cosmetic_tag = POL_SOCIALIST
 				}
-				if = {
+				else_if = {
 					limit = {
 						OR = {
 							has_government = socialist_monarchy
@@ -9419,7 +8583,7 @@ on_actions = {
 					}
 					set_cosmetic_tag = USA_BLUE
 				}
-				if = {
+				else_if = {
 					limit = {
 						OR = {
 							has_government = centrist_monarchism
@@ -9427,7 +8591,7 @@ on_actions = {
 					}
 					set_cosmetic_tag = SWE_BLUE
 				}
-				if = {
+				else_if = {
 					limit = {
 						OR = {
 							has_government = socialism_ideology
@@ -9438,13 +8602,13 @@ on_actions = {
 					}
 					set_cosmetic_tag = PL2_CONREP
 				}
-				if = {
+				else_if = {
 					limit = {
 						has_government = anocratic_monarchism
 					}
 					set_cosmetic_tag = RUS_GREEN
 				}
-				if = {
+				else_if = {
 					limit = {
 						OR = {
 							has_government = democratic_monarchism
@@ -9457,7 +8621,7 @@ on_actions = {
 					}
 					set_cosmetic_tag = PL2_AUTHREP
 				}
-				if = {
+				else_if = {
 					limit = {
 						OR = {
 							has_government = anocratic_republic
@@ -9466,13 +8630,13 @@ on_actions = {
 					}
 					set_cosmetic_tag = PL2_STRAT
 				}
-				if = {
+				else_if = {
 					limit = {
 						has_government = republican_fascism
 					}
 					set_cosmetic_tag = PL2_REPFASH
 				}
-				if = {
+				else_if = {
 					limit = {
 						OR = {
 							has_government = fascism
@@ -9480,6 +8644,9 @@ on_actions = {
 						}
 					}
 					set_cosmetic_tag = PL2_TNO
+				}
+				else = {
+					drop_cosmetic_tag = yes
 				}
 			}
 			if = {
@@ -10979,24 +10146,6 @@ on_actions = {
 				}
 				if = {
 					limit = {
-						tag = ORO
-						controls_moskowien = yes
-					}
-					if = {
-						limit = {
-							OR = {
-								has_government = socialism_ideology
-								has_government = neutrality
-							}
-						}
-						set_cosmetic_tag = ORO_MOSKOWIEN
-					}
-					else = {
-						drop_cosmetic_tag = yes
-					}
-				}
-				if = {
-					limit = {
 						tag = SRT
 						controls_moskowien = yes
 					}
@@ -11264,90 +10413,6 @@ on_actions = {
 							has_government = stratocratic_monarchism
 						}
 						set_cosmetic_tag = PTG_SUPERREGIONAL_STRATMON
-					}
-					else = {
-						drop_cosmetic_tag = yes
-					}
-				}
-				if = {
-					limit = {
-						tag = TVE
-						AND = {
-							controls_moskowien = yes
-							controls_west_russia = no
-						}
-					}
-					if = {
-						limit = {
-							has_government = vanguardism
-						}
-						set_cosmetic_tag = TVE_MOSKOWIEN_VAN
-					}
-					else_if = {
-						limit = {
-							has_government = socialism_ideology
-						}
-						set_cosmetic_tag = TVE_MOSKOWIEN_SOCREP
-					}
-					else_if = {
-						limit = {
-							has_government = conservative_monarchism
-						}
-						set_cosmetic_tag = TVE_MOSKOWIEN_CONMON
-					}
-					else_if = {
-						limit = {
-							has_government = neutrality
-						}
-						set_cosmetic_tag = TVE_MOSKOWIEN_AUTHREP
-					}
-					else_if = {
-						limit = {
-							has_government = stratocratic
-						}
-						set_cosmetic_tag = TVE_MOSKOWIEN
-					}
-					else_if = {
-						limit = {
-							has_government = national_socialism
-						}
-						set_cosmetic_tag = TVE_MOSKOWIEN_NATSOC
-					}
-					else = {
-						drop_cosmetic_tag = yes
-					}
-				}
-				if = {
-					limit = {
-						tag = TVE
-						AND = {
-							controls_moskowien = yes
-							controls_west_russia = yes
-						}
-					}
-					if = {
-						limit = {
-							has_government = vanguardism
-						}
-						set_cosmetic_tag = TVE_SUPERREGIONAL_VAN
-					}
-					else_if = {
-						limit = {
-							has_government = socialism_ideology
-						}
-						set_cosmetic_tag = TVE_SUPERREGIONAL_SOCREP
-					}
-					else_if = {
-						limit = {
-							has_government = neutrality
-						}
-						set_cosmetic_tag = TVE_SUPERREGIONAL_AUTHREP
-					}
-					else_if = {
-						limit = {
-							has_government = stratocratic
-						}
-						set_cosmetic_tag = TVE_SUPERREGIONAL
 					}
 					else = {
 						drop_cosmetic_tag = yes
@@ -13336,43 +12401,6 @@ on_actions = {
 				}
 				if = {
 					limit = {
-						tag = ORO
-						OR = {
-							has_government = socialism_ideology
-							has_government = neutrality
-						}
-					}
-					if = {
-						limit = {
-							AND = {
-								controls_moskowien = yes
-								controls_west_russia = no
-							}
-						}
-						set_cosmetic_tag = ORO_MOSKOWIEN
-						
-						every_state = {
-							limit = {
-								is_owned_by = ORO
-							}
-							do_russian_renames = yes
-						}
-					}
-					else_if = {
-						limit = {
-							AND = {
-								controls_moskowien = yes
-								controls_west_russia = yes
-							}
-						}
-						set_cosmetic_tag = ORO_SUPERREGIONAL
-					}
-					else = {
-						set_cosmetic_tag = ORO_TNO
-					}
-				}
-				if = {
-					limit = {
 						tag = SRT
 						has_government = stratocratic
 					}
@@ -13721,192 +12749,174 @@ on_actions = {
 				if = {
 					limit = {
 						tag = TVE
-						has_government = vanguardism
 					}
 					if = {
 						limit = {
-							AND = {
-								controls_moskowien = yes
-								controls_west_russia = no
-							}
+							controls_moskowien = no
+							controls_west_russia = no
 						}
-						set_cosmetic_tag = TVE_MOSKOWIEN_VAN
+						if = {
+							limit = {
+								has_government = vanguardism
+							}
+							set_cosmetic_tag = TVE_VAN
+						}
+						else_if = {
+							limit = {
+								has_government = socialism_ideology
+							}
+							set_cosmetic_tag = TVE_SOCREP
+						}
+						else_if = {
+							limit = {
+								has_government = conservative_monarchism
+							}
+							set_cosmetic_tag = TVE_CONMON
+						}
+						else_if = {
+							limit = {
+								OR = {
+									has_government = neutrality
+									has_government = stratocratic
+								}
+							}
+							set_cosmetic_tag = TVE_TNO
+						}
+						else_if = {
+							limit = {
+								has_government = national_socialism
+							}
+							set_cosmetic_tag = TVE_NATSOC
+						}
+						else = {
+							drop_cosmetic_tag = yes
+						}
+					}
+					if = {
+						limit = {
+							controls_moskowien = yes
+							controls_west_russia = no
+						}
+						if = {
+							limit = {
+								has_government = vanguardism
+							}
+							set_cosmetic_tag = TVE_MOSKOWIEN_VAN
+						}
+						else_if = {
+							limit = {
+								has_government = socialism_ideology
+							}
+							set_cosmetic_tag = TVE_MOSKOWIEN_SOCREP
+						}
+						else_if = {
+							limit = {
+								has_government = conservative_monarchism
+							}
+							set_cosmetic_tag = TVE_MOSKOWIEN_CONMON
+						}
+						else_if = {
+							limit = {
+								has_government = neutrality
+							}
+							set_cosmetic_tag = TVE_MOSKOWIEN_AUTHREP
+						}
+						else_if = {
+							limit = {
+								has_government = stratocratic
+							}
+							set_cosmetic_tag = TVE_MOSKOWIEN
+						}
+						else_if = {
+							limit = {
+								has_government = national_socialism
+							}
+							set_cosmetic_tag = TVE_MOSKOWIEN_NATSOC
+						}
+						else = {
+							drop_cosmetic_tag = yes
+						}
+					}
+					if = {
+						limit = {
+							controls_moskowien = yes
+							controls_west_russia = yes
+						}
+						if = {
+							limit = {
+								has_government = vanguardism
+							}
+							set_cosmetic_tag = TVE_SUPERREGIONAL_VAN
+						}
+						else_if = {
+							limit = {
+								has_government = socialism_ideology
+							}
+							set_cosmetic_tag = TVE_SUPERREGIONAL_SOCREP
+						}
+						else_if = {
+							limit = {
+								has_government = neutrality
+							}
+							set_cosmetic_tag = TVE_SUPERREGIONAL_AUTHREP
+						}
+						else_if = {
+							limit = {
+								has_government = stratocratic
+							}
+							set_cosmetic_tag = TVE_SUPERREGIONAL
+						}
+						else = {
+							drop_cosmetic_tag = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						tag = ORO
+					}
+					if = {
+						limit = {
+							OR = {
+								has_government = socialism_ideology
+								has_government = neutrality
+							}
+							controls_moskowien = no
+							controls_west_russia = no
+						}
+						set_cosmetic_tag = ORO_TNO
+					}
+					else_if = {
+						limit = {
+							OR = {
+								has_government = socialism_ideology
+								has_government = neutrality
+							}
+							controls_moskowien = yes
+							controls_west_russia = no
+						}
+						set_cosmetic_tag = ORO_MOSKOWIEN
+						
 						every_state = {
 							limit = {
-								is_owned_by = TVE
+								is_owned_by = ORO
 							}
 							do_russian_renames = yes
 						}
 					}
 					else_if = {
 						limit = {
-							AND = {
-								controls_moskowien = yes
-								controls_west_russia = yes
+							OR = {
+								has_government = socialism_ideology
+								has_government = neutrality
 							}
+							controls_moskowien = yes
+							controls_west_russia = yes
 						}
-						set_cosmetic_tag = TVE_SUPERREGIONAL_VAN
-						every_state = {
-							limit = {
-								is_owned_by = TVE
-							}
-							do_russian_renames = yes
-						}
+						set_cosmetic_tag = ORO_SUPERREGIONAL
 					}
 					else = {
-						set_cosmetic_tag = TVE_VAN
-					}
-				}
-				if = {
-					limit = {
-						tag = TVE
-						has_government = socialism_ideology
-					}
-					if = {
-						limit = {
-							AND = {
-								controls_moskowien = yes
-								controls_west_russia = no
-							}
-						}
-						set_cosmetic_tag = TVE_MOSKOWIEN_SOCREP
-					}
-					else_if = {
-						limit = {
-							AND = {
-								controls_moskowien = yes
-								controls_west_russia = yes
-							}
-						}
-						set_cosmetic_tag = TVE_SUPERREGIONAL_SOCREP
-					}
-					else = {
-						set_cosmetic_tag = TVE_SOCREP
-					}
-				}
-				if = {
-					limit = {
-						tag = TVE
-						has_government = conservative_monarchism
-					}
-					if = {
-						limit = {
-							AND = {
-								controls_moskowien = yes
-							}
-						}
-						set_cosmetic_tag = TVE_MOSKOWIEN_CONMON
-						every_state = {
-							limit = {
-								is_owned_by = TVE
-							}
-							do_russian_renames = yes
-						}
-					}
-					else = {
-						set_cosmetic_tag = TVE_CONMON
-					}
-				}
-				if = {
-					limit = {
-						tag = TVE
-						has_government = neutrality
-					}
-					if = {
-						limit = {
-							AND = {
-								controls_moskowien = yes
-								controls_west_russia = no
-							}
-						}
-						set_cosmetic_tag = TVE_MOSKOWIEN_AUTHREP
-						every_state = {
-							limit = {
-								is_owned_by = TVE
-							}
-							do_russian_renames = yes
-						}
-					}
-					else_if = {
-						limit = {
-							AND = {
-								controls_moskowien = yes
-								controls_west_russia = yes
-							}
-						}
-						set_cosmetic_tag = TVE_SUPERREGIONAL_AUTHREP
-						every_state = {
-							limit = {
-								is_owned_by = TVE
-							}
-							do_russian_renames = yes
-						}
-					}
-					else = {
-						set_cosmetic_tag = TVE_TNO
-					}
-				}
-				if = {
-					limit = {
-						tag = TVE
-						has_government = stratocratic
-					}
-					if = {
-						limit = {
-							AND = {
-								controls_moskowien = yes
-								controls_west_russia = no
-							}
-						}
-						set_cosmetic_tag = TVE_MOSKOWIEN
-						every_state = {
-							limit = {
-								is_owned_by = TVE
-							}
-							do_russian_renames = yes
-						}
-					}
-					else_if = {
-						limit = {
-							AND = {
-								controls_moskowien = yes
-								controls_west_russia = yes
-							}
-						}
-						set_cosmetic_tag = TVE_SUPERREGIONAL
-						every_state = {
-							limit = {
-								is_owned_by = TVE
-							}
-							do_russian_renames = yes
-						}
-					}
-					else = {
-						set_cosmetic_tag = TVE_TNO
-					}
-				}
-				if = {
-					limit = {
-						tag = TVE
-						has_government = national_socialism
-					}
-					if = {
-						limit = {
-							AND = {
-								controls_moskowien = yes
-								controls_west_russia = no
-							}
-						}
-						set_cosmetic_tag = TVE_MOSKOWIEN_NATSOC
-						every_state = {
-							limit = {
-								is_owned_by = TVE
-							}
-							do_german_renames = yes
-						}
-					}
-					else = {
-						set_cosmetic_tag = TVE_NATSOC
+						drop_cosmetic_tag = yes
 					}
 				}
 				if = {
@@ -14595,6 +13605,37 @@ on_actions = {
 						}
 						set_cosmetic_tag = AUK_TNO
 					}
+				}
+			}
+		}
+	}
+	on_ruling_party_change = {
+		effect = {
+			if = {
+			if = {
+				limit = {
+					tag = RUS
+					has_start_date > 2022.01.01
+					NOT = {
+						has_government = vanguardism
+					}
+				}
+				set_party_name = {
+					ideology = vanguardism
+					name = RUS_vanguardism_2024_party
+					long_name = RUS_vanguardism_2024_party_long
+				}
+			}
+			if = {
+				limit = {
+					tag = RUS
+					has_start_date > 2022.01.01
+					has_government = vanguardism
+				}
+				set_party_name = {
+					ideology = vanguardism
+					name = RUS_vanguardism_2024_2_party
+					long_name = RUS_vanguardism_2024_2_party_long
 				}
 			}
 		}

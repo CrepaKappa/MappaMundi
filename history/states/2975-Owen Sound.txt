@@ -3,7 +3,7 @@ state={
 	name="STATE_2975"
 	
 	provinces={
-		779 6607 9743 
+		6607
 	}
 	
 	history={
@@ -12,7 +12,7 @@ state={
 		add_core_of = ONT
 		
 		victory_points = {
-			6607 10
+			6607 5
 		}
 	}
 	
@@ -21,14 +21,3 @@ state={
 	buildings_max_level_factor=1.000
 	local_supplies=0.0 
 }
-
-
-
-
-
-
-
-
-
-
-

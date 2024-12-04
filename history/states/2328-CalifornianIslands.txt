@@ -1,10 +1,7 @@
 
 state={
 	id=2328
-	name="STATE_2328"
-	resources={
-		oil=7.000
-	}
+	name="STATE_2328"
 
 	history={
 		owner = USA
@@ -16,7 +13,7 @@ state={
 	}
 
 	provinces={
-		13841 14008
+		13841
 	}
 	manpower=1
 	buildings_max_level_factor=1.000

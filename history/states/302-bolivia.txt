@@ -1,11 +1,7 @@
 
 state={
 	id=302
-	name="STATE_302"
-	resources={
-		tungsten=60.000
-		steel=2.000
-	}
+	name="STATE_302"
 
 	history={
 		owner = BOL
@@ -17,7 +13,7 @@ state={
 	}
 
 	provinces={
-		5230 13195 
+		5230
 	}
 	manpower=1
 	buildings_max_level_factor=1.000

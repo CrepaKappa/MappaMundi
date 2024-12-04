@@ -3,13 +3,27 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
-				tag = RUS
+				OR = {
+					tag = RUS
+					tag = SOV
+				}
 				has_government = vanguardism
 				has_start_date > 1935.01.01
 				has_start_date < 1951.01.01
 			}
 		}
 		localization_key = "Generálʹnyy sekretárʹ TsK VKP(b) Iósif Vissariónovich Stálin"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = RUS
+				has_government = vanguardism
+				has_start_date > 2022.01.01
+				has_start_date < 2049.01.01
+			}
+		}
+		localization_key = "Generál'nyy sekretár' TsK KPSS Gennádiy Andréyevich Zyugánov"
 	}
 	text = {
 		trigger = {
@@ -109,7 +123,8 @@ defined_text = {
 			AND = {
 				tag = SIA
 				has_government = stratocratic_monarchism
-				has_start_date < 2022.01.01
+				has_start_date > 1936.01.01
+				has_start_date < 1939.01.01
 			}
 		}
 		localization_key = "Somdet Phra Čhao Yū Hūa Ānanth Mahidol"
@@ -456,6 +471,17 @@ defined_text = {
 		localization_key = "Vizepräsidentin des Bundesrates Karin Keller-Sutter"
 	}
 	text = {
+		trigger = {
+			AND = {
+				tag = SWI
+				has_government = centrist_republic
+				has_start_date > 1913.01.01
+				has_start_date < 1915.01.01
+			}
+		}
+		localization_key = "Vicepresidente del Consiglio federale Giuseppe Motta"
+	}
+	text = {
 		localization_key = "To be Added"
 	}
 }
@@ -486,6 +512,17 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Jospeh_Stalin_1950"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = RUS
+				has_government = vanguardism
+				has_start_date > 2022.01.01
+				has_start_date < 2049.01.01
+			}
+		}
+		localization_key = "GFX_Gennady_Zyuganov"
 	}
 	text = {
 		trigger = {
@@ -712,6 +749,8 @@ defined_text = {
 			AND = {
 				tag = SIA
 				has_government = stratocratic_monarchism
+				has_start_date > 1936.01.01
+				has_start_date < 1939.01.01
 			}
 		}
 		localization_key = "GFX_Rama_VIII"
@@ -929,6 +968,17 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Karin_Keller_Sutter"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SWI
+				has_government = centrist_republic
+				has_start_date > 1913.01.01
+				has_start_date < 1915.01.01
+			}
+		}
+		localization_key = "GFX_Giuseppe_Motta"
 	}
 	text = {
 		localization_key = "GFX_leader_unknown"

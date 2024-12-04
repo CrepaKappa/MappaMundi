@@ -460,7 +460,7 @@ SRL = {
 	color_ui = rgb { 178 255 102 }
 }
 WGR = {
-	color = rgb { 92 99 109 } # The colors are set to be more are less what we are used to
+	color = rgb { 92 99 109 }
 	color_ui = rgb { 92 99 109 }
 }
 DDR = {
@@ -942,10 +942,6 @@ CSA = {
 NHM = {
 	color = rgb { 234 137 51 }
 	color_ui = rgb { 234 137 51 }
-}
-ALT = {
-	color = rgb { 89 21 8 }
-	color_ui = rgb { 89 21 8 }
 }
 SAS = {
 	color = rgb { 95 186 80 }
@@ -11268,6 +11264,10 @@ S71 = {
 	color = rgb { 173 48 83 }
 	color_ui = rgb { 173 48 83 }
 }
+S72 = {
+	color = rgb { 254 0 0 }
+	color_ui = rgb { 254 0 0 }
+}
 IQK = {
 	color = rgb { 178 114 99 }
 	color_ui = rgb { 178 114 99 }
@@ -11388,6 +11388,14 @@ BHR = {
 	color = rgb { 171 190 152 }
 	color_ui = rgb { 171 190 152 }
 }
+QAT = {
+	color = rgb { 128 0 0 }
+	color_ui = rgb { 128 0 0 }
+}
+UAE = {
+	color = rgb { 102 102 0 }
+	color_ui = rgb { 102 102 0 }
+}
 PNG = {
 	color = rgb { 153 0 76 }
 	color_ui = rgb { 153 0 76 }
@@ -11407,4 +11415,84 @@ TON = {
 VAN = {
 	color = rgb { 64 224 208 }
 	color_ui = rgb { 64 224 208 }
+}
+FCA = {
+	color = rgb { 117 177 207 }
+	color_ui = rgb { 117 177 207 }
+}
+SD6 = {
+	color = rgb { 100 36 36 }
+	color_ui = rgb { 100 36 36 }
+}
+SD7 = {
+	color = rgb { 73 103 141 }
+	color_ui = rgb { 73 103 141 }
+}
+USR = {
+	color = rgb { 90 153 216 }
+	color_ui = rgb { 90 153 216 }
+}
+KJR = {
+	color = rgb { 159 155 160 }
+	color_ui = rgb { 159 155 160 }
+}
+CTP = {
+	color = rgb { 108 146 90 }
+	color_ui = rgb { 108 146 90 }
+}
+PAO = {
+	color = rgb { 152 107 107 }
+	color_ui = rgb { 152 107 107 }
+}
+APC = {
+	color = rgb { 166 89 139 }
+	color_ui = rgb { 166 89 139 }
+}
+EDS = {
+	color = rgb { 74 105 162 }
+	color_ui = rgb { 74 105 162 }
+}
+SBO = {
+	color = rgb { 53 149 113 }
+	color_ui = rgb { 53 149 113 }
+}
+FVK = {
+	color = rgb { 204 182 91 }
+	color_ui = rgb { 204 182 91 }
+}
+MSA = {
+	color = rgb { 204 182 91 }
+	color_ui = rgb { 204 182 91 }
+}
+LBR = {
+	color = rgb { 231 201 29 }
+	color_ui = rgb { 231 201 29 }
+}
+SCT = {
+	color = rgb { 231 201 29 }
+	color_ui = rgb { 231 201 29 }
+}
+ATN = {
+	color = rgb { 16 155 163 }
+	color_ui = rgb { 16 155 163 }
+}
+FTC = {
+	color = rgb { 207 171 63 }
+	color_ui = rgb { 207 171 63 }
+}
+AZL = {
+	color = rgb { 58 71 163 }
+	color_ui = rgb { 58 71 163 }
+}
+CWL = {
+	color = rgb { 189 85 55 }
+	color_ui = rgb { 189 85 55 }
+}
+WBK = {
+	color = rgb { 150 150 150 }
+	color_ui = rgb { 150 150 150 }
+}
+SLE = {
+color = rgb { 150 150 150 }
+color_ui = rgb { 150 150 150 }
 }

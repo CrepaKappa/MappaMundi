@@ -3,7 +3,7 @@ state={
 	name="STATE_2993"
 	
 	provinces={
-		7366 12278 
+		12278 
 	}
 	
 	history={
@@ -11,10 +11,6 @@ state={
 		add_core_of = CAN
 		add_core_of = ONT
 		add_core_of = OT2
-		
-		victory_points = {
-			12278 5
-		}
 	}
 	
 	manpower=1

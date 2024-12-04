@@ -5,12 +5,9 @@ state={
 		14482 
 	}
 	history={
-		owner = YUG
-		add_core_of = YUG
-		add_core_of = BOS
-		add_core_of = SRP
-		add_core_of = ILY
-
+		owner = MLI
+		add_core_of = MRT
+		add_core_of = SD0
 	}
 	manpower=1
 	state_category = pastoral

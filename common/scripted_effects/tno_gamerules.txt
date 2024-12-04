@@ -47,22 +47,7 @@ do_tno_normal_warlord_russia = {
 			add_state_core = PREV
 		}
 	}
-	
-	every_state = {
-		limit = {
-			is_core_of = MSC
-		}
-		MC2 = {
-			transfer_state = PREV
-			transfer_state = 13601
-			transfer_state = 13871
-			transfer_state = 16328
-			transfer_state = 16327
-			transfer_state = 16326
-			transfer_state = 16329
-			transfer_state = 13872
-		}
-	}
+
 	
 	GER = {
 		add_state_claim = 765
@@ -354,7 +339,6 @@ do_tno_normal_warlord_russia = {
 			transfer_state = PREV
 		}
 	}
-	
 	GRK = {
 		set_politics = {
 			ruling_party = stratocratic
@@ -618,7 +602,7 @@ do_tno_normal_warlord_russia = {
 		transfer_state = 11982
 		transfer_state = 11983
 		transfer_state = 567
-		transfer_state = 11978
+		transfer_state = 20488
 		set_capital = {
 			state = 568
 		}
@@ -664,11 +648,16 @@ do_tno_normal_warlord_russia = {
 		transfer_state = 12495
 	}
 	
-	JAP = {
-		transfer_state = 2191
-		transfer_state = 655
-		transfer_state = 14001
-		transfer_state = 14000
+	every_state = {
+		limit = {
+			OR = {
+				is_core_of = SKH
+				state = 2191
+			}
+		}
+		JAP = {
+			transfer_state = PREV
+		}
 	}
 	
 	KAM = {
@@ -694,52 +683,19 @@ do_tno_normal_warlord_russia = {
 		}
 	}
 	
-	every_state = {
-		limit = {
-			OR = {
-				is_core_of = PTG
-				is_core_of = TIK
-			}
-		}
-		MC2 = {
-			transfer_state = PREV
-		}
-	}
+	give_moskowien_states = yes
 	
 	every_state = {
 		limit = {
-			is_core_of = MRD
-			NOT = {
-				is_core_of = SMM
+			AND = {
+				is_core_of = VLG
+				NOT = {
+					is_core_of = ONG
+					is_core_of = TIK
+				}
 			}
 		}
-		MC2 = {
-			transfer_state = PREV
-		}
-	}
-	
-	every_state = {
-		limit = {
-			is_core_of = PNZ
-			NOT = {
-				is_core_of = SMM
-			}
-		}
-		MC2 = {
-			transfer_state = PREV
-		}
-	}
-	
-	every_state = {
-		limit = {
-			is_core_of = SRT
-			NOT = {
-				is_core_of = SMM
-				is_state = 17268
-				is_state = 17270
-			}
-		}
-		MC2 = {
+		VLG = {
 			transfer_state = PREV
 		}
 	}
@@ -747,131 +703,26 @@ do_tno_normal_warlord_russia = {
 	every_state = {
 		limit = {
 			OR = {
-				is_core_of = VGR
-				is_core_of = SMO
-				is_core_of = VLD
-				is_core_of = ASK
-			}
-		}
-		MC2 = {
-			transfer_state = PREV
-			transfer_state = 17313
-			transfer_state = 13597
-			transfer_state = 17753
-			transfer_state = 2488
-			transfer_state = 11110
-			transfer_state = 14336
-			transfer_state = 14326
-			transfer_state = 14335
-			transfer_state = 14333
-			transfer_state = 14337
-			transfer_state = 11109
-			transfer_state = 14332
-			transfer_state = 14331
-			transfer_state = 14334
-			transfer_state = 237
-			transfer_state = 14329
-			transfer_state = 14325
-			transfer_state = 14323
-			transfer_state = 238
-			transfer_state = 11108
-			transfer_state = 14327
-			transfer_state = 14328
-			transfer_state = 14330
-			transfer_state = 1740
-			transfer_state = 14324
-			transfer_state = 14268
-			transfer_state = 245
-			transfer_state = 14322
-			transfer_state = 14321
-			transfer_state = 14319
-			transfer_state = 14320
-			transfer_state = 1329
-			transfer_state = 14318
-			transfer_state = 14317
-			transfer_state = 11112
-			transfer_state = 14121
-			transfer_state = 14123
-			transfer_state = 14122
-			transfer_state = 14119
-			transfer_state = 14117
-			transfer_state = 14113
-			transfer_state = 14118
-			transfer_state = 14120
-			transfer_state = 14124
-			transfer_state = 14125
-			transfer_state = 14126
-			transfer_state = 14129
-			transfer_state = 253
-			transfer_state = 14128
-			transfer_state = 13871
-			transfer_state = 13601
-			transfer_state = 13872
-			transfer_state = 12836
-			transfer_state = 12799
-			transfer_state = 16326
-			transfer_state = 16327
-			transfer_state = 16328
-			transfer_state = 16329
-			transfer_state = 16331
-			transfer_state = 16336
-			transfer_state = 16337
-			transfer_state = 16339
-			transfer_state = 16343
-			transfer_state = 16344
-			transfer_state = 16345
-			transfer_state = 16368
-			transfer_state = 16369
-			transfer_state = 17266
-			transfer_state = 17309
-			transfer_state = 17324
-			transfer_state = 17325
-			transfer_state = 17276
-			transfer_state = 17330
-			transfer_state = 17331
-			transfer_state = 17277
-			transfer_state = 17278
-			transfer_state = 17313
-			transfer_state = 17299
-			transfer_state = 17329
-			transfer_state = 17255
-			transfer_state = 17256
-			transfer_state = 17257
-			transfer_state = 17258
-			transfer_state = 17265
-		}
-	}
-	
-	every_state = {
-		limit = {
-			is_core_of = MRM
-		}
-		FIN = {
-			transfer_state = PREV
-		}
-	}
-	
-	every_state = {
-		limit = {
-			is_core_of = KAR
-			NOT = {
-				is_core_of = ONG
-				state = 17313
+				is_core_of = MRM
+				AND = {
+					is_core_of = KAR
+					NOT = {
+						is_core_of = ONG
+						state = 17313
+					}
+				}
 			}
 		}
 		FIN = {
 			transfer_state = PREV
+			transfer_state = 13600
+			transfer_state = 13854
+			transfer_state = 4753
+			transfer_state = 12302
+			transfer_state = 12029
+			transfer_state = 12290
+			transfer_state = 16246
 		}
-	}
-	
-	FIN = {
-		transfer_state = 13600
-		transfer_state = 13854
-		transfer_state = 4753
-		transfer_state = 12302
-		transfer_state = 12029
-		transfer_state = 12290
-		transfer_state = 16246
 	}
 
 	ATU = {
@@ -903,7 +754,7 @@ do_tno_normal_warlord_russia = {
 		}
 	}
 
-	ATB = {
+	every_state = {
 		limit = {
 			is_core_of = ATU
 			
@@ -928,9 +779,9 @@ do_tno_normal_warlord_russia = {
 		ATB = {
 			transfer_state = PREV
 		}
-		
+	}
+	ATB = {
 		set_cosmetic_tag = ATB_TNO
-		
 		set_politics = {
 			ruling_party = republican_fascism
 		}
@@ -1143,7 +994,6 @@ do_tno_normal_warlord_russia = {
 			remember_old_capital = no
 		}
 		transfer_state = 240
-		transfer_state = 14227
 		transfer_state = 3780
 		transfer_state = 2190
 		transfer_state = 11107
@@ -1159,6 +1009,10 @@ do_tno_normal_warlord_russia = {
 		transfer_state = 17293
 		transfer_state = 17295
 		transfer_state = 17297
+		transfer_state = 19193
+		transfer_state = 19182
+		transfer_state = 19865
+		transfer_state = 19945
 	}
 
 	TUR = {
@@ -1193,13 +1047,6 @@ do_tno_normal_warlord_russia = {
 				ruling_party = national_socialism
 			}
 		}
-	}
-	UA2 = {
-		transfer_state = 11107
-		transfer_state = 11111
-		transfer_state = 218
-		transfer_state = 19193
-		transfer_state = 19182
 	}
 	UA2 = {
 		set_cosmetic_tag = UA2_TNO
@@ -1395,190 +1242,6 @@ do_tno_normal_warlord_russia = {
 		transfer_state = 1008
 		transfer_state = 13830
 	}
-	
-	add_victory_points = {
-		province = 1780
-		value = 5
-	}
-		
-	add_victory_points = {
-		province = 19960
-		value = 5
-	}
-		
-	add_victory_points = {
-		province = 20677
-		value = 5
-	}
-		
-	add_victory_points = {
-		province = 1923
-		value = 5
-	}
-		
-	add_victory_points = {
-		province = 4669
-		value = 5
-	}
-		
-	add_victory_points = {
-		province = 16267
-		value = 5
-	}
-		
-	add_victory_points = {
-		province = 10189
-		value = 25
-	}
-	add_victory_points = {
-		province = 12536
-		value = 5
-	}
-		
-	add_victory_points = {
-		province = 4681
-		value = 5
-	}
-		
-	add_victory_points = {
-		province = 10617
-		value = 5
-	}
-		
-	add_victory_points = {
-		province = 11175
-		value = 5
-	}
-		
-	add_victory_points = {
-		province = 12128
-		value = 25
-	}
-		
-	add_victory_points = {
-		province = 105
-		value = 5
-	}
-		
-	add_victory_points = {
-		province = 7898
-		value = 5
-	}
-		
-	add_victory_points = {
-		province = 4326
-		value = 5
-	}
-		
-	add_victory_points = {
-		province = 7689
-		value = 5
-	}
-		
-	add_victory_points = {
-		province = 1771
-		value = 6
-	}
-		
-	add_victory_points = {
-		province = 7796
-		value = 5
-	}
-		
-	add_victory_points = {
-		province = 19895
-		value = 5
-	}
-		
-	add_victory_points = {
-		province = 1748
-		value = 5
-	}
-		
-	add_victory_points = {
-		province = 14505
-		value = 5
-	}
-		
-	add_victory_points = {
-		province = 3134
-		value = 25
-	}
-		
-	add_victory_points = {
-		province = 19945
-		value = 5
-	}
-		
-	add_victory_points = {
-		province = 10551
-		value = 5
-	}
-		
-	add_victory_points = {
-		province = 4823
-		value = 5
-	}
-		
-	add_victory_points = {
-		province = 4294
-		value = 5
-	}
-		
-	add_victory_points = {
-		province = 7867
-		value = 25
-	}
-
-	add_victory_points = {
-		province = 1295
-		value = 5
-	}
-		
-	add_victory_points = {
-		province = 7712
-		value = 5
-	}
-		
-	add_victory_points = {
-		province = 6175
-		value = 5
-	}
-		
-	add_victory_points = {
-		province = 312
-		value = 5
-	}
-		
-	add_victory_points = {
-		province = 9201
-		value = 5
-	}
-		
-	add_victory_points = {
-		province = 1803
-		value = 5
-	}
-		
-	add_victory_points = {
-		province = 4743
-		value = 5
-	}
-		
-	add_victory_points = {
-		province = 11701
-		value = 5
-	}
-		
-	add_victory_points = {
-		province = 10598
-		value = 5
-	}
-		
-	add_victory_points = {
-		province = 17695
-		value = 5
-	}
 	every_state = {
 		limit = {
 			is_core_of = KMR
@@ -1592,12 +1255,11 @@ do_tno_normal_warlord_russia = {
 		limit = {
 			is_core_of = VLG
 			is_owned_by = RUS
-		}
-		NOT = {
-			is_core_of = TIK
+			NOT = {
+				is_core_of = TIK
+			}
 		}
 		transfer_state_to = VLG
-		
 	}
 
 }
@@ -1782,9 +1444,9 @@ do_tno_einheitspakt_setup = {
 				is_owned_by = POL
 			}
 			is_core_of = SLO
-		}
-		NOT = {
-			is_claimed_by = HUN
+			NOT = {
+				is_claimed_by = HUN
+			}
 		}
 		SLO = {
 			transfer_state = PREV
@@ -2177,9 +1839,9 @@ do_tno_einheitspakt_setup = {
 	every_state = {
 		limit = {
 			is_core_of = SYR
-		}
-		NOT = {
-			is_core_of = WTC
+			NOT = {
+				is_core_of = WTC
+			}
 		}
 		transfer_state_to = WTC
 	}
@@ -2497,7 +2159,7 @@ do_tno_co_prosperity_setup = {
 		limit = {
 			OR = {
 				is_core_of = S14
-				is_core_of S43
+				is_core_of = S43
 			}
 		}
 		transfer_state_to = SIA
@@ -2543,9 +2205,9 @@ do_tno_co_prosperity_setup = {
 	every_state = {
 		limit = {
 			is_core_of = YUN
-		}
-		NOT = {
-			is_core_of = BRM
+			NOT = {
+				is_core_of = BRM
+			}
 		}
 		transfer_state_to = YUN
 	}
@@ -2703,7 +2365,7 @@ do_tno_co_prosperity_setup = {
 		transfer_state = 10538
 	}
 	every_state = {
-		limit {
+		limit = {
 			is_core_of = IDS
 		}
 		transfer_state_to = IDS
@@ -2738,9 +2400,9 @@ do_tno_co_prosperity_setup = {
 	every_state = {
 		limit = {
 			is_core_of = FMS
-		}
-		NOT = {
-			is_core_of = KED
+			NOT = {
+				is_core_of = KED
+			}
 		}
 		transfer_state_to = FMS
 	}
@@ -2877,9 +2539,9 @@ do_tno_co_prosperity_setup = {
 	every_state = {
 		limit = {
 			is_core_of = PMR
-		}
-		NOT = {
-			is_core_of = PAK
+			NOT = {
+				is_core_of = PAK
+			}
 		}
 		transfer_state = AFG
 	}
@@ -3061,9 +2723,9 @@ do_africa_tno_setup = {
 	every_state = {
 		limit = {
 			is_owned_by = FEA
-		}
-		NOT = {
-			is_core_of = SD0
+			NOT = {
+				is_core_of = SD0
+			}
 		}
 		transfer_state_to = CMR
 	}
@@ -3191,9 +2853,9 @@ do_africa_tno_setup = {
 		limit = {
 			is_core_of = SD0
 			is_core_of = CHA
-		}
-		NOT = {
-			is_core_of = LBA
+			NOT = {
+				is_core_of = LBA
+			}
 		}
 		transfer_state_to = SD0
 	}
@@ -3333,17 +2995,24 @@ do_africa_tno_setup = {
 		transfer_state = 9588
 	}
 	FR2 = {
-		set_politics = {ruling_party = neutrality}
-		annex_country = {target = IVO}
-		annex_country = {target = SNW}
+		set_politics = {
+			ruling_party = neutrality
+		}
+		annex_country = {
+			target = IVO
+		}
+		annex_country = {
+			target = SNW
+		}
 		set_cosmetic_tag = FRA_BLUE
-		set_capital = 867
+		set_capital = {
+			state = 867
+		}
 		transfer_state = 713
 		transfer_state = 2692
 		transfer_state = 7712
 		transfer_state = 7711
 		transfer_state = 2691
-		transfer_state = 
 	}
 	SIE = {
 		set_politics = {ruling_party = stratocratic}
@@ -3400,7 +3069,9 @@ do_tno_america_setup = {
 	HOL = {
 		annex_country = {target = SUR}
 		annex_country = {target = CRC}
-		set_capital = 309
+		set_capital = {
+			state = 309
+		}
 	}
 	CAY = {
 		annex_country = {target = INI}
@@ -3763,7 +3434,7 @@ do_tno_moskowien_civil_war = {
 			limit = {
 				is_core_of = LCT
 				NOT = {
-				state = 16325
+					state = 16325
 				}
 			}
 			WTR = {
@@ -4084,6 +3755,18 @@ do_tno_moskowien_civil_war = {
 	
 	every_state = {
 		limit = {
+			is_core_of = GRK
+		}
+		GRK = {
+			transfer_state = PREV
+			set_politics = {
+				ruling_party = stratocratic
+			}
+		}
+	}
+	
+	every_state = {
+		limit = {
 			is_owned_by = MC2
 		}
 		UA2 = {
@@ -4109,6 +3792,7 @@ do_tno_ostland_civil_war = {
 					is_core_of = MGV
 					is_core_of = LAT
 					is_core_of = EST
+					is_core_of = LIV
 					
 					state = 95
 					state = 1763
@@ -4196,6 +3880,9 @@ do_tno_ostland_civil_war = {
 					state = 17787
 					state = 17794
 					state = 17795
+					state = 20235
+					state = 20336
+					state = 20469
 				}
 				NOT = {
 					is_core_of = HGM
@@ -4272,8 +3959,9 @@ do_tno_ostland_civil_war = {
 					
 					state = 995
 					state = 2119
-					state = 17792
-					state = 17793
+					state = 19927
+					state = 19940
+					state = 19980
 				}
 				NOT = {
 					is_owned_by = LTG
@@ -4287,6 +3975,9 @@ do_tno_ostland_civil_war = {
 					state = 17772
 					state = 17794
 					state = 17795
+					state = 20235
+					state = 20336
+					state = 20469
 				}
 			}
 			SUV = {
@@ -4319,9 +4010,6 @@ do_tno_ostland_civil_war = {
 					state = 4846
 					state = 7406
 					state = 11001
-					state = 17781
-					state = 17782
-					state = 17783
 					state = 17788
 					state = 17789
 					state = 17849
@@ -4688,6 +4376,7 @@ do_tno_ukrainian_civil_war = {
 				state = 17303
 				state = 19182
 				state = 19193
+				state = 19945
 			}
 		}
 		KHK = {
@@ -4816,13 +4505,16 @@ do_tno_ukrainian_civil_war = {
 				state = 240
 				state = 3780
 				state = 13264
-				state = 14227
 				state = 14250
+				state = 14227
 				state = 19190
 				state = 19192
 				state = 19194
 				state = 19195
 				state = 19196
+				state = 19865
+				state = 19866
+				state = 19892
 			}
 		}
 		UA2 = {

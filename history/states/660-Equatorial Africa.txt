@@ -1,13 +1,11 @@
 
 state={
 	id=660
-	name="STATE_660"
-	resources={
-		rubber=3.000
-	}
+	name="STATE_660"
 
 	history={
 		owner = FEA
+		add_core_of = FEA
 		add_core_of = CAR
 
 	}

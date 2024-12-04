@@ -175,7 +175,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = TON
-				has_government = authoritarian_monarchism
+				has_government = monarchism
 				has_start_date < 1937.01.01
 				has_start_date > 1935.01.01
 			}
@@ -186,7 +186,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = TON
-				has_government = centrist_monarchism
+				has_government = anocratic_monarchism
 				has_start_date > 2022.01.01
 			}
 		}
@@ -274,19 +274,6 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
-				OR = {
-					tag = RUS
-					tag = SOV
-				}
-				has_government = vanguardism
-				has_start_date > 2022.01.01
-			}
-		}
-		localization_key = "Premʹyér-Minístr Iván Ivánovich Mélʹnikov"
-	}
-	text = {
-		trigger = {
-			AND = {
 				tag = SOV
 				has_government = vanguardism
 				has_start_date > 1935.01.01
@@ -304,6 +291,97 @@ defined_text = {
 			}
 		}
 		localization_key = "Predsedátelʹ Sovéta Minístrov Iván Lógginovich Goremýkin"
+	}
+	text = {
+		trigger = {
+			AND = {
+				OR = {
+					tag = RUS
+					tag = SOV
+				}
+				has_government = vanguardism
+				has_start_date > 2022.01.01
+				has_start_date < 2049.01.01
+			}
+		}
+		localization_key = "Predsedátel' Sovéta Minístrov Iván Ivánovich Mélʹnikov"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = RUS
+				has_government = communism
+				has_start_date > 2022.01.01
+				has_start_date < 2049.01.01
+			}
+		}
+		localization_key = "Predsedátelʹ Pravítelʹstva Alexander Mikhailovich Babakov"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = RUS
+				has_government = socialism_ideology
+				has_start_date > 2022.01.01
+				has_start_date < 2049.01.01
+			}
+		}
+		localization_key = "Predsedátelʹ Pravítelʹstva Nikoláy Yúr'yevich Kavkázskiy"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = RUS
+				has_government = liberal_republic
+				has_start_date > 2022.01.01
+				has_start_date < 2049.01.01
+			}
+		}
+		localization_key = "Predsedátelʹ Pravítelʹstva Nikoláy Ígorevich Rybakóv"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = RUS
+				has_government = centrist_republic
+				has_start_date > 2022.01.01
+				has_start_date < 2049.01.01
+			}
+		}
+		localization_key = "Predsedátelʹ Pravítelʹstva Leoníd Mikháylovich Vólkov"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = RUS
+				has_government = democratic
+				has_start_date > 2022.01.01
+				has_start_date < 2049.01.01
+			}
+		}
+		localization_key = "Predsedátelʹ Pravítelʹstva Andréy Alekséevich Necháev"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = RUS
+				has_government = national_conservative_republic
+				has_start_date > 2022.01.01
+				has_start_date < 2049.01.01
+			}
+		}
+		localization_key = "Predsedátelʹ Pravítelʹstva Rifát Gabdulkhákovich Shaykhutdínov"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = RUS
+				has_government = anocratic_republic
+				has_start_date > 2022.01.01
+				has_start_date < 2049.01.01
+			}
+		}
+		localization_key = "Predsedátelʹ Pravítelʹstva Alekséy Gennád'yevich Necháev"
 	}
 	text = {
 		trigger = {
@@ -331,6 +409,8 @@ defined_text = {
 			AND = {
 			tag = RUS
 				has_government = vanguardism
+				has_start_date > 1935.01.01
+				has_start_date < 1939.01.01
 			}
 		}
 		localization_key = "Predsedátelʹ Sovnarkóma Daniíl Yegórovich Sulímov"
@@ -666,6 +746,17 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
+				tag = ITA
+				has_government = anocratic_monarchism
+				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
+			}
+		}
+		localization_key = "Presidente del Consiglio dei ministri Giovanni Giolitti"
+	}
+	text = {
+		trigger = {
+			AND = {
 				tag = WGR
 				has_government = vanguardism
 				has_start_date > 2022.01.01
@@ -897,6 +988,17 @@ defined_text = {
 			}
 		}
 		localization_key = "Ministerpräsident Leopold Figl"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = AUS
+				has_government = socialism_ideology
+				has_start_date > 1900.01.01
+				has_start_date < 2000.01.01
+			}
+		}
+		localization_key = "Bundeskanzler Franz Vranitzsky"
 	}
 	text = {
 		trigger = {
@@ -1557,11 +1659,76 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = SRL
-				has_government = democratic
+				has_government = national_conservative_republic
 				has_start_date > 2022.01.01
 			}
 		}
 		localization_key = "Agrāmātya Dinēṣ Candra Rūpasiṁha Guṇavardhana"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = FRA
+				OR = {
+					has_government = socialism_ideology
+					has_government = socialist_monarchy
+				}
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Premiér Ministre Lucie Castets"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = FRA
+				OR = {
+					has_government = liberal_republic
+					has_government = democratic_monarchism
+				}
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Premiér Ministre Gabriel Nissim Attal de Couriss"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = FRA
+				OR = {
+					has_government = centrist_republic
+					has_government = centrist_monarchism
+				}
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Premiér Ministre François René Jean Lucien Bayrou"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = FRA
+				OR = {
+					has_government = democratic
+					has_government = conservative_monarchism
+				}
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Premiér Ministre Francois-Xavier Bellamy"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = FRA
+				OR = {
+					has_government = national_conservative_republic
+					has_government = national_conservative_monarchism
+				}
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Premiér Ministre Jordan Bardella"
 	}
 	text = {
 		trigger = {
@@ -1577,7 +1744,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = FRA
-				has_government = democratic
+				has_government = socialism_ideology
 				has_start_date < 1915.01.01
 				has_start_date > 1913.01.01
 			}
@@ -1703,12 +1870,45 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = NZL
-				has_government = democratic_monarchism
+				has_government = socialist_monarchy
 				has_start_date < 1937.01.01
 				has_start_date > 1935.01.01
 			}
 		}
 		localization_key = "Prime Minister Michael Joseph Savage"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = NZL
+				has_government = democratic_monarchism
+				has_start_date < 1937.01.01
+				has_start_date > 1935.01.01
+			}
+		}
+		localization_key = "Pirimia Eruera Tihema Te Aika Tirikatene"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = NZL
+				has_government = centrist_monarchism
+				has_start_date < 1937.01.01
+				has_start_date > 1935.01.01
+			}
+		}
+		localization_key = "Prime Minister Harold Montague Rushworth"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = NZL
+				has_government = conservative_monarchism
+				has_start_date < 1937.01.01
+				has_start_date > 1935.01.01
+			}
+		}
+		localization_key = "Prime Minister George William Forbes"
 	}
 	text = {
 		trigger = {
@@ -2124,7 +2324,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = SPR
-				has_government = anocratic_monarchism
+				has_government = authoritarian_monarchism
 				has_start_date < 1915.01.01
 			}
 		}
@@ -2175,6 +2375,8 @@ defined_text = {
 			AND = {
 				tag = ISR
 				has_government = socialism_ideology
+				has_start_date > 1935.01.01
+				has_start_date < 1951.01.01
 			}
 		}
 		localization_key = "Roʾš HaMemšalah Dawid Ḃen-Gẇriyŵn"
@@ -2183,7 +2385,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = ISR
-				has_government = democratic
+				has_government = national_conservative_republic
 				has_start_date > 1990.01.01
 				has_start_date < 2000.01.01
 			}
@@ -2194,11 +2396,121 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = ISR
+				has_government = vanguardism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Yŵšeb-Roʾš Məŵʿeṣet HaŚariym Ayman ʿAʾdel ʿŴdeh"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ISR
+				has_government = communism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Roʾš HaMemšalah Saʾmiy Aḃẇ Šəḥaʾdah"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ISR
+				has_government = socialism_ideology
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Roʾš HaMemšalah Yaʾiyr Gŵlan"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ISR
+				has_government = liberal_republic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Roʾš HaMemšalah Yaʾiyr Laṗiyd"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ISR
+				has_government = centrist_republic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Roʾš HaMemšalah Ḃinyamiyn Ganṣ"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ISR
+				has_government = democratic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Roʾš HaMemšalah Abiygdŵr Liyḃerman"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ISR
+				has_government = national_conservative_republic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Roʾš HaMemšalah Yiṣḥaq Yiśaškar Gŵldqnŵpp"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ISR
 				has_government = anocratic_republic
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "Roʾš HaMemšalah Ḃinyamiyn Ntanyahẇ"
+		localization_key = "Roʾš HaMemšalah Ḃinyamiyn Nətanyahẇ"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ISR
+				has_government = neutrality
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Roʾš HaMemšalah Abiygdŵr Maʿŵz"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ISR
+				has_government = republican_fascism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Roʾš HaMemšalah Iytamar Ḃen Gəbiyr"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ISR
+				has_government = national_socialism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Manhiyg WəRoʾš HaMemšalah Iytamar Ḃen Gəbiyr"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ISR
+				has_government = theocratic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Naśiyʾ HaMŵʿaṣah Yaʿaqob Rŵze'"
 	}
 	text = {
 		trigger = {
@@ -2324,6 +2636,17 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
+				tag = HOL
+				has_government = centrist_monarchism
+				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
+			}
+		}
+		localization_key = "Minister-president Pieter Wilhelm Adrianus Cort van der Linden"
+	}
+	text = {
+		trigger = {
+			AND = {
 				tag = BEL
 				has_government = anocratic_monarchism
 				has_start_date > 2022.01.01
@@ -2341,6 +2664,17 @@ defined_text = {
 			}
 		}
 		localization_key = "Eerste Jean Luc Joseph Marie Dehaene"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = BEL
+				has_government = conservative_monarchism
+				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
+			}
+		}
+		localization_key = "Premiér Ministre Charles Marie Pierre Albert, 1er comte de Broqueville"
 	}
 	text = {
 		trigger = {
@@ -2541,6 +2875,17 @@ defined_text = {
 			}
 		}
 		localization_key = "Președintele Gheorghe I. Tătărescu"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = MOL
+				has_government = anocratic_republic
+				has_start_date > 1990.01.01
+				has_start_date < 2000.01.01
+			}
+		}
+		localization_key = "Prim-ministru Valeriu Muravschi"
 	}
 	text = {
 		trigger = {
@@ -2774,10 +3119,32 @@ defined_text = {
 			AND = {
 				tag = WES
 				has_government = communism
+				has_start_date > 1990.01.01
+				has_start_date < 2000.01.01
+			}
+		}
+		localization_key = "Wazīr al-Awwal Maḥfūẓ ʿAliyy Baybā Ḥammād Duwayhī"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = WES
+				has_government = communism
 				has_start_date > 2022.01.01
 			}
 		}
 		localization_key = "Wazīr al-Awwal Būšrāyaẗ Ḥammūdī Bayūn"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ALG
+				has_government = anocratic_republic
+				has_start_date > 1990.01.01
+				has_start_date < 2000.01.01
+			}
+		}
+		localization_key = "Wazīr al-Awwal Sīd Aḥmad Ġazālī"
 	}
 	text = {
 		trigger = {
@@ -2815,6 +3182,17 @@ defined_text = {
 			AND = {
 				tag = MOR
 				has_government = anocratic_monarchism
+				has_start_date > 1990.01.01
+				has_start_date < 2000.01.01
+			}
+		}
+		localization_key = "Raʾīs Ḥukūmaẗ ʿAz ud-Dīn al-Arāqī"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = MOR
+				has_government = anocratic_monarchism
 				has_start_date > 2022.01.01
 			}
 		}
@@ -2837,6 +3215,17 @@ defined_text = {
 			}
 		}
 		localization_key = "Premier Ministre Mohamed Hédi Lakhoua"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = TUN
+				has_government = neutrality
+				has_start_date > 1990.01.01
+				has_start_date < 2000.01.01
+			}
+		}
+		localization_key = "Raʾīs Ḥukūmaẗ Ḥāmid bin Aḥmad al-Qarawī"
 	}
 	text = {
 		trigger = {
@@ -2932,6 +3321,8 @@ defined_text = {
 			AND = {
 				tag = CZE
 				has_government = centrist_republic
+				has_start_date > 1935.01.01
+				has_start_date < 1937.01.01
 			}
 		}
 		localization_key = "Předseda vlády Milan Hodža"
@@ -2940,7 +3331,10 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = CZE
-				has_government = liberal_republic
+				OR = {
+					has_government = centrist_republic
+					has_government = centrist_monarchism
+				}
 				has_start_date < 2000.01.01
 				has_start_date > 1991.01.01
 			}
@@ -3010,12 +3404,29 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = SAF
-				has_government = centrist_monarchism
+				OR = {
+					has_government = national_conservative_republic
+					has_government = national_conservative_monarchism
+				}
 				has_start_date < 1937.01.01
 				has_start_date > 1935.01.01
 			}
 		}
-		localization_key = "Prime Minister James Barry Munnik Hertzog"
+		localization_key = "Eerste Minister James Barry Munnik Hertzog"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SAF
+				OR = {
+					has_government = anocratic_republic
+					has_government = anocratic_monarchism
+				}
+				has_start_date < 1937.01.01
+				has_start_date > 1935.01.01
+			}
+		}
+		localization_key = "Eerste Minister Daniël François Malan"
 	}
 	text = {
 		trigger = {
@@ -3152,8 +3563,23 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = LUX
+				OR = {
+					has_government = conservative_monarchism
+					has_government = anocratic_monarchism
+				}
+				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
+			}
+		}
+		localization_key = "Premier Minister Paul Eyschen"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = LUX
 				has_government = conservative_monarchism
 				has_start_date < 1950.01.01
+				has_start_date > 1945.01.01
 			}
 		}
 		localization_key = "Premier Minister Joseph Bech"
@@ -3164,7 +3590,7 @@ defined_text = {
 				tag = LUX
 				has_government = conservative_monarchism
 				has_start_date > 1990.01.01
-				has_start_date < 200.01.01
+				has_start_date < 2000.01.01
 			}
 		}
 		localization_key = "Premier Minister Jacques Santer"
@@ -3253,17 +3679,30 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = SIA
+				has_government = stratocratic_monarchism
+				has_start_date > 1990.01.01
+				has_start_date < 2000.01.01
+			}
+		}
+		localization_key = "Nāyok Ratthamontrī `Ānan Panyānchun"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SIA
 				has_government = anocratic_monarchism
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "Nāyok Ratthamontrī Settha Thawisin"
+		localization_key = "Nāyok Ratthamontrī Sēnsathā Thawīsin"
 	}
 	text = {
 		trigger = {
 			AND = {
 				tag = SIA
 				has_government = stratocratic_monarchism
+				has_start_date > 1936.01.01
+				has_start_date < 1939.01.01
 			}
 		}
 		localization_key = "Nāyok Ratthamontrī Phrayā Ploplopyuhasēnā"
@@ -3282,11 +3721,33 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = MAL
+				has_government = national_conservative_monarchism
+				has_start_date > 1990.01.01
+				has_start_date < 2000.01.01
+			}
+		}
+		localization_key = "Perdana Menteri Mahathir bin Mohamad"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = MAL
 				has_government = democratic_monarchism
 				has_start_date > 2022.01.01
 			}
 		}
 		localization_key = "Perdana Menteri Anwar bin Ibrahim"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SGP
+				has_government = anocratic_republic
+				has_start_date > 1990.01.01
+				has_start_date < 2000.01.01
+			}
+		}
+		localization_key = "Prime Minister Goh Chok Tong"
 	}
 	text = {
 		trigger = {
@@ -3374,7 +3835,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = CRO
-				has_government = democratic
+				has_government = national_conservative_republic
 				has_start_date > 1992.01.01
 				has_start_date < 2000.01.01
 			}
@@ -3480,7 +3941,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = MAC
-				has_government = democratic
+				has_government = national_conservative_republic
 				has_start_date > 1992.01.01
 				has_start_date < 2000.01.01
 			}
@@ -3765,6 +4226,17 @@ defined_text = {
 			}
 		}
 		localization_key = "Rayiys alwuzara' Taj al-Din al-Hasani"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = LEB
+				has_government = anocratic_republic
+				has_start_date > 1990.01.01
+				has_start_date < 2000.01.01
+			}
+		}
+		localization_key = "Raʾīs Maǧlis al-Wuzarāʾ ʿUmar ʿAbd ul-Ḥamīd Karāmī"
 	}
 	text = {
 		trigger = {
@@ -4305,7 +4777,10 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = PAL
-				has_government = neutrality
+				OR = {
+					has_government = anocratic_republic
+					has_government = neutrality
+				}
 				has_start_date > 2022.01.01
 			}
 		}
@@ -4986,7 +5461,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = TON
-				has_government = authoritarian_monarchism
+				has_government = monarchism
 				has_start_date < 1937.01.01
 				has_start_date > 1935.01.01
 			}
@@ -4997,7 +5472,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = TON
-				has_government = centrist_monarchism
+				has_government = anocratic_monarchism
 				has_start_date > 2022.01.01
 			}
 		}
@@ -5091,9 +5566,87 @@ defined_text = {
 				}
 				has_government = vanguardism
 				has_start_date > 2022.01.01
+				has_start_date < 2049.01.01
 			}
 		}
 		localization_key = "GFX_Ivan_Melnikov"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = RUS
+				has_government = communism
+				has_start_date > 2022.01.01
+				has_start_date < 2049.01.01
+			}
+		}
+		localization_key = "GFX_Alexander_Babakov"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = RUS
+				has_government = socialism_ideology
+				has_start_date > 2022.01.01
+				has_start_date < 2049.01.01
+			}
+		}
+		localization_key = "GFX_Nikolay_Kavkazsky"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = RUS
+				has_government = liberal_republic
+				has_start_date > 2022.01.01
+				has_start_date < 2049.01.01
+			}
+		}
+		localization_key = "GFX_Nikolai_Rybakov"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = RUS
+				has_government = centrist_republic
+				has_start_date > 2022.01.01
+				has_start_date < 2049.01.01
+			}
+		}
+		localization_key = "GFX_Leonid_Volkov"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = RUS
+				has_government = democratic
+				has_start_date > 2022.01.01
+				has_start_date < 2049.01.01
+			}
+		}
+		localization_key = "GFX_Andrey_Nechayev"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = RUS
+				has_government = national_conservative_republic
+				has_start_date > 2022.01.01
+				has_start_date < 2049.01.01
+			}
+		}
+		localization_key = "GFX_Rifat_Shaykhutdinov"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = RUS
+				has_government = anocratic_republic
+				has_start_date > 2022.01.01
+				has_start_date < 2049.01.01
+			}
+		}
+		localization_key = "GFX_Alexei_Nechayev"
 	}
 	text = {
 		trigger = {
@@ -5142,6 +5695,8 @@ defined_text = {
 			AND = {
 				tag = RUS
 				has_government = vanguardism
+				has_start_date > 1935.01.01
+				has_start_date < 1939.01.01
 			}
 		}
 		localization_key = "GFX_Daniil_Sulimov"
@@ -5303,6 +5858,17 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Gabriele_Annunzio"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ITA
+				has_government = anocratic_monarchism
+				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
+			}
+		}
+		localization_key = "GFX_Giovanni_Giolitti"
 	}
 	text = {
 		trigger = {
@@ -5500,6 +6066,17 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Leopold_Figl"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = AUS
+				has_government = socialism_ideology
+				has_start_date > 1900.01.01
+				has_start_date < 2000.01.01
+			}
+		}
+		localization_key = "GFX_Franz_Vranitzsky"
 	}
 	text = {
 		trigger = {
@@ -6115,11 +6692,73 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = SRL
-				has_government = democratic
+				has_government = national_conservative_republic
 				has_start_date > 2022.01.01
 			}
 		}
 		localization_key = "GFX_Dinesh_Gunawardena"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = FRA
+				OR = {
+					has_government = socialism_ideology
+					has_government = socialist_monarchy
+				}
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Lucie_Castets"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = FRA
+				has_government = liberal_republic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Gabriel_Attal"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = FRA
+				OR = {
+					has_government = centrist_republic
+					has_government = centrist_monarchism
+				}
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Francois_Bayrou"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = FRA
+				OR = {
+					has_government = democratic
+					has_government = conservative_monarchism
+				}
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Francois_Bellamy"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = FRA
+				OR = {
+					has_government = national_conservative_republic
+					has_government = national_conservative_monarchism
+				}
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Jordan_Bardella"
 	}
 	text = {
 		trigger = {
@@ -6135,7 +6774,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = FRA
-				has_government = democratic
+				has_government = socialism_ideology
 				has_start_date < 1915.01.01
 				has_start_date > 1913.01.01
 			}
@@ -6259,12 +6898,45 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = NZL
-				has_government = democratic_monarchism
+				has_government = socialist_monarchy
 				has_start_date < 1937.01.01
 				has_start_date > 1935.01.01
 			}
 		}
 		localization_key = "GFX_Michael_Savage"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = NZL
+				has_government = democratic_monarchism
+				has_start_date < 1937.01.01
+				has_start_date > 1935.01.01
+			}
+		}
+		localization_key = "GFX_Eruera_Tirikatene"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = NZL
+				has_government = centrist_monarchism
+				has_start_date < 1937.01.01
+				has_start_date > 1935.01.01
+			}
+		}
+		localization_key = "GFX_Harold_Rushworth"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = NZL
+				has_government = conservative_monarchism
+				has_start_date < 1937.01.01
+				has_start_date > 1935.01.01
+			}
+		}
+		localization_key = "GFX_George_Forbes"
 	}
 	text = {
 		trigger = {
@@ -6706,7 +7378,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = SPR
-				has_government = anocratic_monarchism
+				has_government = authoritarian_monarchism
 				has_start_date < 1915.01.01
 			}
 		}
@@ -6757,6 +7429,8 @@ defined_text = {
 			AND = {
 				tag = ISR
 				has_government = socialism_ideology
+				has_start_date > 1935.01.01
+				has_start_date < 1951.01.01
 			}
 		}
 		localization_key = "GFX_David_Ben_Gurion"
@@ -6765,7 +7439,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = ISR
-				has_government = democratic
+				has_government = national_conservative_republic
 				has_start_date > 1990.01.01
 				has_start_date < 2000.01.01
 			}
@@ -6776,11 +7450,114 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = ISR
+				has_government = vanguardism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Aymen_Odeh"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ISR
+				has_government = communism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Sami_Abu_Shehadeh"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ISR
+				has_government = socialism_ideology
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Yair_Golan"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ISR
+				has_government = liberal_republic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Yair_Lapid"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ISR
+				has_government = centrist_republic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Benny_Gantz"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ISR
+				has_government = democratic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Avigdor_Lieberman"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ISR
+				has_government = national_conservative_republic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Yitzhak_Goldknopf"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ISR
 				has_government = anocratic_republic
 				has_start_date > 2022.01.01
 			}
 		}
 		localization_key = "GFX_Benjamin_Netanyahu"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ISR
+				has_government = neutrality
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Avi_Maoz"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ISR
+				OR = {
+					has_government = republican_fascism
+					has_government = national_socialism
+				}
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Itamar_Ben_Gvir"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ISR
+				has_government = theocratic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Yaakov_Roja"
 	}
 	text = {
 		trigger = {
@@ -6884,6 +7661,17 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = HOL
+				has_government = centrist_monarchism
+				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
+			}
+		}
+		localization_key = "GFX_Pieter_Cort_van_der_Linden"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = HOL
 				has_government = conservative_monarchism
 				has_start_date < 2000.01.01
 				has_start_date > 1991.01.01
@@ -6911,6 +7699,17 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Jean_Luc_Dehaene"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = BEL
+				has_government = conservative_monarchism
+				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
+			}
+		}
+		localization_key = "GFX_Charles_de_Broqueville"
 	}
 	text = {
 		trigger = {
@@ -7099,6 +7898,8 @@ defined_text = {
 			AND = {
 				tag = CZE
 				has_government = centrist_republic
+				has_start_date > 1935.01.01
+				has_start_date < 1937.01.01
 			}
 		}
 		localization_key = "GFX_Milan_Hodza"
@@ -7108,8 +7909,8 @@ defined_text = {
 			AND = {
 				tag = CZE
 				OR = {
-					has_government = liberal_republic
-					has_government = democratic_monarchism
+					has_government = centrist_republic
+					has_government = centrist_monarchism
 				}
 				has_start_date < 2000.01.01
 				has_start_date > 1991.01.01
@@ -7169,12 +7970,29 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = SAF
-				has_government = centrist_monarchism
+				OR = {
+					has_government = national_conservative_republic
+					has_government = national_conservative_monarchism
+				}
 				has_start_date < 1937.01.01
 				has_start_date > 1935.01.01
 			}
 		}
 		localization_key = "GFX_Barry_Hertzog"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SAF
+				OR = {
+					has_government = anocratic_republic
+					has_government = anocratic_monarchism
+				}
+				has_start_date < 1937.01.01
+				has_start_date > 1935.01.01
+			}
+		}
+		localization_key = "GFX_DF_Malan"
 	}
 	text = {
 		trigger = {
@@ -7311,8 +8129,23 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = LUX
+				OR = {
+					has_government = conservative_monarchism
+					has_government = anocratic_monarchism
+				}
+				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
+			}
+		}
+		localization_key = "GFX_Paul_Eyschen"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = LUX
 				has_government = conservative_monarchism
 				has_start_date < 1950.01.01
+				has_start_date > 1945.01.01
 			}
 		}
 		localization_key = "GFX_Joseph_Bech"
@@ -7323,7 +8156,7 @@ defined_text = {
 				tag = LUX
 				has_government = conservative_monarchism
 				has_start_date > 1990.01.01
-				has_start_date < 200.01.01
+				has_start_date < 2000.01.01
 			}
 		}
 		localization_key = "GFX_Jacques_Santer"
@@ -7414,6 +8247,17 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Gheorghe_Tatarescu"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = MOL
+				has_government = anocratic_republic
+				has_start_date > 1990.01.01
+				has_start_date < 2000.01.01
+			}
+		}
+		localization_key = "GFX_Valeriu_Muravschi"
 	}
 	text = {
 		trigger = {
@@ -7619,10 +8463,32 @@ defined_text = {
 			AND = {
 				tag = WES
 				has_government = communism
+				has_start_date > 1990.01.01
+				has_start_date < 2000.01.01
+			}
+		}
+		localization_key = "GFX_Mahfoud_Ali_Beiba"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = WES
+				has_government = communism
 				has_start_date > 2022.01.01
 			}
 		}
 		localization_key = "GFX_Bouchraya_Hammoudi"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ALG
+				has_government = anocratic_republic
+				has_start_date > 1990.01.01
+				has_start_date < 2000.01.01
+			}
+		}
+		localization_key = "GFX_Sid_Ahmed_Ghozali"
 	}
 	text = {
 		trigger = {
@@ -7660,6 +8526,17 @@ defined_text = {
 			AND = {
 				tag = MOR
 				has_government = anocratic_monarchism
+				has_start_date > 1990.01.01
+				has_start_date < 2000.01.01
+			}
+		}
+		localization_key = "GFX_Azzeddin_Laraki"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = MOR
+				has_government = anocratic_monarchism
 				has_start_date > 2022.01.01
 			}
 		}
@@ -7682,6 +8559,17 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Hedi_Lakhoua"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = TUN
+				has_government = neutrality
+				has_start_date > 1990.01.01
+				has_start_date < 2000.01.01
+			}
+		}
+		localization_key = "GFX_Hamed_Karoui"
 	}
 	text = {
 		trigger = {
@@ -7921,6 +8809,17 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Taj_Hasani"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = LEB
+				has_government = anocratic_republic
+				has_start_date > 1990.01.01
+				has_start_date < 2000.01.01
+			}
+		}
+		localization_key = "GFX_Omar_Karami"
 	}
 	text = {
 		trigger = {
@@ -8460,6 +9359,17 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = SIA
+				has_government = stratocratic_monarchism
+				has_start_date > 1990.01.01
+				has_start_date < 2000.01.01
+			}
+		}
+		localization_key = "GFX_Anand_Panyarachun"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SIA
 				has_government = anocratic_monarchism
 				has_start_date > 2022.01.01
 			}
@@ -8471,7 +9381,8 @@ defined_text = {
 			AND = {
 				tag = SIA
 				has_government = stratocratic_monarchism
-				has_start_date < 2022.01.01
+				has_start_date > 1936.01.01
+				has_start_date < 1939.01.01
 			}
 		}
 		localization_key = "GFX_Phraya_Phahon"
@@ -8490,11 +9401,33 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = MAL
+				has_government = national_conservative_monarchism
+				has_start_date > 1990.01.01
+				has_start_date < 2000.01.01
+			}
+		}
+		localization_key = "GFX_Mahathir_Mohamad"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = MAL
 				has_government = democratic_monarchism
 				has_start_date > 2022.01.01
 			}
 		}
 		localization_key = "GFX_Anwar_Ibrahim"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SGP
+				has_government = anocratic_republic
+				has_start_date > 1990.01.01
+				has_start_date < 2000.01.01
+			}
+		}
+		localization_key = "GFX_Goh_Chok_Tong"
 	}
 	text = {
 		trigger = {
@@ -8582,7 +9515,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = CRO
-				has_government = democratic
+				has_government = national_conservative_republic
 				has_start_date > 1992.01.01
 				has_start_date < 2000.01.01
 			}
@@ -8688,7 +9621,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = MAC
-				has_government = democratic
+				has_government = national_conservative_republic
 				has_start_date > 1992.01.01
 				has_start_date < 2000.01.01
 			}
@@ -8869,7 +9802,10 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = PAL
-				has_government = neutrality
+				OR = {
+					has_government = anocratic_republic
+					has_government = neutrality
+				}
 				has_start_date > 2022.01.01
 			}
 		}

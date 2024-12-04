@@ -1,4 +1,4 @@
-	state={
+state={
 	id=1444
 	name="STATE_1444"
 	
@@ -7,10 +7,13 @@
 		add_core_of = CAN
 		add_core_of = QUE
 		
+		victory_points = {
+			10715 1
+		}
 	}
 	
 	provinces={
-		7807 7893 10715 15288 15289
+		10715
 	}
 	manpower=1
 	buildings_max_level_factor=1.000

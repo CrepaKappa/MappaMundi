@@ -162,6 +162,11 @@ spriteTypes = {
     }
 	
 	spriteType = {
+        name = GFX_Franz_Vranitzsky
+        texturefile = "gfx/leaders/AUS/AUS_Vranitzsky.tga"
+    }
+	
+	spriteType = {
         name = GFX_Karl_Nehammer
         texturefile = "gfx/leaders/AUS/AUS_Nehammer.tga"
     }
@@ -295,8 +300,13 @@ spriteTypes = {
     }
 	
 	spriteType = {
-        name = GFX_Mikhail_Mishtusin
-        texturefile = "gfx/leaders/Russia/RUS_Mishtusin.tga"
+        name = GFX_Jospeh_Stalin
+        texturefile = "gfx/leaders/Russia/Portrait_Soviet_Joseph_Stalin.dds"
+    }
+	
+	spriteType = {
+        name = GFX_Jospeh_Stalin_1950
+        texturefile = "gfx/leaders/Russia/SOV_Stalin_1950.tga"
     }
 	
 	spriteType = {
@@ -305,13 +315,48 @@ spriteTypes = {
     }
 	
 	spriteType = {
-        name = GFX_Jospeh_Stalin
-        texturefile = "gfx/leaders/Russia/Portrait_Soviet_Joseph_Stalin.dds"
+        name = GFX_Gennady_Zyuganov
+        texturefile = "gfx/leaders/Russia/RUS_Zyuganov.tga"
     }
 	
 	spriteType = {
-        name = GFX_Jospeh_Stalin_1950
-        texturefile = "gfx/leaders/Russia/SOV_Stalin_1950.tga"
+        name = GFX_Alexander_Babakov
+        texturefile = "gfx/leaders/Russia/Portrait_Alexander_Babakov.dds"
+    }
+	
+	spriteType = {
+        name = GFX_Nikolay_Kavkazsky
+        texturefile = "gfx/leaders/Russia/RUS_Kavkazsky.tga"
+    }
+	
+	spriteType = {
+        name = GFX_Nikolai_Rybakov
+        texturefile = "gfx/leaders/Russia/RUS_Rybakov.tga"
+    }
+	
+	spriteType = {
+        name = GFX_Leonid_Volkov
+        texturefile = "gfx/leaders/Russia/RUS_Volkov.tga"
+    }
+	
+	spriteType = {
+        name = GFX_Andrey_Nechayev
+        texturefile = "gfx/leaders/Russia/RUS_Andrey_Nechayev.tga"
+    }
+	
+	spriteType = {
+        name = GFX_Rifat_Shaykhutdinov
+        texturefile = "gfx/leaders/Russia/RUS_Shaykhutdinov.tga"
+    }
+	
+	spriteType = {
+        name = GFX_Alexei_Nechayev
+        texturefile = "gfx/leaders/Russia/RUS_Alexei_Nechayev.tga"
+    }
+	
+	spriteType = {
+        name = GFX_Mikhail_Mishtusin
+        texturefile = "gfx/leaders/Russia/RUS_Mishtusin.tga"
     }
 	
 	### United Kingdom ###
@@ -477,6 +522,11 @@ spriteTypes = {
 	spriteType = {
         name = GFX_Luca_Romagnoli
         texturefile = "gfx/leaders/ITA/ITA_Romagnoli.tga"
+    }
+	
+	spriteType = {
+        name = GFX_Giovanni_Giolitti
+        texturefile = "gfx/leaders/ITA/ITA_Giolitti.tga"
     }
 	
 	### Malta ###
@@ -719,6 +769,26 @@ spriteTypes = {
     }
 	
 	spriteType = {
+        name = GFX_Lucie_Castets
+        texturefile = "gfx/leaders/FRA/FRA_Castets.tga"
+    }
+	
+	spriteType = {
+        name = GFX_Francois_Bayrou
+        texturefile = "gfx/leaders/FRA/FRA_Bayrou.tga"
+    }
+	
+	spriteType = {
+        name = GFX_Francois_Bellamy
+        texturefile = "gfx/leaders/FRA/FRA_Bellamy.tga"
+    }
+	
+	spriteType = {
+        name = GFX_Jordan_Bardella
+        texturefile = "gfx/leaders/FRA/FRA_Bardella.tga"
+    }
+	
+	spriteType = {
         name = GFX_Georges_Bidault
         texturefile = "gfx/leaders/FRA/Portrait_Georges_Bidault.dds"
     }
@@ -784,6 +854,21 @@ spriteTypes = {
 	spriteType = {
         name = GFX_Michael_Savage
         texturefile = "gfx/leaders/NZL/NZL_michael_joseph_savage.dds"
+    }
+	
+	spriteType = {
+        name = GFX_Eruera_Tirikatene
+        texturefile = "gfx/leaders/NZL/NZL_Tirikatene.tga"
+    }
+	
+	spriteType = {
+        name = GFX_Harold_Rushworth
+        texturefile = "gfx/leaders/NZL/Portrait_Harold_Rushworth.dds"
+    }
+	
+	spriteType = {
+        name = GFX_George_Forbes
+        texturefile = "gfx/leaders/NZL/Portrait_George_Forbes.dds"
     }
 	
 	spriteType = {
@@ -1084,6 +1169,56 @@ spriteTypes = {
         texturefile = "gfx/leaders/ISR/ISR_Bibi.tga"
     }
 	
+	spriteType = {
+        name = GFX_Yair_Lapid
+        texturefile = "gfx/leaders/ISR/ISR_Lapid.tga"
+    }
+	
+	spriteType = {
+        name = GFX_Benny_Gantz
+        texturefile = "gfx/leaders/ISR/ISR_Gantz.tga"
+    }
+	
+	spriteType = {
+        name = GFX_Yair_Golan
+        texturefile = "gfx/leaders/ISR/ISR_Golan.tga"
+    }
+	
+	spriteType = {
+        name = GFX_Avigdor_Lieberman
+        texturefile = "gfx/leaders/ISR/ISR_Lieberman.tga"
+    }
+	
+	spriteType = {
+        name = GFX_Yitzhak_Goldknopf
+        texturefile = "gfx/leaders/ISR/ISR_Goldknopf.tga"
+    }
+	
+	spriteType = {
+        name = GFX_Avi_Maoz
+        texturefile = "gfx/leaders/ISR/ISR_Maoz.tga"
+    }
+	
+	spriteType = {
+        name = GFX_Itamar_Ben_Gvir
+        texturefile = "gfx/leaders/ISR/ISR_Ben-Gvir.tga"
+    }
+	
+	spriteType = {
+        name = GFX_Sami_Abu_Shehadeh
+        texturefile = "gfx/leaders/ISR/ISR_Abu_Shehadeh.tga"
+    }
+	
+	spriteType = {
+        name = GFX_Aymen_Odeh
+        texturefile = "gfx/leaders/ISR/ISR_Odeh.tga"
+    }
+	
+	spriteType = {
+        name = GFX_Yaakov_Roja
+        texturefile = "gfx/leaders/ISR/ISR_Roja.tga"
+    }
+	
 	### Ukraine ###
 	
 	spriteType = {
@@ -1155,6 +1290,11 @@ spriteTypes = {
         texturefile = "gfx/leaders/HOL/Portrait_Ruud_Lubbers.dds"
     }
 	
+	spriteType = {
+        name = GFX_Pieter_Cort_van_der_Linden
+        texturefile = "gfx/leaders/HOL/HOL_Cort_van_der_Linden.tga"
+    }
+	
 	### Belgium ###
 	
 	spriteType = {
@@ -1172,6 +1312,11 @@ spriteTypes = {
         texturefile = "gfx/leaders/BEL/Portrait_Jean_Luc_Dehaene.dds"
     }
 	
+	spriteType = {
+        name = GFX_Charles_de_Broqueville
+        texturefile = "gfx/leaders/BEL/BEL_de Broqueville.tga"
+    }
+	
 	### Luxembourg ###
 	
 	spriteType = {
@@ -1187,6 +1332,11 @@ spriteTypes = {
 	spriteType = {
         name = GFX_Jacques_Santer
         texturefile = "gfx/leaders/LUX/Portrait_Jacques_Santer.dds"
+    }
+	
+	spriteType = {
+        name = GFX_Paul_Eyschen
+        texturefile = "gfx/leaders/LUX/Portrait_Paul_Eyschen.dds"
     }
 	
 	### Liechtenstein ###
@@ -1402,6 +1552,11 @@ spriteTypes = {
     }
 	
 	spriteType = {
+        name = GFX_DF_Malan
+        texturefile = "gfx/leaders/SAF/SAF_Malan.tga"
+    }
+	
+	spriteType = {
         name = GFX_Louis_Botha
         texturefile = "gfx/leaders/SAF/Portrait_Louis_Botha.dds"
     }
@@ -1429,6 +1584,11 @@ spriteTypes = {
     }
 	
 	spriteType = {
+        name = GFX_Azzeddin_Laraki
+        texturefile = "gfx/leaders/MOR/MOR_Laraki.tga"
+    }
+	
+	spriteType = {
         name = GFX_Aziz_Akhannouch
         texturefile = "gfx/leaders/MOR/MOR_Akhannouch.tga"
     }
@@ -1436,11 +1596,21 @@ spriteTypes = {
 	### Western Sahara ###
 	
 	spriteType = {
+        name = GFX_Mahfoud_Ali_Beiba
+        texturefile = "gfx/leaders/WES/WES_Beiba.tga"
+    }
+	
+	spriteType = {
         name = GFX_Bouchraya_Hammoudi
         texturefile = "gfx/leaders/WES/WES_Hammoudi.tga"
     }
 
 	### Algeria ###
+	
+	spriteType = {
+        name = GFX_Sid_Ahmed_Ghozali
+        texturefile = "gfx/leaders/ALG/ALG_Ghozali.tga"
+    }
 	
 	spriteType = {
         name = GFX_Nadir_Larbaoui
@@ -1462,6 +1632,11 @@ spriteTypes = {
 	spriteType = {
         name = GFX_Marcel_Peyrouton
         texturefile = "gfx/leaders/TUN/TUN_Peyrouton.tga"
+    }
+	
+	spriteType = {
+        name = GFX_Hamed_Karoui
+        texturefile = "gfx/leaders/TUN/TUN_Karoui.tga"
     }
 	
 	spriteType = {
@@ -1632,6 +1807,11 @@ spriteTypes = {
         texturefile = "gfx/leaders/SWI/Portrait_Arthur_Hoffmann.dds"
     }
 	
+	spriteType = {
+        name = GFX_Giuseppe_Motta
+        texturefile = "gfx/leaders/SWI/SWI_Motta_1914.tga"
+    }
+	
 	### Burma ###
 	
 	spriteType = {
@@ -1649,6 +1829,11 @@ spriteTypes = {
 	spriteType = {
         name = GFX_Rama_VIII
         texturefile = "gfx/leaders/SIA/Portrait_Rama_VIII.tga"
+    }
+	
+	spriteType = {
+        name = GFX_Anand_Panyarachun
+        texturefile = "gfx/leaders/SIA/SIA_Panyarachun.tga"
     }
 	
 	spriteType = {
@@ -1676,6 +1861,11 @@ spriteTypes = {
 	### Malaysia ###
 	
 	spriteType = {
+        name = GFX_Mahathir_Mohamad
+        texturefile = "gfx/leaders/MAL/MAL_Mahathir.tga"
+    }
+	
+	spriteType = {
         name = GFX_Anwar_Ibrahim
         texturefile = "gfx/leaders/MAL/MAL_Ibrahim.tga"
     }
@@ -1683,13 +1873,13 @@ spriteTypes = {
 	### Singapore ###
 	
 	spriteType = {
-        name = GFX_Lawrence_Wong
-        texturefile = "gfx/leaders/SGP/SGP_Wong.tga"
+        name = GFX_Goh_Chok_Tong
+        texturefile = "gfx/leaders/SGP/SGP_Goh.tga"
     }
 	
 	spriteType = {
-        name = GFX_Christian_Schmidt
-        texturefile = "gfx/leaders/BOS/BOS_Schmidt.tga"
+        name = GFX_Lawrence_Wong
+        texturefile = "gfx/leaders/SGP/SGP_Wong.tga"
     }
 	
 	### Yugoslavia ###
@@ -1760,6 +1950,11 @@ spriteTypes = {
 	spriteType = {
         name = GFX_Borjana_Kristo
         texturefile = "gfx/leaders/BOS/BOS_Kristo.tga"
+    }
+	
+	spriteType = {
+        name = GFX_Christian_Schmidt
+        texturefile = "gfx/leaders/BOS/BOS_Schmidt.tga"
     }
 	
 	### Serbia ###
@@ -1977,6 +2172,11 @@ spriteTypes = {
     }
 	
 	### Moldova ###
+	
+	spriteType = {
+        name = GFX_Valeriu_Muravschi
+        texturefile = "gfx/leaders/MOL/MOL_Muravschi.tga"
+    }
 	
 	spriteType = {
         name = GFX_Dorin_Recean
@@ -2323,6 +2523,11 @@ spriteTypes = {
     }
 	
 	spriteType = {
+        name = GFX_Omar_Karami
+        texturefile = "gfx/leaders/LEB/LEB_Karami.tga"
+    }
+	
+	spriteType = {
         name = GFX_Najib_Mikati
         texturefile = "gfx/leaders/LEB/LEB_Mikati.tga"
     }
@@ -2425,6 +2630,11 @@ spriteTypes = {
     }
 
 	### West Bank ###
+	
+	spriteType = {
+        name = GFX_Mohammad_Mustafa
+        texturefile = "gfx/leaders/PAL/PAL_Safrani.tga"
+    }
 	
 	spriteType = {
         name = GFX_Mohammad_Mustafa

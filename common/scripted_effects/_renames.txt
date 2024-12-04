@@ -6,6 +6,38 @@
 ###################################################################################################################################
 
 do_spanish_renames = {
+	#North America
+	#USA
+	#Alaska
+	if = {
+		limit = {
+			state = 2819
+		}		
+		set_province_name = {
+			id = 14229
+			name = "Siatca"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 463
+		}		
+		set_province_name = {
+			id = 13091
+			name = "Anclaje"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 1030
+		}		
+		set_province_name = {
+			id = 13203
+			name = "Juneau"
+		}
+	}
 
 	if = {
 		limit = {
@@ -4004,7 +4036,38 @@ do_lower_german_renames = {
     }
 }
 do_german_renames = {
+	#North America
+	#USA
+	#Alaska
+	if = {
+		limit = {
+			state = 2819
+		}		
+		set_province_name = {
+			id = 14229
+			name = "Sitka"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 463
+		}		
+		set_province_name = {
+			id = 13091
+			name = "Ankerplatz"
+		}
+	}
 
+	if = {
+		limit = {
+			state = 1030
+		}		
+		set_province_name = {
+			id = 13203
+			name = "Prinz-Johan-Stadt"
+		}
+	}
 	if = {
 		limit = {
 			state = 3780
@@ -6141,10 +6204,10 @@ do_german_renames = {
 
     if = {
 		limit = {
-			state = 2787
+			state = 20269
 		}		
 		set_province_name = {
-			id = 6619
+			id = 1229
 			name = "Prijedor"
 		}
 	}
@@ -10323,20 +10386,20 @@ do_german_renames = {
 
 	if = {
 		limit = {
-			state = 2264
+			state = 7355
 		}		
 		set_province_name = {
-			id = 13857
+			id = 17085
 			name = "Bertschko"
 		}
 	}
 
 	if = {
 		limit = {
-			state = 2267
+			state = 20260
 		}		
 		set_province_name = {
-			id = 11899
+			id = 2273
 			name = "Sarajewo"
 		}
 	}
@@ -10880,10 +10943,10 @@ do_burmese_renames = {
 
 	if = {
 		limit = {
-			state = 2217
+			state = 8496
 		}		
 		set_province_name = {
-			id = 1566
+			id = 18252
 			name = "Toṅʻkrī"
 		}
 	}
@@ -11126,10 +11189,10 @@ do_thai_renames = {
 
 	if = {
 		limit = {
-			state = 2217
+			state = 8496
 		}		
 		set_province_name = {
-			id = 1566
+			id = 18252
 			name = "Taunggyi"
 		}
 	}
@@ -15397,10 +15460,10 @@ do_pinyin_renames = {
 
 	if = {
 		limit = {
-			state = 2217
+			state = 8496
 		}		
 		set_province_name = {
-			id = 1566
+			id = 18252
 			name = "Dōngzhī"
 		}
 	}
@@ -21380,7 +21443,7 @@ do_japanese_renames = {
 			name = "Iwō Jima"
 		}
 	}
-
+	
 	if = {
 		limit = {
 			state = 536
@@ -21388,6 +21451,11 @@ do_japanese_renames = {
 		set_province_name = {
 			id = 10444
 			name = "Sapporo"
+		}
+	
+	if = {
+		limit = {
+			state = 16573
 		}
 		set_province_name = {
 			id = 12421
@@ -21835,10 +21903,10 @@ do_japanese_renames = {
 
 	if = {
 		limit = {
-			state = 3253
+			state = 4213
 		}		
 		set_province_name = {
-			id = 14318
+			id = 1238
 			name = "Kōchin"
 		}
 	}
@@ -22202,17 +22270,9 @@ do_japanese_renames = {
 			name = "Attsu"
 		}
 	}
-
-	if = {
-		limit = {
-			state = 3108
-		}		
-		set_province_name = {
-			id = 13090
-			name = "Unarasuka"
-		}
-	}
-
+#North America
+#USA
+#Alaska
 	if = {
 		limit = {
 			state = 463
@@ -22220,6 +22280,16 @@ do_japanese_renames = {
 		set_province_name = {
 			id = 13091
 			name = "Ankarejji"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 2819
+		}		
+		set_province_name = {
+			id = 14229
+			name = "Sitoka"
 		}
 	}
 
@@ -23325,10 +23395,10 @@ do_japanese_renames = {
 
 	if = {
 		limit = {
-			state = 2217
+			state = 8496
 		}		
 		set_province_name = {
-			id = 1566
+			id = 18252
 			name = "Taunjī"
 		}
 	}
@@ -26350,23 +26420,6 @@ do_russian_renames = {
 			name = "Petróvsk-Zabaykálʹskiy"
 		}
 	}
-		
-	if = {
-		limit = {
-			state = 564
-			ROOT = {
-				is_russian_communist_warlord = yes
-			}
-		}	
-		set_province_name = {
-			id = 7835
-			name = "Verkhneúdinsk"
-		}
-		set_province_name = {
-			id = 1696
-			name = "Petróvsk-Zabaykálʹskiy"
-		}
-	}
 
 	if = {
 		limit = {
@@ -26399,32 +26452,6 @@ do_russian_renames = {
 		set_province_name = {
 			id = 6124
 			name = "Kírov"
-		}
-	}
-
-	if = {
-		limit = {
-			state = 400
-			ROOT = {
-				is_russian_communist_warlord = yes
-			}
-		}		
-		set_province_name = {
-			id = 6124
-			name = "Rýkov"
-		}
-	}
-
-	if = {
-		limit = {
-			state = 400
-			ROOT = {
-				is_russian_monarchist_warlord = yes
-			}
-		}		
-		set_province_name = {
-			id = 6124
-			name = "Vyátka"
 		}
 	}
 
@@ -26879,7 +26906,6 @@ do_russian_renames = {
 					has_government = socialist_monarchy
 					has_government = stratocratic
 					has_government = stratocratic_monarchism
-					is_russian_communist_warlord = yes
 				}
 			}
 		}		
@@ -28795,10 +28821,10 @@ do_russian_renames = {
 
     if = {
 		limit = {
-			state = 2787
+			state = 20269
 		}		
 		set_province_name = {
-			id = 6619
+			id = 1229
 			name = "Priyedor"
 		}
 	}
@@ -29264,7 +29290,6 @@ do_russian_renames = {
 					has_government = socialist_monarchy
 					has_government = stratocratic
 					has_government = stratocratic_monarchism
-					is_russian_communist_warlord = yes
 				}
 			}
 		}		
@@ -30232,20 +30257,20 @@ do_russian_renames = {
 
 	if = {
 		limit = {
-			state = 2264
+			state = 7355
 		}		
 		set_province_name = {
-			id = 13857
+			id = 17085
 			name = "Brchko"
 		}
 	}
 
 	if = {
 		limit = {
-			state = 2267
+			state = 20260
 		}		
 		set_province_name = {
-			id = 11899
+			id = 2273
 			name = "Saráyevo"
 		}
 	}
@@ -30727,36 +30752,6 @@ do_russian_renames = {
 		set_province_name = {
 			id = 13057
 			name = "Ostróv Attú"
-		}
-	}
-
-	if = {
-		limit = {
-			state = 3108
-		}		
-		set_province_name = {
-			id = 13090
-			name = "Unaláshka"
-		}
-	}
-
-	if = {
-		limit = {
-			state = 463
-		}		
-		set_province_name = {
-			id = 13091
-			name = "Ánkoridzh"
-		}
-	}
-
-	if = {
-		limit = {
-			state = 1030
-		}		
-		set_province_name = {
-			id = 13203
-			name = "Dzhúno"
 		}
 	}
 
@@ -31961,7 +31956,6 @@ do_russian_renames = {
 					has_government = socialist_monarchy
 					has_government = stratocratic
 					has_government = stratocratic_monarchism
-					is_russian_communist_warlord = yes
 				}
 			}
 		}		
@@ -32165,6 +32159,38 @@ do_russian_renames = {
 		}
 	}
 }
+#North America
+#USA
+#Alaska
+	if = {
+		limit = {
+			state = 2819
+		}		
+		set_province_name = {
+			id = 14229
+			name = "Nóvo-Arxángelʹsk"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 463
+		}		
+		set_province_name = {
+			id = 13091
+			name = "Ánkoridzh"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 1030
+		}		
+		set_province_name = {
+			id = 13203
+			name = "Džúno"
+		}
+	}
 
 do_soviet_renames = {
 
@@ -32702,6 +32728,16 @@ do_hebrew_renames = {
 			name = "Ḥēyfah"
 		}
 	}
+		
+	if = {
+		limit = {
+			state = 17545
+		}		
+		set_province_name = {
+			id = 8294
+			name = "Ariyʾel"
+		}
+	}
 
 	if = {
 		limit = {
@@ -32712,10 +32748,30 @@ do_hebrew_renames = {
 			name = "Tēl Āviv-Yāfo"
 		}
 	}
+	
+	if = {
+		limit = {
+			state = 9261
+		}		
+		set_province_name = {
+			id = 18405
+			name = "Cagallo"
+		}
+	}
 
 }
 
 do_arabic_renames = {
+
+	if = {
+		limit = {
+			state = 17401
+		}		
+		set_province_name = {
+			id = 7234
+			name = "Marjayoun"
+		}
+	}
 
 	if = {
 		limit = {
@@ -33980,10 +34036,30 @@ do_arabic_renames = {
 			name = "Tarabizun"
 		}
 	}
+	
+	if = {
+		limit = {
+			state = 9261
+		}		
+		set_province_name = {
+			id = 18405
+			name = "Sāġlū"
+		}
+	}
 
 }
 
 do_standard_arabic_renames = {
+
+	if = {
+		limit = {
+			state = 17401
+		}		
+		set_province_name = {
+			id = 7234
+			name = "Marǧʿayūn"
+		}
+	}
 
 	if = {
 		limit = {
@@ -34147,7 +34223,7 @@ do_standard_arabic_renames = {
 	
 	if = {
 		limit = {
-			state = 7623
+			state = 7653
 		}
 		set_province_name = {
 			id = 16324
@@ -36090,6 +36166,16 @@ do_standard_arabic_renames = {
 		
 	if = {
 		limit = {
+			state = 17545
+		}		
+		set_province_name = {
+			id = 8294
+			name = "Arīʾīl"
+		}
+	}
+		
+	if = {
+		limit = {
 			state = 3375
 		}		
 		set_province_name = {
@@ -36575,6 +36661,36 @@ do_standard_arabic_renames = {
 		set_province_name = {
 			id = 14408
 			name = "Al-Madīnaẗ al-Munawwaraẗ"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 14427
+		}		
+		set_province_name = {
+			id = 12883
+			name = "Jiddaẗ"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 964
+		}		
+		set_province_name = {
+			id = 4968
+			name = "Hāʾīl"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 896
+		}		
+		set_province_name = {
+			id = 12702
+			name = "Dammām"
 		}
 	}
 }
@@ -39953,10 +40069,10 @@ do_indian_renames = {
 
 	if = {
 		limit = {
-			state = 3253
+			state = 4213
 		}		
 		set_province_name = {
-			id = 14318
+			id = 1238
 			name = "Kochi"
 		}
 	}
@@ -40106,6 +40222,16 @@ do_sinhalese_renames = {
 }
 
 do_english_renames = {
+	
+	if = {
+		limit = {
+			state = 1593
+		}		
+		set_province_name = {
+			id = 10929
+			name = "Salisbury"
+		}
+	}
 
 	if = {
 		limit = {
@@ -40494,6 +40620,16 @@ do_english_renames = {
 		set_province_name = {
 			id = 1201
 			name = "Haifa"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 17545
+		}		
+		set_province_name = {
+			id = 8294
+			name = "Ariel"
 		}
 	}
 		
@@ -42323,10 +42459,10 @@ do_english_renames = {
 
 	if = {
 		limit = {
-			state = 3253
+			state = 4213
 		}		
 		set_province_name = {
-			id = 14318
+			id = 1238
 			name = "Cochin"
 		}
 	}
@@ -43013,10 +43149,10 @@ do_english_renames = {
 
 	if = {
 		limit = {
-			state = 2217
+			state = 8496
 		}		
 		set_province_name = {
-			id = 1566
+			id = 18252
 			name = "Taunggyi"
 		}
 	}
@@ -43691,9 +43827,53 @@ do_english_renames = {
 		}
 		set_state_name = "Georgetown"
 	}
+	
+	if = {
+		limit = {
+			state = 1952
+		}		
+		set_province_name = {
+			id = 12381
+			name = "Cow Ford"
+		}
+		set_state_name = "Cow Ford"
+	}
 }
 
 do_american_renames = {
+	#North America
+	#USA
+	#Alaska
+	if = {
+		limit = {
+			state = 2819
+		}		
+		set_province_name = {
+			id = 14229
+			name = "Sitka"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 463
+		}		
+		set_province_name = {
+			id = 13091
+			name = "Anchorage"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 1030
+		}		
+		set_province_name = {
+			id = 13203
+			name = "Juneau"
+		}
+	}
+	#Other
 	if = {
 		limit = {
 			state = 4395
@@ -43857,6 +44037,17 @@ do_american_renames = {
 			name = "Los Angeles"
 		}		
 		set_state_name = "Central Los Angeles"
+	}
+	
+	if = {
+		limit = {
+			state = 1952
+		}		
+		set_province_name = {
+			id = 12381
+			name = "Jacksonville"
+		}
+		set_state_name = "Jacksonville"
 	}
 }
 
@@ -44468,10 +44659,10 @@ do_latin_renames = {
 
     if = {
 		limit = {
-			state = 2787
+			state = 20269
 		}		
 		set_province_name = {
-			id = 6619
+			id = 1229
 			name = "Prijedor"
 		}
 	}
@@ -44968,6 +45159,16 @@ do_latin_renames = {
 		
 	if = {
 		limit = {
+			state = 17545
+		}		
+		set_province_name = {
+			id = 8294
+			name = "Ariel"
+		}
+	}
+		
+	if = {
+		limit = {
 			state = 1209
 		}		
 		set_province_name = {
@@ -45292,7 +45493,7 @@ do_latin_renames = {
 		}		
 		set_province_name = {
 			id = 15986
-			name = "Łuczany"
+			name = "Letzen"
 		}
 	}
 
@@ -48219,10 +48420,10 @@ do_latin_renames = {
 
 	if = {
 		limit = {
-			state = 2264
+			state = 7355
 		}		
 		set_province_name = {
-			id = 13857
+			id = 17085
 			name = "Breucus"
 		}
 	}
@@ -48239,10 +48440,10 @@ do_latin_renames = {
 
 	if = {
 		limit = {
-			state = 2267
+			state = 20260
 		}		
 		set_province_name = {
-			id = 11899
+			id = 2273
 			name = "Seraium"
 		}
 	}
@@ -49756,7 +49957,7 @@ do_belarussian_renames = {
 		}		
 		set_province_name = {
 			id = 3194
-			name = "Talsi"
+			name = "Kuldiga"
 		}
 	}
 
@@ -53008,10 +53209,10 @@ do_polish_renames = {
 
     if = {
 		limit = {
-			state = 2787
+			state = 20269
 		}		
 		set_province_name = {
-			id = 6619
+			id = 1229
 			name = "Prijedor"
 		}
 	}
@@ -53728,20 +53929,20 @@ do_polish_renames = {
 
 	if = {
 		limit = {
-			state = 2264
+			state = 7355
 		}		
 		set_province_name = {
-			id = 13857
+			id = 17085
 			name = "Brczko"
 		}
 	}
 
 	if = {
 		limit = {
-			state = 2267
+			state = 20260
 		}		
 		set_province_name = {
-			id = 11899
+			id = 2273
 			name = "Sarajewo"
 		}
 	}
@@ -54383,6 +54584,15 @@ do_polish_renames = {
 		set_province_name = {
 			id = 15986
 			name = "Łuczany"
+		}
+		if = {
+			limit = {
+				has_start_date > 2024.01.01
+			}
+			set_province_name = {
+				id = 15986
+				name = "Giżycko"
+			}
 		}
 	}
 
@@ -56854,10 +57064,10 @@ do_czech_renames = {
 
     if = {
 		limit = {
-			state = 2787
+			state = 20269
 		}		
 		set_province_name = {
-			id = 6619
+			id = 1229
 			name = "Prijedor"
 		}
 	}
@@ -57024,20 +57234,20 @@ do_czech_renames = {
 
 	if = {
 		limit = {
-			state = 2264
+			state = 7355
 		}		
 		set_province_name = {
-			id = 13857
+			id = 17085
 			name = "Bričko"
 		}
 	}
 
 	if = {
 		limit = {
-			state = 2267
+			state = 20260
 		}		
 		set_province_name = {
-			id = 11899
+			id = 2273
 			name = "Sarajevo"
 		}
 	}
@@ -59712,10 +59922,10 @@ do_serbocroat_renames = {
 
     if = {
 		limit = {
-			state = 2787
+			state = 20269
 		}		
 		set_province_name = {
-			id = 6619
+			id = 1229
 			name = "Prijedor"
 		}
 	}
@@ -59862,20 +60072,20 @@ do_serbocroat_renames = {
 	
 	if = {
 		limit = {
-			state = 2264
+			state = 7355
 		}		
 		set_province_name = {
-			id = 13857
+			id = 17085
 			name = "Brčko"
 		}
 	}
 	
 	if = {
 		limit = {
-			state = 2267
+			state = 20260
 		}		
 		set_province_name = {
-			id = 11899
+			id = 2273
 			name = "Sarajevo"
 		}
 	}
@@ -60064,10 +60274,10 @@ do_yugoslavian_renames = {
 
     if = {
 		limit = {
-			state = 2787
+			state = 20269
 		}		
 		set_province_name = {
-			id = 6619
+			id = 1229
 			name = "Prijedor"
 		}
 	}
@@ -60324,20 +60534,20 @@ do_yugoslavian_renames = {
 
 	if = {
 		limit = {
-			state = 2264
+			state = 7355
 		}		
 		set_province_name = {
-			id = 13857
+			id = 17085
 			name = "Brčko"
 		}
 	}
 
 	if = {
 		limit = {
-			state = 2267
+			state = 20260
 		}		
 		set_province_name = {
-			id = 11899
+			id = 2273
 			name = "Sarajevo"
 		}
 	}
@@ -62704,10 +62914,10 @@ do_hungarian_renames = {
 
     if = {
 		limit = {
-			state = 2787
+			state = 20269
 		}		
 		set_province_name = {
-			id = 6619
+			id = 1229
 			name = "Prijedór"
 		}
 	}
@@ -63074,10 +63284,10 @@ do_hungarian_renames = {
 
 	if = {
 		limit = {
-			state = 2264
+			state = 7355
 		}		
 		set_province_name = {
-			id = 13857
+			id = 17085
 			name = "Bricsko"
 		}
 	}
@@ -63094,10 +63304,10 @@ do_hungarian_renames = {
 
 	if = {
 		limit = {
-			state = 2267
+			state = 20260
 		}		
 		set_province_name = {
-			id = 11899
+			id = 2273
 			name = "Szarajevó"
 		}
 	}
@@ -63626,10 +63836,10 @@ do_romanian_renames = {
 
     if = {
 		limit = {
-			state = 2787
+			state = 20269
 		}		
 		set_province_name = {
-			id = 6619
+			id = 1229
 			name = "Priedor"
 		}
 	}
@@ -63886,20 +64096,20 @@ do_romanian_renames = {
 
 	if = {
 		limit = {
-			state = 2264
+			state = 7355
 		}		
 		set_province_name = {
-			id = 13857
+			id = 17085
 			name = "Bărcico"
 		}
 	}
 
 	if = {
 		limit = {
-			state = 2267
+			state = 20260
 		}		
 		set_province_name = {
-			id = 11899
+			id = 2273
 			name = "Saraievo"
 		}
 	}
@@ -65270,10 +65480,10 @@ do_greek_renames = {
 
     if = {
 		limit = {
-			state = 2787
+			state = 20269
 		}		
 		set_province_name = {
-			id = 6619
+			id = 1229
 			name = "Priédor"
 		}
 	}
@@ -66048,10 +66258,10 @@ do_greek_renames = {
 
 	if = {
 		limit = {
-			state = 2264
+			state = 7355
 		}		
 		set_province_name = {
-			id = 13857
+			id = 17085
 			name = "Vrefkoi"
 		}
 	}
@@ -66068,10 +66278,10 @@ do_greek_renames = {
 
 	if = {
 		limit = {
-			state = 2267
+			state = 20260
 		}		
 		set_province_name = {
-			id = 11899
+			id = 2273
 			name = "Saráyevo"
 		}
 	}	
@@ -67447,10 +67657,10 @@ do_albanian_renames = {
 
     if = {
 		limit = {
-			state = 2787
+			state = 20269
 		}		
 		set_province_name = {
-			id = 6619
+			id = 1229
 			name = "Prijedor"
 		}
 	}
@@ -67607,20 +67817,20 @@ do_albanian_renames = {
 
 	if = {
 		limit = {
-			state = 2264
+			state = 7355
 		}		
 		set_province_name = {
-			id = 13857
+			id = 17085
 			name = "Bërçka"
 		}
 	}
 
 	if = {
 		limit = {
-			state = 2267
+			state = 20260
 		}		
 		set_province_name = {
-			id = 11899
+			id = 2273
 			name = "Sarajeva"
 		}
 	}
@@ -69634,10 +69844,10 @@ do_turkish_renames = {
 
     if = {
 		limit = {
-			state = 2787
+			state = 20269
 		}		
 		set_province_name = {
-			id = 6619
+			id = 1229
 			name = "Pridor"
 		}
 	}
@@ -70059,6 +70269,16 @@ do_turkish_renames = {
 		set_province_name = {
 			id = 1201
 			name = "Hayfa"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 17545
+		}		
+		set_province_name = {
+			id = 8294
+			name = "Eriyel"
 		}
 	}
 		
@@ -72166,10 +72386,10 @@ do_turkish_renames = {
 
 	if = {
 		limit = {
-			state = 2264
+			state = 7355
 		}		
 		set_province_name = {
-			id = 13857
+			id = 17085
 			name = "Breçka"
 		}
 	}
@@ -72196,10 +72416,10 @@ do_turkish_renames = {
 
 	if = {
 		limit = {
-			state = 2267
+			state = 20260
 		}		
 		set_province_name = {
-			id = 11899
+			id = 2273
 			name = "Saraybosna"
 		}
 	}	
@@ -72569,6 +72789,36 @@ do_turkish_renames = {
 		set_province_name = {
 			id = 14408
 			name = "Medine"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 14427
+		}		
+		set_province_name = {
+			id = 12883
+			name = "Cidde"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 964
+		}		
+		set_province_name = {
+			id = 4968
+			name = "Hayil"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 896
+		}		
+		set_province_name = {
+			id = 12702
+			name = "Dahran"
 		}
 	}
 
@@ -76028,6 +76278,16 @@ do_italian_renames = {
 		
 	if = {
 		limit = {
+			state = 17545
+		}		
+		set_province_name = {
+			id = 8294
+			name = "Ariel"
+		}
+	}
+		
+	if = {
+		limit = {
 			state = 3375
 		}		
 		set_province_name = {
@@ -77170,10 +77430,10 @@ do_italian_renames = {
 
     if = {
 		limit = {
-			state = 2787
+			state = 20269
 		}		
 		set_province_name = {
-			id = 6619
+			id = 1229
 			name = "Prijedor"
 		}
 	}
@@ -77320,10 +77580,10 @@ do_italian_renames = {
 
 	if = {
 		limit = {
-			state = 2264
+			state = 7355
 		}		
 		set_province_name = {
-			id = 13857
+			id = 17085
 			name = "Breuco"
 		}
 	}
@@ -77750,10 +78010,10 @@ do_italian_renames = {
 
 	if = {
 		limit = {
-			state = 2267
+			state = 20260
 		}		
 		set_province_name = {
-			id = 11899
+			id = 2273
 			name = "Saraievo"
 		}
 	}
@@ -77895,16 +78155,6 @@ do_italian_renames = {
 		set_province_name = {
 			id = 13350
 			name = "Napoli"
-		}
-	}
-		
-	if = {
-		limit = {
-			state = 3385
-		}		
-		set_province_name = {
-			id = 1201
-			name = "Caifa"
 		}
 	}
 		
@@ -84559,6 +84809,16 @@ do_turkestan_renames = {
 	}
 }
 do_french_renames = {
+
+	if = {
+		limit = {
+			state = 17401
+		}		
+		set_province_name = {
+			id = 7234
+			name = "Marjayoun"
+		}
+	}
 	
 	if = {
 		limit = {
@@ -86852,20 +87112,20 @@ do_french_renames = {
 	
 	if = {
 		limit = {
-			state = 2264
+			state = 7355
 		}		
 		set_province_name = {
-			id = 13857
+			id = 17085
 			name = "Beurtchko"
 		}
 	}
 	
 	if = {
 		limit = {
-			state = 2267
+			state = 20260
 		}		
 		set_province_name = {
-			id = 11899
+			id = 2273
 			name = "Sarayevo"
 		}
 	}
@@ -87567,6 +87827,16 @@ do_french_renames = {
 		set_province_name = {
 			id = 1201
 			name = "Haïfa"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 17545
+		}		
+		set_province_name = {
+			id = 8294
+			name = "Ariel"
 		}
 	}
 		
@@ -90252,7 +90522,7 @@ do_french_renames = {
 	
 	if = {
 		limit = {
-			state = 7623
+			state = 7653
 		}
 		set_province_name = {
 			id = 16324
@@ -90885,6 +91155,16 @@ do_french_renames = {
 		set_province_name = {
 			id = 9853
 			name = "Perpignan"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 9261
+		}		
+		set_province_name = {
+			id = 18405
+			name = "Sagallou"
 		}
 	}
 }
@@ -93840,6 +94120,15 @@ do_indonesian_renames = {
 	}
 }
 do_postcolonial_african_renames = {
+	if = {
+		limit = {
+			state = 1593
+		}		
+		set_province_name = {
+			id = 10929
+			name = "Harare"
+		}
+	}
 	if = {
 		limit = {
 			state = 10028

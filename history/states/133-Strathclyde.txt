@@ -5,10 +5,7 @@ state={
 	manpower = 2257723
 	
 	state_category = city
-	
-	resources={
-		steel=21 # was: 36
-	}
+	
 
 	history={
 		owner = ENG
@@ -22,7 +19,7 @@ state={
 	}
 
 	provinces={
-		3273 6395 
+		3273
 	}
 	local_supplies=0.0 
 }

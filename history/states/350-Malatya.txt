@@ -1,14 +1,11 @@
 
 state={
 	id=350
-	name="STATE_350"
-	resources={
-		oil=2.000
-		chromium=11.000
-	}
+	name="STATE_350"
 
 	history={
 		owner = TUR
+		add_core_of = EDS
 		add_core_of = TUR
 		add_core_of = KUR
         add_core_of = ASY

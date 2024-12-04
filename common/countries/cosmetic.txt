@@ -471,6 +471,10 @@ PHI_USA = {
 	color = rgb { 53 105 165 }
 	color_ui = rgb { 53 105 165 }
 }
+PHI_1914 = {
+	color = rgb { 53 105 165 }
+	color_ui = rgb { 53 105 165 }
+}
 PUE_USA = {
 	color = rgb { 53 105 165 }
 	color_ui = rgb { 53 105 165 }
@@ -686,10 +690,6 @@ SPR_ITA = {
 FRA_ITA = {
 	color = rgb { 42 107 48 }
 	color_ui = rgb { 42 107 48 }
-}
-RUU_BEL = {
-	color = rgb { 196 141 31 }
-	color_ui = rgb { 196 141 31 }
 }
 SOM_ITA = {
 	color = rgb { 42 107 48 }
@@ -1261,6 +1261,10 @@ NEP_RAJ = {
 	color_ui = rgb { 170 10 10 }
 }
 AFG_RAJ = {
+	color = rgb { 170 10 10 }
+	color_ui = rgb { 170 10 10 }
+}
+AFG_1914 = {
 	color = rgb { 170 10 10 }
 	color_ui = rgb { 170 10 10 }
 }
@@ -1878,6 +1882,10 @@ UKR_ANARCHIST = {
 UKR_1914_SCC = {
 	color = rgb { 140 80 12 }
 	color_ui = rgb { 140 80 12 }
+}
+UKR_SOCIALIST_1914_SCC = {
+	color = rgb { 125 13 54 }
+	color_ui = rgb { 125 13 54 }
 }
 DON_GER = {
 	color = rgb { 63 63 63 }
@@ -5736,11 +5744,6 @@ WGR_1992_HRE = {
 	color_ui = rgb { 113 114 80 }
 }
 
-GER_THEO = {
-	color = rgb { 55 35 55 }
-	color_ui = rgb { 55 35 55 }
-}
-
 GER_1914 = {
 	color = rgb { 63 63 63 }
 	color_ui = rgb { 63 63 63 }
@@ -5749,6 +5752,11 @@ GER_1914 = {
 GER_HRE_1914 = {
 	color = rgb { 113 114 80 }
 	color_ui = rgb { 113 114 80 }
+}
+
+DDR_SCC = {
+	color = rgb { 124 33 33 }
+	color_ui = rgb { 124 33 33 }
 }
 
 FRA_SOCIALIST = {
@@ -6213,8 +6221,8 @@ JFR_SOCIALIST = {
 }
 
 CAN_ABSMON = {
-	color = rgb { 60 60 120 }
-	color_ui = rgb { 60 60 120 }
+	color = rgb { 129 38 29 }
+	color_ui = rgb { 129 38 29 }
 }
 
 CAN_AUTH = {
@@ -6233,8 +6241,8 @@ CAN_REPUBLIC = {
 }
 
 CAN_SOCIALIST = {
-	color = rgb { 121 21 28 }
-	color_ui = rgb { 121 21 28 }
+	color = rgb { 106 26 36 }
+	color_ui = rgb { 106 26 36 }
 }
 
 GVK_ANOCREP = {
@@ -6285,26 +6293,6 @@ VGR_AUTHREP = {
 MC2_NATSOC = {
     color = rgb { 118 124 94 }
     color_ui = rgb { 118 124 94 }
-}
-MC2_AUTHREP = {
-    color = rgb { 64 62 58 }
-    color_ui = rgb { 64 62 58 }
-}
-MC2_AUTHMON = {
-	color = rgb { 118 124 94 }
-	color_ui = rgb { 118 124 94 }
-}
-MC2_CENREP = {
-    color = rgb { 64 62 58 }
-    color_ui = rgb { 64 62 58 }
-}
-MC2_STRAT = {
-    color = rgb { 80 60 60 }
-    color_ui = rgb { 80 60 60 }
-}
-MC2_STRATMON = {
-    color = rgb { 70 70 70 }
-    color_ui = rgb { 70 70 70 }
 }
 MC2_CORPMON = {
     color = rgb { 120 100 90 }
@@ -6524,8 +6512,8 @@ MEX_THEOC = {
 }
 
 MEX_MONARCHY = {
-	color = rgb { 109 145 106 }
-	color_ui = rgb { 109 145 106 }
+	color = rgb { 54 127 90 }
+	color_ui = rgb { 54 127 90 }
 }
 
 MEX_AUTH = {
@@ -6539,8 +6527,13 @@ MEX_CENMON = {
 }
 
 MEX_SOCIALIST = {
-	color = rgb { 134 94 92 }
-	color_ui = rgb { 134 94 92 }
+	color = rgb { 151 102 92 }
+	color_ui = rgb { 151 102 92 }
+}
+
+MEX_SOCIALIST_1914 = {
+	color = rgb { 151 102 92 }
+	color_ui = rgb { 151 102 92 }
 }
 
 SS_STATE_GENERIC = {
@@ -7465,6 +7458,36 @@ NFL_1914_SCC = {
 	color_ui = rgb { 131 43 36 }
 }
 
+AUS_AUSTRIA_HUNGARY = {
+	color = rgb { 200 200 200 }
+	color_ui = rgb { 200 200 200 }
+}
+
+HUN_AUSTRIA_HUNGARY = {
+	color = rgb { 200 200 200 }
+	color_ui = rgb { 200 200 200 }
+}
+
+CZC_AUSTRIA_HUNGARY = {
+	color = rgb { 200 200 200 }
+	color_ui = rgb { 200 200 200 }
+}
+
+GAL_AUSTRIA_HUNGARY = {
+	color = rgb { 200 200 200 }
+	color_ui = rgb { 200 200 200 }
+}
+
+ILY_AUSTRIA_HUNGARY = {
+	color = rgb { 200 200 200 }
+	color_ui = rgb { 200 200 200 }
+}
+
+GER_EMPIRE = {
+	color = rgb { 63 63 63 }
+	color_ui = rgb { 63 63 63 }
+}
+
 DDR_1950 = {
 	color = rgb { 132 10 29 }
 	color_ui = rgb { 132 10 29 }
@@ -7663,4 +7686,24 @@ WGR_2024_AUTH = {
 SOKOTO_GREEN = {
 	color = rgb { 0 98 0 }
 	color_ui = rgb { 0 98 0 }
+}
+RUS_2024_AUTH = {
+	color = rgb { 0 89 28 }
+	color_ui = rgb { 0 89 28 }
+}
+RUS_2024_FREE = {
+	color = rgb { 0 161 19 }
+	color_ui = rgb { 0 161 19 }
+}
+RUS_2024_NATSOC = {
+	color = rgb { 64 51 0 }
+	color_ui = rgb { 64 51 0 }
+}
+RUS_2024_VAN = {
+	color = rgb { 125 13 24 }
+	color_ui = rgb { 125 13 24 }
+}
+UKR_2024_VAN = {
+	color = rgb { 125 13 24 }
+	color_ui = rgb { 125 13 24 }
 }
