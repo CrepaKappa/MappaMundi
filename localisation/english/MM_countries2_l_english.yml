@@ -30926,8 +30926,18 @@
  A09_DEF:0 "The City-State of Umma"
  A09_ADJ:0 "Ngarinyin"
 
+<<<<<<< Updated upstream
  A10:0 "Kish"
  A10_DEF:0 "The City-State of Kish"
+=======
+<<<<<<< Updated upstream
+ A10:0 "Arrernte Tribes"
+ A10_DEF:0 "The Arrernte Tribes"
+=======
+ A10:0 "Kish"
+ A10_DEF:0 "The Kingdom of Kish"
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
  A10_ADJ:0 "Arrernte"
 
  A11:0 "Nippur"
@@ -30946,8 +30956,8 @@
  A14_DEF:0 "The City-State of Gomo'rha"
  A14_ADJ:0 "Wawula"
 
- A15:0 "Kalaako Tribes"
- A15_DEF:0 "The Kalaako Tribes"
+ A15:0 "Mari"
+ A15_DEF:0 "The Mari Civilization"
  A15_ADJ:0 "Kalaako"
 
  A16:0 "Ngatjumay Tribes"

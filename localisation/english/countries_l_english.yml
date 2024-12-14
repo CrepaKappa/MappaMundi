@@ -1439,8 +1439,8 @@
  UKR_neutrality:0 "Ukrainian State"
  UKR_neutrality_DEF:0 "The Ukrainian State"
  UKR_neutrality_ADJ:0 "Ukrainian"
- UKR_authoritarian_monarchism:0 "Kingdom of Ukraine"
- UKR_authoritarian_monarchism_DEF:0 "The Kingdom of Ukraine"
+ UKR_authoritarian_monarchism:0 "Tewemthet"
+ UKR_authoritarian_monarchism_DEF:0 "The Tewemthet Culture"
  UKR_authoritarian_monarchism_ADJ:0 "Ukrainian"
  UKR_stratocratic:0 "Ukrainian Military Junta"
  UKR_stratocratic_DEF:0 "The Ukrainian Military Junta"
@@ -6572,8 +6572,18 @@
  GRL_centrist_republic_DEF:0 "The Republic of Greenland"
  GRL_communism:0 "Inuit People's Republic"
  GRL_communism_DEF:0 "The Inuit People's Republic"
+<<<<<<< Updated upstream
  GRL_authoritarian_monarchism:0 "Saqqaq"
  GRL_authoritarian_monarchism_DEF:0 "The Saqqaq Culture"
+=======
+<<<<<<< Updated upstream
+ GRL_authoritarian_monarchism:0 "Colony of Greenland"
+ GRL_authoritarian_monarchism_DEF:0 "The Colony of Greenland"
+=======
+ GRL_authoritarian_monarchism:0 ""
+ GRL_authoritarian_monarchism_DEF:0 "The Saqqaq Culture"
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
  GRL_monarchism:0 "Kingdom of Greenland"
  GRL_monarchism_DEF:0 "The Kingdom of Greenland"
  GRL_anarchism_ideology:0 "Kalaallit Tribes"
@@ -10926,8 +10936,8 @@
  TWN_anocratic_monarchism_ADJ:0 "Austronesian"
  TWN_neutrality:0 "Taiwan Province"
  TWN_neutrality_DEF:0 "The Taiwan Province"
- TWN_authoritarian_monarchism:0 "Colony of Taiwan"
- TWN_authoritarian_monarchism_DEF:0 "The Colony of Taiwan"
+ TWN_authoritarian_monarchism:0 "Dapankeng"
+ TWN_authoritarian_monarchism_DEF:0 "The Dapankeng Culture"
  TWN_stratocratic:0 "Chinese Republican Government in Exile"
  TWN_stratocratic_DEF:0 "The Chinese Republican Government in Exile"
  TWN_stratocratic_monarchism:0 "Province of Formosa"
@@ -11741,8 +11751,18 @@
  SOL_monarchism_DEF:0 "The Kingdom of the Solomon Islands"
  SOL_anarchism_ideology:0 "Solomon Tribes"
  SOL_anarchism_ideology_DEF:0 "The Solomon Tribes"
+<<<<<<< Updated upstream
  SOL_authoritarian_monarchism:0 ""
  SOL_authoritarian_monarchism_DEF:0 "The Uninhabited Polynesia"
+=======
+<<<<<<< Updated upstream
+ SOL_authoritarian_monarchism:0 "British Solomon Islands Protectorate"
+ SOL_authoritarian_monarchism_DEF:0 "The British Solomon Islands Protectorate"
+=======
+ SOL_authoritarian_monarchism:0 ""
+ SOL_authoritarian_monarchism_DEF:0 "The Uninhabited Lands"
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
  SOL_democratic_monarchism:0 "Solomon Islands"
  SOL_democratic_monarchism_DEF:0 "The Solomon Islands"
  SOL_conservative_monarchism:0 "Solomon Islands"
@@ -12412,8 +12432,8 @@
  BHR_conservative_monarchism:0 "State of Bahrain"
  BHR_conservative_monarchism_DEF:0 "The State of Bahrain"
  BHR_conservative_monarchism_ADJ:0 "Bahraini"
- BHR_authoritarian_monarchism:0 "Kingdom of Bahrain"
- BHR_authoritarian_monarchism_DEF:0 "The Kingdom of Bahrain"
+ BHR_authoritarian_monarchism:0 "Kingdom of Dilmun"
+ BHR_authoritarian_monarchism_DEF:0 "The Kingdom of Dilmun"
  BHR_authoritarian_monarchism_ADJ:0 "Bahraini"
  BHR_centrist_monarchism:0 "Protectorate of Bahrain and Dependencies"
  BHR_centrist_monarchism_DEF:0 "The Protectorate of Bahrain and Dependencies"
@@ -12672,9 +12692,21 @@
  QAT_conservative_monarchism:0 "Emirate of Qatar"
  QAT_conservative_monarchism_DEF:0 "The Emirate of Qatar"
  QAT_conservative_monarchism_ADJ:0 "Qatari"
+<<<<<<< Updated upstream
  QAT_authoritarian_monarchism:0 "Dilmun"
  QAT_authoritarian_monarchism_DEF:0 "The Dilmun Civilization"
  QAT_authoritarian_monarchism_ADJ:0 "Dilmun"
+=======
+<<<<<<< Updated upstream
+ QAT_authoritarian_monarchism:0 "State of Qatar"
+ QAT_authoritarian_monarchism_DEF:0 "State of Qatar"
+ QAT_authoritarian_monarchism_ADJ:0 "Qatari"
+=======
+ QAT_authoritarian_monarchism:0 "Edun"
+ QAT_authoritarian_monarchism_DEF:0 "The Edun Civilization"
+ QAT_authoritarian_monarchism_ADJ:0 "Dilmun"
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
  QAT_centrist_monarchism_monarchism:0 "Protectorate of Qatar"
  QAT_centrist_monarchism_monarchism_DEF:0 "Protectorate of Qatar"
  QAT_centrist_monarchism_monarchism_ADJ:0 "Qatari"
